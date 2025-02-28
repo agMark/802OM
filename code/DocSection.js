@@ -8,6 +8,7 @@ class DocSection {
         this.HasContent = false;
         this.ContentFileUrl = "CONTENT FILE NOT SET";
         this.CustomStyle = "";
+        this.CustomClass = "";
 
         /**@type {DocSection[]} */
         this.Sections = [];
@@ -37,8 +38,7 @@ class DocSection {
                         })
                     }
                 )
-                .catch(x => console.log("fetch error"))
-                .finally();
+                .catch(x => console.log("fetch error"));
 
         }
 
@@ -58,6 +58,7 @@ class DocSection {
         let d = document.createElement("div");
 
         if(this.CustomStyle){d.setAttribute("style", this.CustomStyle);}
+        if(this.CustomClass){d.classList.add(this.CustomClass);}
 
         if (this.DisplayTitle) {
             let titleString = this.SectionTitle;

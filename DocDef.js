@@ -49,7 +49,16 @@ def_Sec_1
         new DocSection().i(true,"1.15",true,"AIR CONDITIONER",true,"html/Description/AIR CONDITIONER.html")
     ]);
 
-
+let def_Sec_2 = new DocSection().i(true,"2",true,"MAINTENANCE",false,"","break-before:right;");
+def_Sec_2.CustomClass = "breakBeforeRight";
+let def_Sec_3 = new DocSection().i(true,"3",true,"INSPECTION",false,"","page-break-before:always;");
+def_Sec_3.CustomClass = "breakBeforeRight";
+let def_Sec_4 = new DocSection().i(true,"4",true,"LUBRICATION",false,"","page-break-before:always;");
+def_Sec_4.CustomClass = "breakBeforeRight";
+let def_Sec_5 = new DocSection().i(true,"5",true,"REPAIRS",false,"","page-break-before:always;");
+def_Sec_5.CustomClass = "breakBeforeRight";
+let def_Sec_6 = new DocSection().i(true,"6",true,"AIRWORTHINESS LIMITATIONS",false,"","page-break-before:always;");
+def_Sec_6.CustomClass = "breakBeforeRight";
 
 
 /**@type {DocSection} */
@@ -61,7 +70,12 @@ DocDef.SectionTitle = "DOCUMENT";
 DocDef.HasContent = false;
 DocDef.ContentFileUrl = "";
 DocDef.Sections = [
-    def_Sec_1
+    def_Sec_1,
+    def_Sec_2,
+    def_Sec_3,
+    def_Sec_4,
+    def_Sec_5,
+    def_Sec_6
 ];
 DocDef.GetContent();
 
