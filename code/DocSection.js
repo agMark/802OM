@@ -55,7 +55,11 @@ class DocSection {
      * @param {HTMLElement} targetElement 
      */
     RenderContent = (recursive, targetElement) => {
-        let d = document.createElement("div");
+        /**@type {HTMLElement} */
+        let d = document.createElement("div");;
+
+            
+
 
         if(this.CustomStyle){d.setAttribute("style", this.CustomStyle);}
         if(this.CustomClass){d.classList.add(this.CustomClass);}
@@ -93,6 +97,7 @@ class DocSection {
     }
 
     /**
+     * Simple initialization function that sets the properties for most sections.
      * 
      * @param {boolean} isNumbered 
      * @param {string} sectionNumber 
@@ -121,8 +126,17 @@ class DocSection {
      */
     s = (sections) => {
         this.Sections = sections;
+        return this;
     }
 
+    /**
+     * Function used internally.
+     * Counts the number of characters (char) in a string (str)
+     * 
+     * @param {string} str 
+     * @param {string} char 
+     * @returns 
+     */
     static _countChars(str, char) {
         let count = 0;
         for (let i = 0; i < str.length; i++) {

@@ -2,50 +2,47 @@
 
 <head>
 
+    <link href="css/elementStyling.css" rel="stylesheet">
 
     <style>
-        body {
-            font-family: Helvitca, sans-serif;
-        }
 
-        h1 {
-            font-size: 1.5em;
-        }
 
-        h2 {
-            font-size: 1.0em;
-            break-after: avoid;
-        }
-
-        h3 {
-            font-size: 1.0em;
-            break-after: avoid;
-        }
-        .breakBeforeRight{
+        .breakBeforeRight {
             break-before: right;
         }
 
-        @page {
+        .sectionDescription{
+            page: descriptionSection;
+            break-before: right;
+        }
+
+        .descriptionHeaderRight {
+            position: running(descriptionHeaderRight);
+            font-family: 'Times New Roman', Times, serif;
+            border-bottom: 1px solid black;
+        }
+        .descriptionHeaderLeft{
+            position: running(descriptionHeaderLeft);
+            font-family: 'Times New Roman', Times, serif;
+            border-bottom: 1px solid black;  
+        }
+
+        @page descriptionSection :right{
             @top-center {
-                content: element(headerCenter);
+                content: element(descriptionHeaderRight);
+            }
+        }
+        @page descriptionSection :left{
+            @top-center{
+                content: element(descriptionHeaderLeft);
             }
         }
 
+        .pgNum::before{
+            content: counter(page);
+        }
 
-        .tableInspections{
-            width: 90%;
-        }
-        .cellInspectionNumber{
-            width: 5%;
-            min-width: 3em;
-        }
-        .cellInspectionInterval{
-            width: 5%;
-            min-width: 4em;
-        }
-        .cellInspectionText{
-            width: 90%;
-        }
+
     </style>
 </head>
 
@@ -56,19 +53,51 @@
 
 
 
-    <div id="headerCenter" class="headerCenter"><p>Air Tractor</p></div>
+    <div class="descriptionHeaderRight">
+        <div style="display: inline-block; width: 30%; line-height:1em; margin:0; text-align: left;">
+            <p style="line-height: 1em; margin:0;">AT-802/802A</p>
+            <p style="line-height: 1em; margin:0;">Owner's Manual</p>
+            <p style="line-height: 1em; margin:0;">Description</p>
+        </div>
+        <div style="display: inline-block; width: 30%;">
+            <p style="font-size: 1.25em; font-weight: bold; line-height: 1em; margin: 0;">Air Tractor</p>
+            <p style="font-size: .75em; font-weight: bold; line-height: 1em; margin:0">Olney, TX</p>
+        </div>
+        <div style="display: inline-block; width: 30%; text-align: right;">
+            <p style="line-height: 1em; margin:0;">Number:<span
+                    style="display: inline-block; width: 5em;">03-0121</span></p>
+            <p style="line-height: 1em; margin:0;">Date:<span style="display: inline-block; width: 5em;">12/12/24</span>
+            </p>
+            <p style="line-height: 1em; margin:0;">Page:<span class="pgNum"
+                    style="display: inline-block; width: 5em;"></span></p>
+        </div>
+    </div>
 
-    <style>
-        @page {
-            .headerCenter {
-                position: running(headerCenter);
-            }
-        }
 
-        .headerCenter {
-            position: running(headerCenter);
-        }
-    </style>
+    <div class="descriptionHeaderLeft">
+        <div style="display: inline-block; width: 30%; text-align: left;">
+            <p style="line-height: 1em; margin:0;">Number:
+                <span style="display: inline-block; width: 5em; text-align: right;">03-0121</span>
+            </p>
+            <p style="line-height: 1em; margin:0;">Date:
+                <span style="display: inline-block; width: 5em; text-align: right;">12/12/24</span>
+            </p>
+            <p style="line-height: 1em; margin:0;">Page:
+                <span class="pgNum" style="display: inline-block; width: 5em; text-align: right;"></span>
+            </p>
+        </div>
+        <div style="display: inline-block; width: 30%;">
+            <p style="font-size: 1.25em; font-weight: bold; line-height: 1em; margin: 0;">Air Tractor</p>
+            <p style="font-size: .75em; font-weight: bold; line-height: 1em; margin:0">Olney, TX</p>
+        </div>
+        <div style="display: inline-block; width: 30%; line-height:1em; margin:0; text-align: right;">
+            <p style="line-height: 1em; margin:0;">AT-802/802A</p>
+            <p style="line-height: 1em; margin:0;">Owner's Manual</p>
+            <p style="line-height: 1em; margin:0;">Description</p>
+        </div>
+    </div>
+
+
 
     <script src="code/DocSection.js"></script>
     <script src="DocDef.js"></script>

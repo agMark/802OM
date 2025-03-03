@@ -1,0 +1,66 @@
+body {
+    font-family: Helvitca, sans-serif;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.0em;
+    break-after: avoid;
+}
+
+h3 {
+    font-size: 1.0em;
+    break-after: avoid;
+}
+
+.titlePage1{
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.titlePage2{
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.titlePage3{
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.tableInspections {
+    width: 90%;
+}
+
+.cellInspectionNumber {
+    width: 5%;
+    min-width: 3em;
+}
+
+.cellInspectionInterval {
+    width: 5%;
+    min-width: 4em;
+}
+
+.cellInspectionText {
+    width: 90%;
+}
+
+
+
+
+
+
+
+.imageCentered_6x8{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6in;
+    height: 8in;
+}
