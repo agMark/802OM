@@ -3,7 +3,14 @@
 
 
 let def_Sec_0 = new DocSection();
-def_Sec_0.i(false, "", false, "", true,"html/Intro/TITLE.html");
+def_Sec_0
+    .i(false, "", false, "", true,"html/Intro/TITLE.html")
+    .s([
+        new DocSection().i(false,"",true,"OVERVIEW",true,"html/Intro/OVERVIEW.html"),
+        new DocSection().i(false,"",true,"MANUAL DISTRIBUTION", true,"html/Intro/MANUAL DISTRIBUTION.html"),
+        new DocSection().i(false,"",false,"",true,"html/Intro/TOC AND NOTES.html")
+    ]);
+
 
 
 
@@ -41,9 +48,10 @@ def_Sec_1
         new DocSection().i(true, "1.15", true, "AIR CONDITIONER", true, "html/Description/AIR CONDITIONER.html"),
         new DocSection().i(true, "1.20", true, "COCKPIT", true,"html/Description/COCKPIT.html"),
         new DocSection().i(true, "1.25", true, "COCKPIT HEATER", true, "html/Description/COCKPIT HEATER.html")
-    ]),
-        
-def_Sec_1.CustomClass = "sectionDescription";
+    ])
+    .SetElementId("Sec_1")
+    .CustomClass = "sectionDescription";
+
 
 ////////////////////////////////////////
 ////////////////////////////////////////   END SECTION 1

@@ -9,7 +9,7 @@ class DocSection {
         this.ContentFileUrl = "CONTENT FILE NOT SET";
         this.CustomStyle = "";
         this.CustomClass = "";
-
+        this.ElementId = "";
         /**@type {DocSection[]} */
         this.Sections = [];
 
@@ -56,9 +56,11 @@ class DocSection {
      */
     RenderContent = (recursive, targetElement) => {
         /**@type {HTMLElement} */
-        let d = document.createElement("div");;
+        let d = document.createElement("div");
 
-            
+        if(this.ElementId){
+            d.id = this.ElementId;
+        }           
 
 
         if(this.CustomStyle){d.setAttribute("style", this.CustomStyle);}
@@ -94,6 +96,15 @@ class DocSection {
                 s.RenderContent(true, d);
             });
         }
+    }
+
+    /**
+     * 
+     * @param {string} id 
+     */
+    SetElementId = (id) => {
+        this.ElementId = id;
+        return this;
     }
 
     /**

@@ -5,13 +5,19 @@
     <link href="css/elementStyling.css" rel="stylesheet">
 
     <style>
-
-
         .breakBeforeRight {
             break-before: right;
         }
 
-        .sectionDescription{
+        .breakBefore {
+            break-before: page;
+        }
+
+        .breakAfter {
+            break-after: page;
+        }
+
+        .sectionDescription {
             page: descriptionSection;
             break-before: right;
         }
@@ -21,28 +27,43 @@
             font-family: 'Times New Roman', Times, serif;
             border-bottom: 1px solid black;
         }
-        .descriptionHeaderLeft{
-            position: running(descriptionHeaderLeft);
-            font-family: 'Times New Roman', Times, serif;
-            border-bottom: 1px solid black;  
+
+        .descriptionRightMargin {
+            position: running(descriptionRightMargin);
+            background-color: lightgray;
+            font-weight: bold;
+            text-orientation: mixed;
+            writing-mode: vertical-rl;
+            vertical-align: middle;
+            text-align: center;
         }
 
-        @page descriptionSection :right{
+        .descriptionHeaderLeft {
+            position: running(descriptionHeaderLeft);
+            font-family: 'Times New Roman', Times, serif;
+            border-bottom: 1px solid black;
+        }
+
+        @page descriptionSection :right {
             @top-center {
                 content: element(descriptionHeaderRight);
             }
+
+            @right-middle {
+                content: element(descriptionRightMargin);
+                border: lightgray;
+            }
         }
-        @page descriptionSection :left{
-            @top-center{
+
+        @page descriptionSection :left {
+            @top-center {
                 content: element(descriptionHeaderLeft);
             }
         }
 
-        .pgNum::before{
+        .pgNum::before {
             content: counter(page);
         }
-
-
     </style>
 </head>
 
@@ -71,6 +92,10 @@
             <p style="line-height: 1em; margin:0;">Page:<span class="pgNum"
                     style="display: inline-block; width: 5em;"></span></p>
         </div>
+    </div>
+
+    <div class="descriptionRightMargin">
+        DESCRIPTION
     </div>
 
 

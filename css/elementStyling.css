@@ -16,6 +16,10 @@ h3 {
     break-after: avoid;
 }
 
+.unnumberedHeader{
+    font-weight: bold;
+}
+
 .titlePage1{
     font-size: 3em;
     text-align: center;
@@ -63,4 +67,12 @@ h3 {
     margin-right: auto;
     width: 6in;
     height: 8in;
+}
+
+.imageCentered_3x2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 3in;
+    height: 2in;
 }
