@@ -7,7 +7,7 @@ Please contact Mark for access to modify the files in this repository.
 
 
 
-# What is this anyways?
+## What is this anyways?
 
 Historically, these documents have been written and maintained in normal word processors like MSWord and WordPerfect.
 These documents are getting too large and needs to be better organized which makes maintenance with MSWord, very difficult or impossible.
@@ -18,20 +18,28 @@ The document is compiled from the HTML files into a single page that is then ren
 
 DocDef.js is the javascript script that links and orders all of the individual sections into a single document.
 
-# Styles
+## Styles
 
 Inline styling of elements needs to be limited in the HTML files or it will be difficult to maintain.  Generally, all the styling should be in elementStyling.css which is in the css folder.
 
 Certain Paged.js related styles relating to pagination and headers and things like that are in pagedjs.css and should not be modified.
 
-# Rules of Thumb
+## Rules of Thumb
 
 The html files should be as small as practical.  A single paragraph is perfectly acceptable.
 The overarching idea is that these small files can eventually be organized and reused in other documents to avoid copying and pasting.
 
 
+## Images
 
+We need to standardize the shape and formatting of images that are in the document.
 
+Currently acceptable shapes are:
+
+    | Width(in) | Height(in)    |
+    |-----------|---------------|
+    | 6.0       | 8.0           |
+    | 3.0       | 2.0           |
 
 
 
