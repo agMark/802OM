@@ -15,6 +15,7 @@ class DocSection {
 
 
         this._html = [];
+        this._div = null;
     }
 
 
@@ -60,14 +61,14 @@ class DocSection {
     RenderContent = (recursive, targetElement) => {
         /**@type {HTMLElement} */
         let d = document.createElement("div");
-
-        if(this.ElementId){
+        this._div =d;
+        if (this.ElementId) {
             d.id = this.ElementId;
-        }           
+        }
 
 
-        if(this.CustomStyle){d.setAttribute("style", this.CustomStyle);}
-        if(this.CustomClass){d.classList.add(this.CustomClass);}
+        if (this.CustomStyle) { d.setAttribute("style", this.CustomStyle); }
+        if (this.CustomClass) { d.classList.add(this.CustomClass); }
 
         if (this.DisplayTitle) {
             let titleString = this.SectionTitle;
@@ -92,7 +93,7 @@ class DocSection {
             d.appendChild(e);
         });
 
-        
+
         targetElement.appendChild(d);
         if (recursive) {
             this.Sections.forEach(s => {
@@ -108,16 +109,58 @@ class DocSection {
      */
     CreateIdsForTOC = (recursive, ids) => {
         let x = DocSection._generateRandomString(20);
-        while(ids.indexOf(x) > -1){
+        while (ids.indexOf(x) > -1) {
             x = DocSection._generateRandomString(20);
         }
         this.SetElementId(x);
         ids.push(x);
-        if(recursive){
+        if (recursive) {
             this.Sections.forEach(s => {
                 s.CreateIdsForTOC(true, ids);
             })
         }
+    }
+
+
+    /**
+     * 
+     * @param {boolean} includeSelf Include the first level (first section) in the table of contents.
+     * @param {HTMLElement} targetDiv 
+     * @param {number} parentLevel Set to 0 if you are ignoring the Section header
+     */
+    CreateToc = (includeSelf, targetDiv, parentLevel = 0) => {
+        let thisLevel = parentLevel + 1;
+        if (includeSelf) {
+            if (this.DisplayTitle) {
+                let d = document.createElement("div");
+                d.className = "tocLevel" + thisLevel.toFixed(0);
+                let a = document.createElement("a");
+                a.href="#";
+                d.appendChild(a);
+                let lineText = "";
+                if (this.IsNumbered) {
+                    lineText += this.SectionNumber + " - " + this.SectionTitle;
+                }
+                else {
+                    lineText += this.SectionTitle;
+                }
+                a.innerText = lineText;
+                targetDiv.appendChild(d);
+            }
+        }
+
+        this.Sections.forEach(s => {
+            s.CreateToc(true, targetDiv, thisLevel);
+        })
+    }
+
+
+    /**
+     * Inserts table of contents right after the section header.
+     * @param {HTMLElement} tocDiv 
+     */
+    InsertToc = (tocDiv) => {
+        this._div.insertBefore(tocDiv, this._div.childNodes[1]);
     }
 
     /**
@@ -188,8 +231,8 @@ class DocSection {
     static _generateRandomString(length) {
         const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
         let charactersLength = characters.length;
-        let result =  "";
-        for(let i=0; i < length; i++){
+        let result = "";
+        for (let i = 0; i < length; i++) {
             result += characters.charAt(Math.floor(Math.random() * charactersLength));
         }
         return result;

@@ -126,7 +126,6 @@ def_Sec_1
     .SetElementId("Sec_1")
     .CustomClass = "sectionDescription";
 
-
 ////////////////////////////////////////
 ////////////////////////////////////////   END SECTION 1
 ////////////////////////////////////////
@@ -283,6 +282,9 @@ DocDef.GetContent();
 let render = () => {
     DocDef.RenderContent(true, document.body);
 
+    let tocDiv = document.createElement("div");
+    def_Sec_1.CreateToc(false, tocDiv);
+    def_Sec_1.InsertToc(tocDiv);
 
     let style = () => {
         let st = document.createElement("link");
