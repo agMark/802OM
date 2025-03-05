@@ -1,0 +1,91 @@
+.breakBeforeRight {
+    break-before: right;
+}
+
+.breakBefore {
+    break-before: page;
+}
+
+.breakAfter {
+    break-after: page;
+}
+
+.sectionDescription {
+    page: descriptionSection;
+    break-before: right;
+}
+.sectionInspection{
+    page: inspectionSection;
+    break-before: right;
+}
+/*-------------------------------------------------------*/
+/*HEADERS AND PAGE NUMBERS*/
+/**/
+/*Declare the counters*/
+body{
+    counter-reset: descPage inspPage;
+}
+
+/*pgNumDesc is the class name for the page number field in the description headers*/
+.pgNumDesc::after {
+    content: counter(descPage);
+}
+.descriptionHeaderRight {
+    position: running(descriptionHeaderRight);
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid black;
+    counter-increment: descPage;
+}
+@page descriptionSection :right {
+    @top-center {
+        content: element(descriptionHeaderRight);
+    }
+}
+.descriptionHeaderLeft {
+    position: running(descriptionHeaderLeft);
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid black;
+    counter-increment: descPage;
+}
+@page descriptionSection :left {
+    @top-center {
+        content: element(descriptionHeaderLeft);
+    }
+}
+
+/*Inspection Section*/
+/*body{
+    counter-reset: inspPage;
+}*/
+.pgNumInsp::after {
+    content: counter(inspPage);
+}
+.inspectionHeaderRight {
+    position: running(inspectionHeaderRight);
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid black;
+    counter-increment: inspPage;
+}
+@page inspectionSection :right {
+    @top-center {
+        content: element(inspectionHeaderRight);
+    }
+}
+.inspectionHeaderLeft {
+    position: running(inspectionHeaderLeft);
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid black;
+    counter-increment: inspPage;
+}
+@page inspectionSection :left {
+    @top-center {
+        content: element(inspectionHeaderLeft);
+    }
+}
+/**/
+/**/
+/*-------------------------------------------------------*/
+
+
+
+

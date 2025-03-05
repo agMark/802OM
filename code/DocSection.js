@@ -18,6 +18,9 @@ class DocSection {
     }
 
 
+    /**
+     * Recursively retrieves the section's and subsection's content.
+     */
     GetContent = () => {
         if (this.HasContent) {
             fetch(this.ContentFileUrl)
@@ -50,8 +53,8 @@ class DocSection {
     }
 
     /**
-     * 
-     * @param {boolean} recursive 
+     * Renders the html content into an html element.
+     * @param {boolean} recursive True to recursively render subjection's content
      * @param {HTMLElement} targetElement 
      */
     RenderContent = (recursive, targetElement) => {
@@ -99,7 +102,26 @@ class DocSection {
     }
 
     /**
-     * 
+     * Creates unique id's to be used as the element's ID for a table of contents and links.
+     * @param {boolean} recursive 
+     * @param {string[]} ids 
+     */
+    CreateIdsForTOC = (recursive, ids) => {
+        let x = DocSection._generateRandomString(20);
+        while(ids.indexOf(x) > -1){
+            x = DocSection._generateRandomString(20);
+        }
+        this.SetElementId(x);
+        ids.push(x);
+        if(recursive){
+            this.Sections.forEach(s => {
+                s.CreateIdsForTOC(true, ids);
+            })
+        }
+    }
+
+    /**
+     * Sets the html id attribute of the section's main div.
      * @param {string} id 
      */
     SetElementId = (id) => {
@@ -156,5 +178,20 @@ class DocSection {
             }
         }
         return count;
+    }
+
+    /**
+     * Generates a random string from standard letters and numbers.
+     * @param {number} length Length of the string to be generated.
+     * @returns 
+     */
+    static _generateRandomString(length) {
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        let charactersLength = characters.length;
+        let result =  "";
+        for(let i=0; i < length; i++){
+            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+        }
+        return result;
     }
 }

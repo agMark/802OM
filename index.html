@@ -4,67 +4,7 @@
 
     <link href="css/elementStyling.css" rel="stylesheet">
 
-    <style>
-        .breakBeforeRight {
-            break-before: right;
-        }
-
-        .breakBefore {
-            break-before: page;
-        }
-
-        .breakAfter {
-            break-after: page;
-        }
-
-        .sectionDescription {
-            page: descriptionSection;
-            break-before: right;
-        }
-
-        .descriptionHeaderRight {
-            position: running(descriptionHeaderRight);
-            font-family: 'Times New Roman', Times, serif;
-            border-bottom: 1px solid black;
-        }
-
-        .descriptionRightMargin {
-            position: running(descriptionRightMargin);
-            background-color: lightgray;
-            font-weight: bold;
-            text-orientation: mixed;
-            writing-mode: vertical-rl;
-            vertical-align: middle;
-            text-align: center;
-        }
-
-        .descriptionHeaderLeft {
-            position: running(descriptionHeaderLeft);
-            font-family: 'Times New Roman', Times, serif;
-            border-bottom: 1px solid black;
-        }
-
-        @page descriptionSection :right {
-            @top-center {
-                content: element(descriptionHeaderRight);
-            }
-
-            @right-middle {
-                content: element(descriptionRightMargin);
-                border: lightgray;
-            }
-        }
-
-        @page descriptionSection :left {
-            @top-center {
-                content: element(descriptionHeaderLeft);
-            }
-        }
-
-        .pgNum::before {
-            content: counter(page);
-        }
-    </style>
+    <link href="css/pagedjs.css" rel="stylesheet">
 </head>
 
 
@@ -89,14 +29,11 @@
                     style="display: inline-block; width: 5em;">03-0121</span></p>
             <p style="line-height: 1em; margin:0;">Date:<span style="display: inline-block; width: 5em;">12/12/24</span>
             </p>
-            <p style="line-height: 1em; margin:0;">Page:<span class="pgNum"
-                    style="display: inline-block; width: 5em;"></span></p>
+            <p style="line-height: 1em; margin:0;">Page:<span class="pgNumDesc"
+                    style="display: inline-block; width: 5em;">1-</span></p>
         </div>
     </div>
 
-    <div class="descriptionRightMargin">
-        DESCRIPTION
-    </div>
 
 
     <div class="descriptionHeaderLeft">
@@ -108,7 +45,7 @@
                 <span style="display: inline-block; width: 5em; text-align: right;">12/12/24</span>
             </p>
             <p style="line-height: 1em; margin:0;">Page:
-                <span class="pgNum" style="display: inline-block; width: 5em; text-align: right;"></span>
+                <span class="pgNumDesc" style="display: inline-block; width: 5em; text-align: right;">1-</span>
             </p>
         </div>
         <div style="display: inline-block; width: 30%;">
@@ -119,6 +56,54 @@
             <p style="line-height: 1em; margin:0;">AT-802/802A</p>
             <p style="line-height: 1em; margin:0;">Owner's Manual</p>
             <p style="line-height: 1em; margin:0;">Description</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="inspectionHeaderRight">
+        <div style="display: inline-block; width: 30%; line-height:1em; margin:0; text-align: left;">
+            <p style="line-height: 1em; margin:0;">AT-802/802A</p>
+            <p style="line-height: 1em; margin:0;">Owner's Manual</p>
+            <p style="line-height: 1em; margin:0;">Inspection</p>
+        </div>
+        <div style="display: inline-block; width: 30%;">
+            <p style="font-size: 1.25em; font-weight: bold; line-height: 1em; margin: 0;">Air Tractor</p>
+            <p style="font-size: .75em; font-weight: bold; line-height: 1em; margin:0">Olney, TX</p>
+        </div>
+        <div style="display: inline-block; width: 30%; text-align: right;">
+            <p style="line-height: 1em; margin:0;">Number:<span
+                    style="display: inline-block; width: 5em;">03-0121</span></p>
+            <p style="line-height: 1em; margin:0;">Date:<span style="display: inline-block; width: 5em;">12/12/24</span>
+            </p>
+            <p style="line-height: 1em; margin:0;">Page:<span class="pgNumInsp"
+                    style="display: inline-block; width: 5em;">3-</span></p>
+        </div>
+    </div>
+    <div class="inspectionHeaderLeft">
+        <div style="display: inline-block; width: 30%; text-align: left;">
+            <p style="line-height: 1em; margin:0;">Number:
+                <span style="display: inline-block; width: 5em; text-align: right;">03-0121</span>
+            </p>
+            <p style="line-height: 1em; margin:0;">Date:
+                <span style="display: inline-block; width: 5em; text-align: right;">12/12/24</span>
+            </p>
+            <p style="line-height: 1em; margin:0;">Page:
+                <span class="pgNumInsp" style="display: inline-block; width: 5em; text-align: right;">3-</span>
+            </p>
+        </div>
+        <div style="display: inline-block; width: 30%;">
+            <p style="font-size: 1.25em; font-weight: bold; line-height: 1em; margin: 0;">Air Tractor</p>
+            <p style="font-size: .75em; font-weight: bold; line-height: 1em; margin:0">Olney, TX</p>
+        </div>
+        <div style="display: inline-block; width: 30%; line-height:1em; margin:0; text-align: right;">
+            <p style="line-height: 1em; margin:0;">AT-802/802A</p>
+            <p style="line-height: 1em; margin:0;">Owner's Manual</p>
+            <p style="line-height: 1em; margin:0;">Inspection</p>
         </div>
     </div>
 
