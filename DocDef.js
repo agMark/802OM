@@ -284,7 +284,7 @@ let render = () => {
 
     let tocDiv = document.createElement("div");
     def_Sec_1.CreateToc(false, tocDiv);
-    def_Sec_1.InsertToc(tocDiv);
+    def_Sec_1.InsertToc(tocDiv,true, true,"Table of Contents","tocHeader");
 
     let style = () => {
         let st = document.createElement("link");

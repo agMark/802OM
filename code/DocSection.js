@@ -61,7 +61,7 @@ class DocSection {
     RenderContent = (recursive, targetElement) => {
         /**@type {HTMLElement} */
         let d = document.createElement("div");
-        this._div =d;
+        this._div = d;
         if (this.ElementId) {
             d.id = this.ElementId;
         }
@@ -129,14 +129,23 @@ class DocSection {
      * @param {number} parentLevel Set to 0 if you are ignoring the Section header
      */
     CreateToc = (includeSelf, targetDiv, parentLevel = 0) => {
+        /*Styling from: https://css-tricks.com/a-perfect-table-of-contents-with-html-css/ */
         let thisLevel = parentLevel + 1;
         if (includeSelf) {
             if (this.DisplayTitle) {
                 let d = document.createElement("div");
                 d.className = "tocLevel" + thisLevel.toFixed(0);
                 let a = document.createElement("a");
-                a.href="#";
+                a.className = "tocGrid";
+                //TEST
+                if(!this.ElementId){
+                    this._div.id = DocSection._generateRandomString(20);
+                    a.href = "#" + this._div.id;
+                }
+                //TEST
+                
                 d.appendChild(a);
+
                 let lineText = "";
                 if (this.IsNumbered) {
                     lineText += this.SectionNumber + " - " + this.SectionTitle;
@@ -144,7 +153,17 @@ class DocSection {
                 else {
                     lineText += this.SectionTitle;
                 }
-                a.innerText = lineText;
+                let span1 = document.createElement("span");
+                span1.innerText = (lineText);
+                let spanLeaders = document.createElement("span");
+                spanLeaders.className = "tocLeaders";
+                spanLeaders.setAttribute("aria-hidden", "true");
+                span1.appendChild(spanLeaders);
+                a.appendChild(span1);
+                let span2 = document.createElement("span");
+                span2.className = "tocPageNum";
+                span2.innerText = "XXX";
+                a.appendChild(span2);
                 targetDiv.appendChild(d);
             }
         }
@@ -159,8 +178,23 @@ class DocSection {
      * Inserts table of contents right after the section header.
      * @param {HTMLElement} tocDiv 
      */
-    InsertToc = (tocDiv) => {
-        this._div.insertBefore(tocDiv, this._div.childNodes[1]);
+    InsertToc = (tocDiv, breakPageAfterToc = false, createTocHeader = false, tocHeaderText = "", tocHeaderClass = "") => {
+        if (createTocHeader) {
+            let tDiv = document.createElement("div");
+            let pHeader = document.createElement("p");
+            pHeader.innerText = tocHeaderText;
+            if (tocHeaderClass) {
+                pHeader.className = tocHeaderClass;
+            }
+            tDiv.appendChild(pHeader);
+            tDiv.appendChild(tocDiv);
+            if (breakPageAfterToc) { tDiv.className = "breakAfter"; }
+            this._div.insertBefore(tDiv, this._div.childNodes[1]);
+        }
+        else {
+            if (breakPageAfterToc) { tocDiv.className = "breakAfter"; }
+            this._div.insertBefore(tocDiv, this._div.childNodes[1]);
+        }
     }
 
     /**
