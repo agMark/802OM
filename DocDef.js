@@ -139,8 +139,7 @@ def_Sec_1
 
 
 
-let def_Sec_2 = new DocSection().i(true, "2", true, "MAINTENANCE", false, "", "break-before:right;");
-def_Sec_2.CustomClass = "breakBeforeRight";
+
 ////////////////////////////////////////
 ////////////////////////////////////////   END SECTION 2
 ////////////////////////////////////////
