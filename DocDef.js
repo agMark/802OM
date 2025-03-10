@@ -55,7 +55,11 @@ def_Sec_1_35
     .i(true, "1.35", true, "DISPERSAL SYSTEM", true, "html/Description/DISPERSAL SYSTEM.html");
 let def_Sec_1_40 = new DocSection();
 def_Sec_1_40
-    .i(true, "1.40", true, "ELECTRICAL SYSTEM", true, "html/Description/ELECTRICAL SYSTEM.html");
+    .i(true, "1.40", true, "ELECTRICAL SYSTEM", false, "")
+    .s([
+        new DocSection().i(true, "1.40.1", true, "Starter-Generator System",true, "html/Description/Starter Generator System.html"),
+        new DocSection().i(true, "1.40.2", true, "Batteries",true, "html/Description/Batteries.html")
+    ]);
 let def_Sec_1_50 = new DocSection();
 def_Sec_1_50
     .i(true, "1.50", true, "ENGINE", true, "html/Description/ENGINE.html")
@@ -139,7 +143,7 @@ def_Sec_1
 
 
 
-
+//See DocDef_2_Maintenance.js
 ////////////////////////////////////////
 ////////////////////////////////////////   END SECTION 2
 ////////////////////////////////////////

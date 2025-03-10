@@ -10,7 +10,8 @@ Please contact Mark for access to modify the files in this repository.
 ## What is this anyways?
 
 Historically, these documents have been written and maintained in normal word processors like MSWord and WordPerfect.
-These documents are getting too large and needs to be better organized which makes maintenance with MSWord, very difficult or impossible.
+
+These documents are getting too large and need to be better organized which makes maintenance with MSWord, very difficult or impossible.
 
 Organizing all the content into HTML files allows for easier editing of individual sections.
 
@@ -42,7 +43,23 @@ Currently acceptable shapes are:
     | 3.0       | 2.0           |
 
 
+## Caution and Warning Boxes
 
+The standard caution and warning boxes are:
+
+small: 3in wide x Content Height\
+medium: 4in wide x Content Height\
+large: 6in wide x Content Height
+
+Each size has corresponding css classes that should be applied.
+
+For a small box, html markup is as follows:
+```html
+<div class="boxCautionSmall">
+    <p class="boxCautionSmallHeader">CAUTION</p>
+    <p class="boxCautionSmallText">Caution's text goes here.</p>
+</div>
+```
 
 # Paged.js Notes
 ## Page Number Counters

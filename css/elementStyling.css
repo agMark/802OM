@@ -63,11 +63,13 @@ h3 {
 .cellInspectionNumber {
     width: 5%;
     min-width: 3em;
+    vertical-align: top;
 }
 
 .cellInspectionInterval {
     width: 5%;
     min-width: 6em;
+    vertical-align: top;
 }
 
 .cellInspectionText {
@@ -79,7 +81,23 @@ h3 {
 
 
 
-
+.boxCautionSmall{
+    width: 3in;
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+    margin-top: .2em;
+    margin-bottom: .2em;
+}
+.boxCautionSmallHeader{
+    font-weight: bold;
+    margin-top: .2em;
+    margin-bottom: .2em;
+}
+.boxCautionSmallText{
+    margin-top: .2em;
+    margin-bottom: .2em;
+}
 
 /*----------------------------------------------*/
 /*----------------------------------------------*/
