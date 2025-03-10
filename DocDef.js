@@ -285,9 +285,18 @@ DocDef.GetContent();
 let render = () => {
     DocDef.RenderContent(true, document.body);
 
-    let tocDiv = document.createElement("div");
-    def_Sec_1.CreateToc(false, tocDiv);
-    def_Sec_1.InsertToc(tocDiv,true, true,"Table of Contents","tocHeader");
+    let tocDiv1 = document.createElement("div");
+    def_Sec_1.CreateToc(false, tocDiv1);
+    def_Sec_1.InsertToc(tocDiv1,true, true,"Table of Contents","tocHeader");
+
+
+    let tocDiv2 = document.createElement("div");
+    def_Sec_2.CreateToc(false, tocDiv2);
+    def_Sec_2.InsertToc(tocDiv2,true,true, "Table of Contents", "tocHeader");
+
+    let tocDiv3 = document.createElement("div");
+    def_Sec_3.CreateToc(false, tocDiv3);
+    def_Sec_3.InsertToc(tocDiv3,true,true, "Table of Contents", "tocHeader");
 
     let style = () => {
         let st = document.createElement("link");

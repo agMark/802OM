@@ -80,7 +80,11 @@ h3 {
 /*----------------------------------------------*/
 
 
-
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+/*WARNING, CAUTION, AND NOTE BOXESG*/
+/*----------------------------------------------*/
+/*----------------------------------------------*/
 .boxCautionSmall{
     width: 3in;
     border: 1px solid black;
@@ -98,6 +102,46 @@ h3 {
     margin-top: .2em;
     margin-bottom: .2em;
 }
+.boxCautionMedium{
+    width: 4.5in;
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+    margin-top: .2em;
+    margin-bottom: .2em;
+}
+.boxCautionMediumHeader{
+    font-weight: bold;
+    margin-top: .2em;
+    margin-bottom: .2em;
+}
+.boxCautionMediumText{
+    margin-top: .2em;
+    margin-bottom: .2em;
+}
+.boxCautionLarge{
+    width: 6in;
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+    margin-top: .2em;
+    margin-bottom: .2em;
+}
+.boxCautionLargeHeader{
+    font-weight: bold;
+    margin-top: .2em;
+    margin-bottom: .2em;
+}
+.boxCautionLargeText{
+    margin-top: .2em;
+    margin-bottom: .2em;
+}
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+
+
+
 
 /*----------------------------------------------*/
 /*----------------------------------------------*/

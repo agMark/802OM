@@ -241,5 +241,5 @@ def_Sec_2.s([
     def_Sec_2_50,
     def_Sec_2_55
 ]);
-def_Sec_2.CustomClass = "breakBeforeRight";
+def_Sec_2.CustomClass = "sectionMaintenance";
 def_Sec_2.SetElementId("Sec_2");

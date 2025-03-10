@@ -48,7 +48,7 @@ Currently acceptable shapes are:
 The standard caution and warning boxes are:
 
 small: 3in wide x Content Height\
-medium: 4in wide x Content Height\
+medium: 4.5in wide x Content Height\
 large: 6in wide x Content Height
 
 Each size has corresponding css classes that should be applied.

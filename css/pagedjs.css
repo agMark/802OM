@@ -14,16 +14,31 @@
     page: descriptionSection;
     break-before: right;
 }
+.sectionMaintenance{
+    page: maintenanceSection;
+    break-before: right;
+}
 .sectionInspection{
     page: inspectionSection;
     break-before: right;
 }
+
+
+
+
+
+
+
+
+
+
+
 /*-------------------------------------------------------*/
 /*HEADERS AND PAGE NUMBERS*/
 /**/
 /*Declare the counters*/
 body{
-    counter-reset: descPage inspPage;
+    counter-reset: descPage maintPage inspPage;
 }
 
 /*pgNumDesc is the class name for the page number field in the description headers*/
@@ -52,6 +67,34 @@ body{
         content: element(descriptionHeaderLeft);
     }
 }
+
+/*Maintenance Section*/
+.pgNumMaint::after {
+    content: counter(maintPage);
+}
+.maintenanceHeaderRight {
+    position: running(maintenanceHeaderRight);
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid black;
+    counter-increment: maintPage;
+}
+@page maintenanceSection :right {
+    @top-center {
+        content: element(maintenanceHeaderRight);
+    }
+}
+.maintenanceHeaderLeft {
+    position: running(maintenanceHeaderLeft);
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid black;
+    counter-increment: maintPage;
+}
+@page maintenanceSection :left {
+    @top-center {
+        content: element(maintenanceHeaderLeft);
+    }
+}
+
 
 /*Inspection Section*/
 /*body{
