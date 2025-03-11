@@ -102,7 +102,8 @@ def_Sec_1_85
         new DocSection().i(true, "1.85.3", true, "Compass", true, "html/Description/Compass.html"),
         new DocSection().i(true, "1.85.4", true, "Attitude Indicator", true, "html/Description/Attitude Indicator.html"),
         new DocSection().i(true, "1.85.5", true, "Low Fuel Warning Light System", true, "html/Description/Low Fuel Warning Light System.html"),
-        def_Sec_1_80_6
+        def_Sec_1_80_6,
+        new DocSection().i(true, "1.80.7",true,"MVP-50T Digital Instruments", true, "html/Description/MVP-50T.html")
     ]);
 
 let def_Sec_1 = new DocSection();
