@@ -154,7 +154,7 @@ let defSec_2_45_3 = new DocSection().i(true, "2.45.3", true, "Horizontal Stabili
 let defSec_2_45_4 = new DocSection().i(true, "2.45.4", true, "Elevators ", true, "html/Maintenance/Elevators.html");
 let defSec_2_45_5 = new DocSection().i(true, "2.45.5", true, "Elevator Trim Tabs", true, "html/Maintenance/Elevator Trim Tabs.html");
 let defSec_2_45_6 = new DocSection().i(true, "2.45.6", true, "Vertical Fin", true, "html/Maintenance/Vertical Fin.html");
-let defSec_2_45_7 = new DocSection().i(true, "2.45.7", true, "Rudder ", true, "html/Maintenance/Rudder.html");
+let defSec_2_45_7 = new DocSection().i(true, "2.45.7", true, "Rudder", true, "html/Maintenance/Rudder.html");
 let defSec_2_45_8 = new DocSection().i(true, "2.45.8", true, "Rudder Trim Tab", true, "html/Maintenance/Rudder Trim Tab.html");
 let defSec_2_45_9 = new DocSection().i(true, "2.45.9", true, "Deflector Wire", true, "html/Maintenance/Deflector Wire.html");
 let def_Sec_2_45 = new DocSection();
@@ -225,6 +225,88 @@ def_Sec_2_55
     ]);
 
 
+let defSec_2_60_1 = new DocSection().i(true, "2.60.1", true, "FCU Manual Override Rigging", true, "html/Maintenance/FCU Manual Override Rigging.html");
+let def_Sec_2_60 = new DocSection();
+def_Sec_2_60
+    .i(true, "2.60", true, "FCU MANUAL OVERRIDE", false, "")
+    .s([
+        defSec_2_60_1
+    ]);
+
+
+let def_Sec_2_65 = new DocSection();
+def_Sec_2_65
+    .i(true, "2.65", true, "FIRE RETARDANT DISPERSAL SYSTEM", false, "html/Maintenance/FIRE RETARDANT DISPERSAL SYSTEM.html")
+    .s([
+    ]);
+
+
+let defSec_2_70_1 = new DocSection().i(true, "2.70.1", true, "Flap Removal", true, "html/Maintenance/Flap Removal.html");
+let defSec_2_70_2 = new DocSection().i(true, "2.70.2", true, "Flap Replacement", true, "html/Maintenance/Flap Replacement.html");
+let defSec_2_70_3 = new DocSection().i(true, "2.70.3", true, "Flap Rigging", true, "html/Maintenance/Flap Rigging.html");
+let defSec_2_70_4 = new DocSection().i(true, "2.70.4", true, "Flap Bellcrank and Supports ", true, "html/Maintenance/Flap Bellcrank and Supports.html");
+let defSec_2_70_5 = new DocSection().i(true, "2.70.5", true, "Flap Actuator", true, "html/Maintenance/Flap Actuator.html");
+let defSec_2_70_6 = new DocSection().i(true, "2.70.6", true, "Flap Actuator Troubleshooting", true, "html/Maintenance/Flap Actuator Troubleshooting.html");
+let defSec_2_70_7 = new DocSection().i(true, "2.70.7", true, "Flap Motor Troubleshooting", true, "html/Maintenance/Flap Motor Troubleshooting.html");
+let defSec_2_70_8 = new DocSection().i(true, "2.70.8", true, "Flap Actuator Removal Instructions", true, "html/Maintenance/Flap Actuator Removal Instructions.html");
+let defSec_2_70_9 = new DocSection().i(true, "2.70.9", true, "Flap Actuator Installation Instructions", true, "html/Maintenance/Flap Actuator Installation Instructions.html");
+let defSec_2_70_10 = new DocSection().i(true, "2.70.10", true, "Flap Relay Troubleshooting", true, "html/Maintenance/Flap Relay Troubleshooting.html");
+let def_Sec_2_70 = new DocSection();
+def_Sec_2_70
+    .i(true, "2.70", true, "FLAPS", false, "")
+    .s([
+        defSec_2_70_1,
+        defSec_2_70_2,
+        defSec_2_70_3,
+        defSec_2_70_4,
+        defSec_2_70_5,
+        defSec_2_70_6,
+        defSec_2_70_7,
+        defSec_2_70_8,
+        defSec_2_70_9,
+        defSec_2_70_10
+    ]);
+
+let defSec_2_75_1 = new DocSection().i(true, "2.75.1", true, "Fuel Tanks", true, "html/Maintenance/Fuel Tanks.html");
+let defSec_2_75_2 = new DocSection().i(true, "2.75.2", true, "Fuel Tank Sealing", true, "html/Maintenance/Fuel Tank Sealing.html");
+let defSec_2_75_3 = new DocSection().i(true, "2.75.3", true, "Fuel Tank Senders", true, "html/Maintenance/Fuel Tank Senders.html");
+let defSec_2_75_4 = new DocSection().i(true, "2.75.4", true, "Fuel Tank Receiver", true, "html/Maintenance/Fuel Tank Receiver.html");
+let defSec_2_75_5 = new DocSection().i(true, "2.75.5", true, "Fuel System Drains", true, "html/Maintenance/Fuel System Drains.html");
+let defSec_2_75_6 = new DocSection().i(true, "2.75.6", true, "Fuel System Screens and Filters", true, "html/Maintenance/Fuel System Screens and Filters.html");
+let defSec_2_75_7 = new DocSection().i(true, "2.75.7", true, "Airframe Fuel Pump", true, "html/Maintenance/Airframe Fuel Pump.html");
+let def_Sec_2_75 = new DocSection();
+def_Sec_2_75
+    .i(true, "2.75", true, "FUEL SYSTEM", false, "")
+    .s([
+        defSec_2_75_1,
+        defSec_2_75_2,
+        defSec_2_75_3,
+        defSec_2_75_4,
+        defSec_2_75_5,
+        defSec_2_75_6,
+        defSec_2_75_7
+    ]);
+
+let defSec_2_80_1 = new DocSection().i(true, "2.80.1", true, "Fuselage Removable Skins", true, "html/Maintenance/Fuselage Removable Skins.html");
+let defSec_2_80_2 = new DocSection().i(true, "2.80.2", true, "Fuselage Fixed Skins", true, "html/Maintenance/Fuselage Fixed Skins.html");
+let defSec_2_80_3 = new DocSection().i(true, "2.80.3", true, "Fuselage Cockpit Skins", true, "html/Maintenance/Fuselage Cockpit Skins.html");
+let defSec_2_80_4 = new DocSection().i(true, "2.80.4", true, "Fuselage Frame", true, "html/Maintenance/Fuselage Frame.html");
+let defSec_2_80_5 = new DocSection().i(true, "2.80.5", true, "Windshield", true, "html/Maintenance/Windshield.html");
+let defSec_2_80_6 = new DocSection().i(true, "2.80.6", true, "Canopy Doors", true, "html/Maintenance/Canopy Doors");
+let defSec_2_80_7 = new DocSection().i(true, "2.80.7", true, "Seat", true, "html/Maintenance/Seat.html");
+let def_Sec_2_80 = new DocSection();
+def_Sec_2_80
+    .i(true, "2.80", true, "FUSELAGE", false, "")
+    .s([
+        defSec_2_80_1,
+        defSec_2_80_2,
+        defSec_2_80_3,
+        defSec_2_80_4,
+        defSec_2_80_5,
+        defSec_2_80_6,
+        defSec_2_80_7
+    ]);
+
 
 
 let def_Sec_2 = new DocSection().i(true, "2", true, "MAINTENANCE", false, "", "break-before:right;");
@@ -239,7 +321,12 @@ def_Sec_2.s([
     def_Sec_2_40,
     def_Sec_2_45,
     def_Sec_2_50,
-    def_Sec_2_55
+    def_Sec_2_55,
+    def_Sec_2_60,
+    def_Sec_2_65,
+    def_Sec_2_70,
+    def_Sec_2_75,
+    def_Sec_2_80
 ]);
 def_Sec_2.CustomClass = "sectionMaintenance";
 def_Sec_2.SetElementId("Sec_2");
