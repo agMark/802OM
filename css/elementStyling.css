@@ -92,15 +92,18 @@ h3 {
     margin: auto;
     margin-top: .2em;
     margin-bottom: .2em;
+    break-before: avoid;
 }
 .boxCautionSmallHeader{
     font-weight: bold;
     margin-top: .2em;
     margin-bottom: .2em;
+    break-before: avoid;
 }
 .boxCautionSmallText{
     margin-top: .2em;
     margin-bottom: .2em;
+    break-before: avoid;
 }
 .boxCautionMedium{
     width: 4.5in;
@@ -109,15 +112,18 @@ h3 {
     margin: auto;
     margin-top: .2em;
     margin-bottom: .2em;
+    break-before: avoid;
 }
 .boxCautionMediumHeader{
     font-weight: bold;
     margin-top: .2em;
     margin-bottom: .2em;
+    break-before: avoid;
 }
 .boxCautionMediumText{
     margin-top: .2em;
     margin-bottom: .2em;
+    break-before: avoid;
 }
 .boxCautionLarge{
     width: 6in;
@@ -126,15 +132,18 @@ h3 {
     margin: auto;
     margin-top: .2em;
     margin-bottom: .2em;
+    break-before: avoid;
 }
 .boxCautionLargeHeader{
     font-weight: bold;
     margin-top: .2em;
     margin-bottom: .2em;
+    break-before: avoid;
 }
 .boxCautionLargeText{
     margin-top: .2em;
     margin-bottom: .2em;
+    break-before: avoid;
 }
 
 
@@ -145,17 +154,20 @@ h3 {
     margin: auto;
     margin-top: .2em;
     margin-bottom: .2em;
+    break-before: avoid;
 }
 .boxWarningSmallHeader{
     color: red;
     font-weight: bold;
     margin-top: .2em;
     margin-bottom: .2em;
+    break-before: avoid;
 }
 .boxWarningSmallText{
     color: red;
     margin-top: .2em;
     margin-bottom: .2em;
+    break-before: avoid;
 }
 .boxWarningMedium{
     width: 4.5in;
@@ -164,17 +176,20 @@ h3 {
     margin: auto;
     margin-top: .2em;
     margin-bottom: .2em;
+    break-before: avoid;
 }
 .boxWarningMediumHeader{
     font-weight: bold;
     color: red;
     margin-top: .2em;
     margin-bottom: .2em;
+    break-before: avoid;
 }
 .boxWarningMediumText{
     color: red;
     margin-top: .2em;
     margin-bottom: .2em;
+    break-before: avoid;
 }
 .boxWarningLarge{
     width: 6in;
@@ -183,17 +198,20 @@ h3 {
     margin: auto;
     margin-top: .2em;
     margin-bottom: .2em;
+    break-before: avoid;
 }
 .boxWarningLargeHeader{
     color: red;
     font-weight: bold;
     margin-top: .2em;
     margin-bottom: .2em;
+    break-before: avoid;
 }
 .boxWarningLargeText{
     color: red;
     margin-top: .2em;
     margin-bottom: .2em;
+    break-before: avoid;
 }
 /*----------------------------------------------*/
 /*----------------------------------------------*/
