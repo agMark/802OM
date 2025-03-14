@@ -61,6 +61,29 @@ For a small box, html markup is as follows:
 </div>
 ```
 
+
+## Tables
+There is a lot of content that is formatted as tables.  Some are simple and can use standard style classes, others require column spanning and other complicated styles that will need to be done in the html elements.
+
+The standard table styles are
+
+plainTableLarge
+
+The cells are styled as follows
+
+```html
+<table class="plainTableLarge">
+    <tr>
+        <th class=plainTableHeaderCell>Header Cell 1</th>
+        <th class=plainTableHeaderCell>Header Cell 2</th>
+    </tr>
+    <tr>
+        <td class="plainTableNormalCell centerText">Row 1 Cell 1</td>
+        <td class="plainTableNormalCell centerText">Row 2 Cell 1</td>
+    </tr>
+</table>
+```
+
 # Paged.js Notes
 ## Page Number Counters
 Page number counters are finnicky.
