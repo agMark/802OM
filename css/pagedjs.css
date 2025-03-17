@@ -10,6 +10,10 @@
     break-after: page;
 }
 
+.dontBreakAfter{
+    break-after: avoid;
+}
+
 .sectionDescription {
     page: descriptionSection;
     break-before: right;
@@ -20,6 +24,10 @@
 }
 .sectionInspection{
     page: inspectionSection;
+    break-before: right;
+}
+.sectionLubrication{
+    page: lubricationSection;
     break-before: right;
 }
 
@@ -38,7 +46,7 @@
 /**/
 /*Declare the counters*/
 body{
-    counter-reset: descPage maintPage inspPage;
+    counter-reset: descPage maintPage inspPage lubePage;
 }
 
 /*pgNumDesc is the class name for the page number field in the description headers*/
@@ -123,6 +131,38 @@ body{
 @page inspectionSection :left {
     @top-center {
         content: element(inspectionHeaderLeft);
+    }
+}
+
+
+
+/*Lubrication Section*/
+/*body{
+    counter-reset: inspPage;
+}*/
+.pgNumLube::after {
+    content: counter(lubePage);
+}
+.lubricationHeaderRight {
+    position: running(lubricationHeaderRight);
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid black;
+    counter-increment: lubePage;
+}
+@page lubricationSection :right {
+    @top-center {
+        content: element(lubricationHeaderRight);
+    }
+}
+.lubricationHeaderLeft {
+    position: running(lubricationHeaderLeft);
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid black;
+    counter-increment: lubePage;
+}
+@page lubricationSection :left {
+    @top-center {
+        content: element(lubricationHeaderLeft);
     }
 }
 /**/
