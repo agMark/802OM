@@ -245,7 +245,7 @@ def_Sec_2_65
 
 
 let defSec_2_70_1 = new DocSection().i(true, "2.70.1", true, "Flap Removal", true, "html/Maintenance/Flap Removal.html");
-let defSec_2_70_2 = new DocSection().i(true, "2.70.2", true, "Flap Replacement", true, "html/Maintenance/Flap Replacement.html");
+let defSec_2_70_2 = new DocSection().i(true, "2.70.2", true, "Flap Installation", true, "html/Maintenance/Flap Installation.html");
 let defSec_2_70_3 = new DocSection().i(true, "2.70.3", true, "Flap Rigging", true, "html/Maintenance/Flap Rigging.html");
 let defSec_2_70_4 = new DocSection().i(true, "2.70.4", true, "Flap Bellcrank and Supports ", true, "html/Maintenance/Flap Bellcrank and Supports.html");
 let defSec_2_70_5 = new DocSection().i(true, "2.70.5", true, "Flap Actuator", true, "html/Maintenance/Flap Actuator.html");
