@@ -5,6 +5,9 @@
 .breakBefore {
     break-before: page;
 }
+.dontBreakBefore{
+    break-before: avoid;
+}
 
 .breakAfter {
     break-after: page;
@@ -30,7 +33,14 @@
     page: lubricationSection;
     break-before: right;
 }
-
+.sectionRepairs{
+    page: repairsSection;
+    break-before: right;
+}
+.sectionLimitations{
+    page: limitationsSection;
+    break-before: right;
+}
 
 
 
@@ -46,7 +56,7 @@
 /**/
 /*Declare the counters*/
 body{
-    counter-reset: descPage maintPage inspPage lubePage;
+    counter-reset: descPage maintPage inspPage lubePage repairsPage limitationsPage;
 }
 
 /*pgNumDesc is the class name for the page number field in the description headers*/
@@ -165,6 +175,61 @@ body{
         content: element(lubricationHeaderLeft);
     }
 }
+
+/*Repairs Section*/
+.pgNumRepairs::after {
+    content: counter(repairsPage);
+}
+.repairsHeaderRight {
+    position: running(repairsHeaderRight);
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid black;
+    counter-increment: repairsPage;
+}
+@page repairsSection :right {
+    @top-center {
+        content: element(repairsHeaderRight);
+    }
+}
+.repairsHeaderLeft {
+    position: running(repairsHeaderLeft);
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid black;
+    counter-increment: repairsPage;
+}
+@page repairsSection :left {
+    @top-center {
+        content: element(repairsHeaderLeft);
+    }
+}
+
+/*Limitations Section*/
+.pgNumLimitations::after {
+    content: counter(limitationsPage);
+}
+.limitationsHeaderRight {
+    position: running(limitationsHeaderRight);
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid black;
+    counter-increment: limitationsPage;
+}
+@page limitationsSection :right {
+    @top-center {
+        content: element(limitationsHeaderRight);
+    }
+}
+.limitationsHeaderLeft {
+    position: running(limitationsHeaderLeft);
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 1px solid black;
+    counter-increment: limitationsPage;
+}
+@page limitationsSection :left {
+    @top-center {
+        content: element(limitationsHeaderLeft);
+    }
+}
+
 /**/
 /**/
 /*-------------------------------------------------------*/

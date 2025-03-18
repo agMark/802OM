@@ -57,8 +57,8 @@ let def_Sec_1_40 = new DocSection();
 def_Sec_1_40
     .i(true, "1.40", true, "ELECTRICAL SYSTEM", false, "")
     .s([
-        new DocSection().i(true, "1.40.1", true, "Starter-Generator System",true, "html/Description/Starter Generator System.html"),
-        new DocSection().i(true, "1.40.2", true, "Batteries",true, "html/Description/Batteries.html")
+        new DocSection().i(true, "1.40.1", true, "Starter-Generator System", true, "html/Description/Starter Generator System.html"),
+        new DocSection().i(true, "1.40.2", true, "Batteries", true, "html/Description/Batteries.html")
     ]);
 let def_Sec_1_50 = new DocSection();
 def_Sec_1_50
@@ -103,7 +103,7 @@ def_Sec_1_85
         new DocSection().i(true, "1.85.4", true, "Attitude Indicator", true, "html/Description/Attitude Indicator.html"),
         new DocSection().i(true, "1.85.5", true, "Low Fuel Warning Light System", true, "html/Description/Low Fuel Warning Light System.html"),
         def_Sec_1_80_6,
-        new DocSection().i(true, "1.80.7",true,"MVP-50T Digital Instruments", true, "html/Description/MVP-50T.html")
+        new DocSection().i(true, "1.80.7", true, "MVP-50T Digital Instruments", true, "html/Description/MVP-50T.html")
     ]);
 
 let def_Sec_1 = new DocSection();
@@ -226,20 +226,28 @@ let render = () => {
 
     let tocDiv1 = document.createElement("div");
     def_Sec_1.CreateToc(false, tocDiv1);
-    def_Sec_1.InsertToc(tocDiv1,true, true,"Table of Contents","tocHeader");
+    def_Sec_1.InsertToc(tocDiv1, true, true, "Table of Contents", "tocHeader");
 
 
     let tocDiv2 = document.createElement("div");
     def_Sec_2.CreateToc(false, tocDiv2);
-    def_Sec_2.InsertToc(tocDiv2,true,true, "Table of Contents", "tocHeader");
+    def_Sec_2.InsertToc(tocDiv2, true, true, "Table of Contents", "tocHeader");
 
     let tocDiv3 = document.createElement("div");
     def_Sec_3.CreateToc(false, tocDiv3);
-    def_Sec_3.InsertToc(tocDiv3,true,true, "Table of Contents", "tocHeader");
+    def_Sec_3.InsertToc(tocDiv3, true, true, "Table of Contents", "tocHeader");
 
     let tocDiv4 = document.createElement("div");
     def_Sec_4.CreateToc(false, tocDiv4);
-    def_Sec_4.InsertToc(tocDiv4,true,true, "Table of Contents", "tocHeader");
+    def_Sec_4.InsertToc(tocDiv4, true, true, "Table of Contents", "tocHeader");
+
+    let tocDiv5 = document.createElement("div");
+    def_Sec_5.CreateToc(false, tocDiv5);
+    def_Sec_5.InsertToc(tocDiv5, true, true, "Table of Contents", "tocHeader");
+
+    let tocDiv6 = document.createElement("div");
+    def_Sec_6.CreateToc(false, tocDiv6);
+    def_Sec_6.InsertToc(tocDiv6, true, true, "Table of Contents", "tocHeader");
 
     let style = () => {
         let st = document.createElement("link");
