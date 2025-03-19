@@ -258,6 +258,7 @@ let render = () => {
         let sc = document.createElement("script");
         sc.src = "code/Paged.js/paged.polyfill.js"
         document.body.appendChild(sc);
+
     }
     setTimeout(style, 5000);
 

@@ -3,23 +3,55 @@
 function tocPostProcess() {
 
 
-    let sec1Begin = getGlobalPageNumber("Sec_1")+1; //use 1 indexing so it makes sense for a page number
-    let sec2Begin = getGlobalPageNumber("Sec_2")+1; //use 1 indexing so it makes sense for a page number
-    let sec3Begin = getGlobalPageNumber("Sec_3")+1; //use 1 indexing so it makes sense for a page number
-    let sec4Begin = getGlobalPageNumber("Sec_4")+1; //use 1 indexing so it makes sense for a page number
-    let sec5Begin = getGlobalPageNumber("Sec_5")+1; //use 1 indexing so it makes sense for a page number
-    let sec6Begin = getGlobalPageNumber("Sec_6")+1; //use 1 indexing so it makes sense for a page number
+    let sec1Begin = getGlobalPageNumber("Sec_1");
+    let sec2Begin = getGlobalPageNumber("Sec_2");
+    let sec3Begin = getGlobalPageNumber("Sec_3");
+    let sec4Begin = getGlobalPageNumber("Sec_4");
+    let sec5Begin = getGlobalPageNumber("Sec_5");
+    let sec6Begin = getGlobalPageNumber("Sec_6");
 
 
     let TocLinks = document.getElementsByClassName("tocGrid");
+    let sectionPrepend = "";
+    let sPageNumber = null;
+    let elementGlobalPage = -1;
     for (let i = 0; i < TocLinks.length; i++) {
+        sPageNumber = TocLinks[i].children[1];
+        sectionPrepend = sPageNumber.innerHTML.split("-")[0];
         let href = TocLinks[i].getAttribute("href");
         let id = href.substring(1);
-        let elementGlobalPage = getGlobalPageNumber(id);
-        let sectionPageNumber = elementGlobalPage - sec1Begin;
-        let xxx = 1;
-    }
+        elementGlobalPage = getGlobalPageNumber(id);
 
+        let sectionBeginPage = -1;
+        switch (sectionPrepend) {
+            case "1":
+                sectionBeginPage = sec1Begin;
+                break
+            case "2":
+                sectionBeginPage = sec2Begin;
+                break;
+            case "3":
+                sectionBeginPage = sec3Begin;
+                break;
+            case "4":
+                sectionBeginPage = sec4Begin;
+                break;
+            case "5":
+                sectionBeginPage = sec5Begin;
+                break;
+            case "6":
+                sectionBeginPage = sec6Begin;
+                break;
+            default:
+                throw "Unrecognized section prepend.";
+        }
+    
+    
+    
+        let sectionPageNumber = elementGlobalPage - sectionBeginPage + 1;
+    
+        sPageNumber.innerHTML = sectionPrepend + "-" + sectionPageNumber;
+    }
 
 
     let xx = 1;
