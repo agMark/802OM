@@ -47,7 +47,7 @@ let defSec_2_15_1 = new DocSection().i(true, "2.15.1", true, "Cautionary Informa
 let defSec_2_15_2 = new DocSection().i(true, "2.15.2", true, "R134a Information", true, "html/Maintenance/R134a Information.html");
 let defSec_2_15_3 = new DocSection().i(true, "2.15.3", true, "Application Specifications", true, "html/Maintenance/Application Specifications.html");
 defSec_2_15_3.s([
-    new DocSection().i(false,"",true,"R134a Table of Saturation Temperatures and Pressures",true,"html/Maintenance/Table of Saturation Pressures.html")
+    new DocSection().i(false, "", true, "R134a Table of Saturation Temperatures and Pressures", true, "html/Maintenance/Table of Saturation Pressures.html")
 ])
 let defSec_2_15_4 = new DocSection().i(true, "2.15.4", true, "Diagnosis Confirmation of Compressor Failure", true, "html/Maintenance/Diagnosis Confirmation of Compressor Failure.html");
 let defSec_2_15_5 = new DocSection().i(true, "2.15.5", true, "Compressor Repair", true, "html/Maintenance/Compressor Repair.html");
@@ -311,6 +311,26 @@ def_Sec_2_80
     ]);
 
 
+let defSec_2_85_1 = new DocSection().i(true, "2.85.1", true, "Altimeter / Static System", true, "html/Maintenance/Altimeter - Static System.html");
+let defSec_2_85_2 = new DocSection().i(true, "2.85.2", true, "Airspeed System", true, "html/Maintenance/Airspeed System.html");
+let defSec_2_85_3 = new DocSection().i(true, "2.85.3", true, "Compass", true, "html/Maintenance/Compass.html");
+let defSec_2_85_4 = new DocSection().i(true, "2.85.4", true, "Reserved", false, "");
+let defSec_2_85_5 = new DocSection().i(true, "2.85.5", true, "Low Fuel Warning System", true, "html/Maintenance/Low Fuel Warning System.html");
+let defSec_2_85_6 = new DocSection().i(true, "2.85.6", true, "Engine Instruments", true, "html/Maintenance/Engine Instruments.html");
+let defSec_2_85_7 = new DocSection().i(true, "2.85.7", true, "MVP-50T Engine Instrument System", true, "html/Maintenance/MVP-50T.html");
+let def_Sec_2_85 = new DocSection();
+def_Sec_2_85
+    .i(true, "2.85", true, "INSTRUMENTS", false, "")
+    .s([
+        defSec_2_85_1,
+        defSec_2_85_2,
+        defSec_2_85_3,
+        defSec_2_85_4,
+        defSec_2_85_5,
+        defSec_2_85_6,
+        defSec_2_85_7
+    ]);
+
 
 let def_Sec_2 = new DocSection().i(true, "2", true, "MAINTENANCE", false, "", "break-before:right;");
 def_Sec_2.s([
@@ -329,7 +349,8 @@ def_Sec_2.s([
     def_Sec_2_65,
     def_Sec_2_70,
     def_Sec_2_75,
-    def_Sec_2_80
+    def_Sec_2_80,
+    def_Sec_2_85
 ]);
 def_Sec_2.CustomClass = "sectionMaintenance";
 def_Sec_2.SetElementId("Sec_2");
