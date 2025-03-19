@@ -225,28 +225,28 @@ let render = () => {
     DocDef.RenderContent(true, document.body);
 
     let tocDiv1 = document.createElement("div");
-    def_Sec_1.CreateToc(false, tocDiv1);
+    def_Sec_1.CreateToc(false, tocDiv1,0,"1-");
     def_Sec_1.InsertToc(tocDiv1, true, true, "Table of Contents", "tocHeader");
 
 
     let tocDiv2 = document.createElement("div");
-    def_Sec_2.CreateToc(false, tocDiv2);
+    def_Sec_2.CreateToc(false, tocDiv2,0,"2-");
     def_Sec_2.InsertToc(tocDiv2, true, true, "Table of Contents", "tocHeader");
 
     let tocDiv3 = document.createElement("div");
-    def_Sec_3.CreateToc(false, tocDiv3);
+    def_Sec_3.CreateToc(false, tocDiv3, 0, "3-");
     def_Sec_3.InsertToc(tocDiv3, true, true, "Table of Contents", "tocHeader");
 
     let tocDiv4 = document.createElement("div");
-    def_Sec_4.CreateToc(false, tocDiv4);
+    def_Sec_4.CreateToc(false, tocDiv4, 0, "4-");
     def_Sec_4.InsertToc(tocDiv4, true, true, "Table of Contents", "tocHeader");
 
     let tocDiv5 = document.createElement("div");
-    def_Sec_5.CreateToc(false, tocDiv5);
+    def_Sec_5.CreateToc(false, tocDiv5, 0, "5-");
     def_Sec_5.InsertToc(tocDiv5, true, true, "Table of Contents", "tocHeader");
 
     let tocDiv6 = document.createElement("div");
-    def_Sec_6.CreateToc(false, tocDiv6);
+    def_Sec_6.CreateToc(false, tocDiv6, 0, "6-");
     def_Sec_6.InsertToc(tocDiv6, true, true, "Table of Contents", "tocHeader");
 
     let style = () => {

@@ -97,6 +97,7 @@ h3 {
 /*----------------------------------------------*/
 .limitationsTable {
     width: 6in;
+    margin: auto;
 }
 
 .limitationsTableCell {
@@ -258,6 +259,7 @@ h3 {
     border: 1px solid black;
     border-collapse: collapse;
     width: 6in;
+    margin: auto;
 }
 .plainTableHeaderCell{
     border: 1px solid black;
@@ -349,9 +351,12 @@ h3 {
         ". . . . . . . . . . . . . . . . . . . . . . . ";
     text-align: right;
 }
-.tocPageNum::after{
-    content: target-counter(attr(href), pageDesc);
+/*TOC Page numbers don't work for custom counter names...had to do custom javascript way to get page numbers*/
+/*
+.tocGrid::after{
+    content: target-counter(attr(href), page);
 }
+*/
 /*----------------------------------------------*/
 /*----------------------------------------------*/
 /*----------------------------------------------*/
