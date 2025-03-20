@@ -16,6 +16,10 @@ h3 {
     break-after: avoid;
 }
 
+li{
+    page-break-inside: avoid;
+}
+
 .unnumberedHeader{
     font-weight: bold;
 }
@@ -260,6 +264,7 @@ h3 {
     border-collapse: collapse;
     width: 6in;
     margin: auto;
+    page-break-inside: avoid;
 }
 .plainTableHeaderCell{
     border: 1px solid black;
