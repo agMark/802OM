@@ -40,6 +40,7 @@ Currently acceptable shapes are:
     | Width(in) | Height(in)    |
     |-----------|---------------|
     | 6.0       | 8.0           |
+    | 6.0       | 4.0           |
     | 3.0       | 2.0           |
 
 

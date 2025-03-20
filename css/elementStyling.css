@@ -286,7 +286,13 @@ h3 {
     width: 6in;
     height: 8in;
 }
-
+.imageCentered_6x4{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 4in;
+    height: 4in;
+}
 .imageCentered_3x2{
     display: block;
     margin-left: auto;
@@ -294,6 +300,7 @@ h3 {
     width: 3in;
     height: 2in;
 }
+
 /*----------------------------------------------*/
 /*----------------------------------------------*/
 /*----------------------------------------------*/

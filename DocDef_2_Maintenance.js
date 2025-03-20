@@ -332,6 +332,89 @@ def_Sec_2_85
     ]);
 
 
+
+let defSec_2_90_1 = new DocSection().i(true, "2.90.1", true, "Tire Inflation", true, "html/Maintenance/Tire Inflation.html");
+let defSec_2_90_2 = new DocSection().i(true, "2.90.2", true, "Main Wheels", true, "html/Maintenance/Main Wheels.html");
+let defSec_2_90_3 = new DocSection().i(true, "2.90.3", true, "Main Wheel Alignment", true, "html/Maintenance/Main Wheel Alignment.html");
+let defSec_2_90_4 = new DocSection().i(true, "2.90.4", true, "Main Gear Spring", true, "html/Maintenance/Main Gear Spring.html");
+let defSec_2_90_5 = new DocSection().i(true, "2.90.5", true, "Tail Wheel", true, "html/Maintenance/Tail Wheel.html");
+let defSec_2_90_6 = new DocSection().i(true, "2.90.6", true, "Tail Wheel Fork", true, "html/Maintenance/Tail Wheel Fork.html");
+let defSec_2_90_7 = new DocSection().i(true, "2.90.7", true, "Tail Wheel Lock Pin and Housing", true, "html/Maintenance/Tail Wheel Lock Pin and Housing.html");
+let defSec_2_90_8 = new DocSection().i(true, "2.90.8", true, "Tail Gear Spring", true, "html/Maintenance/Tail Gear Spring.html");
+let defSec_2_90_9 = new DocSection().i(true, "2.90.9", true, "Brake Removal and Replacement", true, "html/Maintenance/Brake Removal and Replacement.html");
+let defSec_2_90_10 = new DocSection().i(true, "2.90.10", true, "Brake Discs", true, "html/Maintenance/Brake Discs.html");
+let defSec_2_90_11 = new DocSection().i(true, "2.90.11", true, "Brake Linings", true, "html/Maintenance/Brake Linings.html");
+let defSec_2_90_12 = new DocSection().i(true, "2.90.12", true, "Brake Master-Cylinders", true, "html/Maintenance/Brake Master-Cylinders.html");
+let defSec_2_90_13 = new DocSection().i(true, "2.90.13", true, "Brake Bleeding", true, "html/Maintenance/Brake Bleeding.html");
+let defSec_2_90_14 = new DocSection().i(true, "2.90.14", true, "Parking Brakes", true, "html/Maintenance/Parking Brakes.html");
+let def_Sec_2_90 = new DocSection();
+def_Sec_2_90
+    .i(true, "2.90", true, "LANDING GEAR AND BRAKES", false, "")
+    .s([
+        defSec_2_90_1,
+        defSec_2_90_2,
+        defSec_2_90_3,
+        defSec_2_90_4,
+        defSec_2_90_5,
+        defSec_2_90_6,
+        defSec_2_90_7,
+        defSec_2_90_8,
+        defSec_2_90_9,
+        defSec_2_90_10,
+        defSec_2_90_11,
+        defSec_2_90_12,
+        defSec_2_90_13,
+        defSec_2_90_14
+    ]);
+
+
+let defSec_2_95_1 = new DocSection().i(true, "2.95.1", true, "Propeller Removal", true, "html/Maintenance/Propeller Removal.html");
+let defSec_2_95_2 = new DocSection().i(true, "2.95.2", true, "Propeller Replacement", true, "html/Maintenance/Propeller Replacement.html");
+let def_Sec_2_95 = new DocSection();
+def_Sec_2_95
+    .i(true, "2.95", true, "PROPELLER MAINTENANCE", false, "")
+    .s([
+        defSec_2_95_1,
+        defSec_2_95_2
+    ]);
+
+let defSec_2_100_1 = new DocSection().i(true, "2.100.1", true, "Wing Attachment to Fuselage", true, "html/Maintenance/Wing Attachment to Fuselage.html");
+let defSec_2_100_2 = new DocSection().i(true, "2.100.2", true, "Wing Center Splice Connection", true, "html/Maintenance/Wing Center Splice Connection.html");
+let defSec_2_100_3 = new DocSection().i(true, "2.100.3", true, "Wing Walk", true, "html/Maintenance/Wing Walk.html");
+let def_Sec_2_100 = new DocSection();
+def_Sec_2_100
+    .i(true, "2.100", true, "WINGS", false, "")
+    .s([
+        defSec_2_100_1,
+        defSec_2_100_2,
+        defSec_2_100_3
+    ]);
+
+
+let defSec_2_105_1 = new DocSection().i(true, "2.105.1", true, "Stripping and Repainting Aluminum Parts", true, "html/Maintenance/Stripping and Repainting Aluminum Parts.html");
+let defSec_2_105_2 = new DocSection().i(true, "2.105.2", true, "Priming Aluminum Parts with Chromated Alkyd Primer", true, "html/Maintenance/Priming Aluminum Parts with Chromated Alkyd Primer.html");
+let defSec_2_105_3 = new DocSection().i(true, "2.105.3", true, "Stripping and Repainting Steel Parts", true, "html/Maintenance/Stripping and Repainting Steel Parts.html");
+let defSec_2_105_4 = new DocSection().i(true, "2.105.4", true, "Materials Used for Stripping Painting and Preservation", true, "html/Maintenance/Materials Used for Stripping Painting and Preservation.html");
+let def_Sec_2_105 = new DocSection();
+def_Sec_2_105
+    .i(true, "2.105", true, "PAINT AND FINISHES", false, "")
+    .s([
+        defSec_2_105_1,
+        defSec_2_105_2,
+        defSec_2_105_3,
+        defSec_2_105_4
+    ]);
+
+let defSec_2_200_1 = new DocSection().i(true, "2.200.1", true, "Recommended Time Limits", true, "html/Maintenance/Recommended Time Limits.html");
+let defSec_2_200_2 = new DocSection().i(true, "2.200.2", true, "Suggested Time Limits", true, "html/Maintenance/Suggested Time Limits.html");
+let def_Sec_2_200 = new DocSection();
+def_Sec_2_200
+    .i(true, "2.200", true, "TIME LIMITED PARTS", false, "")
+    .s([
+        defSec_2_200_1,
+        defSec_2_200_2
+    ])
+
 let def_Sec_2 = new DocSection().i(true, "2", true, "MAINTENANCE", false, "", "break-before:right;");
 def_Sec_2.s([
     def_Sec_2_0,
@@ -350,7 +433,12 @@ def_Sec_2.s([
     def_Sec_2_70,
     def_Sec_2_75,
     def_Sec_2_80,
-    def_Sec_2_85
+    def_Sec_2_85,
+    def_Sec_2_90,
+    def_Sec_2_95,
+    def_Sec_2_100,
+    def_Sec_2_105,
+    def_Sec_2_200
 ]);
 def_Sec_2.CustomClass = "sectionMaintenance";
 def_Sec_2.SetElementId("Sec_2");
