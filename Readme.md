@@ -40,6 +40,7 @@ Currently acceptable shapes are:
     | Width(in) | Height(in)    |
     |-----------|---------------|
     | 6.0       | 8.0           |
+    | 6.0       | 4.0           |
     | 3.0       | 2.0           |
 
 
@@ -59,6 +60,29 @@ For a small box, html markup is as follows:
     <p class="boxCautionSmallHeader">CAUTION</p>
     <p class="boxCautionSmallText">Caution's text goes here.</p>
 </div>
+```
+
+
+## Tables
+There is a lot of content that is formatted as tables.  Some are simple and can use standard style classes, others require column spanning and other complicated styles that will need to be done in the html elements.
+
+The standard table styles are
+
+plainTableLarge
+
+The cells are styled as follows
+
+```html
+<table class="plainTableLarge">
+    <tr>
+        <th class=plainTableHeaderCell>Header Cell 1</th>
+        <th class=plainTableHeaderCell>Header Cell 2</th>
+    </tr>
+    <tr>
+        <td class="plainTableNormalCell centerText">Row 1 Cell 1</td>
+        <td class="plainTableNormalCell centerText">Row 2 Cell 1</td>
+    </tr>
+</table>
 ```
 
 # Paged.js Notes
@@ -81,3 +105,16 @@ Then use the header elements class to increment the counter.
 }
 ```
 If you try to add a new custom counter that increments on @page, pagedjs has a runtime error.
+
+## Table of Contents
+The page number feature in the table of contents doesn't work as described in paged.js documentation.Actually it does but it doesn't work as one would hope.
+
+Using the target-counter() css function can only use the built in "page" counter.  This means that custom named and declared counters for individual sections cannot be used.
+
+To get around this, a javascript function has been written.  It is in TocPostProcess.js.  This file should be loaded by the main html file and be ready for use after the paged.js processing routine is finished.
+
+To run, do this in the console or via some other method:
+
+```js
+tocPostProcess()
+```
