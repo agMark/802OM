@@ -1,3 +1,7 @@
+//@ts-check
+
+import {DocSection} from './code/DocSection.mjs'
+
 let def_Sec_3_0 = new DocSection().i(true, "3.0", true, "GENERAL", true, `html/Inspection/GENERAL.html`);
 
 
@@ -76,3 +80,7 @@ def_Sec_3.
         def_Sec_3_2
     ])
     .SetElementId("Sec_3");
+
+
+
+export {def_Sec_3}

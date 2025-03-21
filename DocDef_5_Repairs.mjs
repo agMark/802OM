@@ -1,4 +1,5 @@
 //@ts-check
+import {DocSection} from './code/DocSection.mjs'
 
 let def_Sec_5_1 = new DocSection().i(true, "5.1", true, "FUSELAGE FRAME REPAIRS", true, "html/Repairs/FUSELAGE FRAME REPAIRS.html");
 
@@ -45,3 +46,6 @@ def_Sec_5.s([
 ]);
 def_Sec_5.SetElementId("Sec_5");
 def_Sec_5.CustomClass = "sectionRepairs";
+
+
+export {def_Sec_5}
