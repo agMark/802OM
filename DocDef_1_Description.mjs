@@ -1,21 +1,6 @@
 //@ts-check
-import {DocSection} from './code/DocSection.mjs'
-import {def_Sec_2} from './DocDef_2_Maintenance.mjs'
-import {def_Sec_3} from './DocDef_3_Inspections.mjs'
-import {def_Sec_4} from './DocDef_4_Lubrication.mjs'
-import {def_Sec_5} from './DocDef_5_Repairs.mjs'
-import {def_Sec_6} from './DocDef_6_AirworthinessLimitations.mjs'
 
-let def_Sec_0 = new DocSection();
-def_Sec_0
-    .i(false, "", false, "", true, "html/Intro/TITLE.html")
-    .s([
-        new DocSection().i(false, "", true, "OVERVIEW", true, "html/Intro/OVERVIEW.html"),
-        new DocSection().i(false, "", true, "MANUAL DISTRIBUTION", true, "html/Intro/MANUAL DISTRIBUTION.html"),
-        new DocSection().i(false, "", false, "", true, "html/Intro/TOC AND NOTES.html")
-    ]);
-
-
+import { DocSection } from './code/DocSection.mjs'
 
 
 let def_Sec_1_0_1 = new DocSection().i(true, "1.0.1", true, "CERTIFICATION BASIS", true, `html/Description/CERTIFICATION BASIS.html`);
@@ -93,6 +78,7 @@ def_Sec_1_80_6
         new DocSection().i(false, "", true, "ITT Gauge", true, "html/Description/ITT Gauge.html"),
         new DocSection().i(false, "", true, "Gas Generator Tachometer", true, "html/Description/Gas Generator Tachometer.html"),
         new DocSection().i(false, "", true, "Oil Pressure Gauge", true, "html/Description/Oil Pressure Gauge.html"),
+        new DocSection().i(false, "", true, "Oil Temperature Gauge", true, "html/Description/Oil Temperature Gauge.html"),
         new DocSection().i(false, "", true, "Propeller Tachometer", true, "html/Description/Propeller Tachometer.html"),
         new DocSection().i(false, "", true, "Torque-Meter", true, "html/Description/Torque-Meter.html"),
         new DocSection().i(false, "", true, "Volt-Ammeter and Voltmeter", true, "html/Description/Volt-Ammeter and Voltmeter.html")
@@ -109,6 +95,18 @@ def_Sec_1_85
         def_Sec_1_80_6,
         new DocSection().i(true, "1.80.7", true, "MVP-50T Digital Instruments", true, "html/Description/MVP-50T.html")
     ]);
+
+let def_Sec_1_90 = new DocSection();
+def_Sec_1_90
+    .i(true, "1.90", true, "LANDING GEAR AND BRAKES", true, "html/Description/Landing Gear and Brakes.html");
+
+let def_Sec_1_95 = new DocSection();
+def_Sec_1_95
+    .i(true, "1.95", true, "PROPELLER AND GOVERNOR", true, "html/Description/Propellor and Governor.html");
+
+let def_Sec_1_100 = new DocSection();
+def_Sec_1_100
+    .i(true, "1.100", true, "WINGS", true, "html/Description/Wings.html");
 
 let def_Sec_1 = new DocSection();
 def_Sec_1
@@ -130,146 +128,14 @@ def_Sec_1
         def_Sec_1_70,
         new DocSection().i(true, "1.75", true, "FUEL SYSTEM", true, "html/Description/FUEL SYSTEM.html"),
         new DocSection().i(true, "1.80", true, "FUSELAGE", true, "html/Description/FUSELAGE.html"),
-        def_Sec_1_85
+        def_Sec_1_85,
+        def_Sec_1_90,
+        def_Sec_1_95,
+        def_Sec_1_100
     ])
     .SetElementId("Sec_1")
     .CustomClass = "sectionDescription";
 
-////////////////////////////////////////
-////////////////////////////////////////   END SECTION 1
-////////////////////////////////////////
 
 
-
-
-
-
-
-
-
-
-//See DocDef_2_Maintenance.js
-////////////////////////////////////////
-////////////////////////////////////////   END SECTION 2
-////////////////////////////////////////
-
-
-
-
-
-
-
-
-//See DocDef_3_Inspections.js
-////////////////////////////////////////
-////////////////////////////////////////   END SECTION 3
-////////////////////////////////////////
-
-
-
-
-
-
-
-
-//See DocDef_4_Lubrication.js
-////////////////////////////////////////
-////////////////////////////////////////   END SECTION 4
-////////////////////////////////////////
-
-
-
-
-
-
-//See DocDef_5_Repairs.js
-////////////////////////////////////////
-////////////////////////////////////////   END SECTION 5
-////////////////////////////////////////
-
-
-
-
-
-//See DocDef_6_AirworthinessLimitations.js
-////////////////////////////////////////
-////////////////////////////////////////   END SECTION 6
-////////////////////////////////////////
-
-
-
-
-
-/**@type {DocSection} */
-var DocDef = new DocSection();
-DocDef.IsNumbered = false;
-DocDef.SectionNumber = "-1";
-DocDef.DisplayTitle = false;
-DocDef.SectionTitle = "DOCUMENT";
-DocDef.HasContent = false;
-DocDef.ContentFileUrl = "";
-DocDef.Sections = [
-    def_Sec_0,
-    def_Sec_1,
-    def_Sec_2,
-    def_Sec_3,
-    def_Sec_4,
-    def_Sec_5,
-    def_Sec_6
-];
-DocDef.GetContent();
-
-
-
-
-
-
-
-let render = () => {
-    DocDef.RenderContent(true, document.body);
-
-    let tocDiv1 = document.createElement("div");
-    def_Sec_1.CreateToc(false, tocDiv1,0,"1-");
-    def_Sec_1.InsertToc(tocDiv1, true, true, "Table of Contents", "tocHeader");
-
-
-    let tocDiv2 = document.createElement("div");
-    def_Sec_2.CreateToc(false, tocDiv2,0,"2-");
-    def_Sec_2.InsertToc(tocDiv2, true, true, "Table of Contents", "tocHeader");
-
-    let tocDiv3 = document.createElement("div");
-    def_Sec_3.CreateToc(false, tocDiv3, 0, "3-");
-    def_Sec_3.InsertToc(tocDiv3, true, true, "Table of Contents", "tocHeader");
-
-    let tocDiv4 = document.createElement("div");
-    def_Sec_4.CreateToc(false, tocDiv4, 0, "4-");
-    def_Sec_4.InsertToc(tocDiv4, true, true, "Table of Contents", "tocHeader");
-
-    let tocDiv5 = document.createElement("div");
-    def_Sec_5.CreateToc(false, tocDiv5, 0, "5-");
-    def_Sec_5.InsertToc(tocDiv5, true, true, "Table of Contents", "tocHeader");
-
-    let tocDiv6 = document.createElement("div");
-    def_Sec_6.CreateToc(false, tocDiv6, 0, "6-");
-    def_Sec_6.InsertToc(tocDiv6, true, true, "Table of Contents", "tocHeader");
-
-    let style = () => {
-        let st = document.createElement("link");
-        st.rel = "stylesheet";
-        st.href = "code/Paged.js/interface.css";
-        document.head.appendChild(st);
-
-        let sc = document.createElement("script");
-        sc.src = "code/Paged.js/paged.polyfill.js"
-        document.body.appendChild(sc);
-
-    }
-    setTimeout(style, 5000);
-
-
-};
-setTimeout(render, 5000)
-
-
-
-export {DocDef}
+    export{def_Sec_1}
