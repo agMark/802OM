@@ -1,5 +1,5 @@
 //@ts-check
-
+import {DocSection} from './code/DocSection.mjs'
 
 
 let def_Sec_4_1 = new DocSection().i(true, "4.1", true, "GREASE AND LUBRICANTS", true, "html/Lubrication/GREASE AND LUBRICANTS.html");
@@ -27,3 +27,6 @@ def_Sec_4.s([
 ]);
 def_Sec_4.SetElementId("Sec_4");
 def_Sec_4.CustomClass = "sectionLubrication";
+
+
+export {def_Sec_4}

@@ -1,5 +1,6 @@
 //@ts-check
 
+import {DocSection} from './code/DocSection.mjs'
 
 let defSec_2_0_1 = new DocSection().i(true, "2.0.1", true, "Towing", true, "html/Maintenance/Towing.html");
 let defSec_2_0_2 = new DocSection().i(true, "2.0.2", true, "Tie Down Instructions", true, "html/Maintenance/Tie Down Instructions.html");
@@ -346,7 +347,7 @@ let defSec_2_90_10 = new DocSection().i(true, "2.90.10", true, "Brake Discs", tr
 let defSec_2_90_11 = new DocSection().i(true, "2.90.11", true, "Brake Linings", true, "html/Maintenance/Brake Linings.html");
 let defSec_2_90_12 = new DocSection().i(true, "2.90.12", true, "Brake Master-Cylinders", true, "html/Maintenance/Brake Master-Cylinders.html");
 let defSec_2_90_13 = new DocSection().i(true, "2.90.13", true, "Brake Bleeding", true, "html/Maintenance/Brake Bleeding.html");
-let defSec_2_90_14 = new DocSection().i(true, "2.90.14", true, "Parking Brakes", true, "html/Maintenance/Parking Brakes.html");
+let defSec_2_90_14 = new DocSection().i(true, "2.90.14", true, "Parking Brake", true, "html/Maintenance/Parking Brake.html");
 let def_Sec_2_90 = new DocSection();
 def_Sec_2_90
     .i(true, "2.90", true, "LANDING GEAR AND BRAKES", false, "")
@@ -442,3 +443,8 @@ def_Sec_2.s([
 ]);
 def_Sec_2.CustomClass = "sectionMaintenance";
 def_Sec_2.SetElementId("Sec_2");
+
+
+
+
+export {def_Sec_2}

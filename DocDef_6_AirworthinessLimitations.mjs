@@ -1,4 +1,5 @@
-
+//@ts-check
+import {DocSection} from './code/DocSection.mjs'
 
 
 let def_Sec_6_00 = new DocSection().i(false,"",false,"",true,"html/Limitations/RevisionHistory.html");
@@ -24,3 +25,7 @@ def_Sec_6.s([
 ]);
 def_Sec_6.SetElementId("Sec_6");
 def_Sec_6.CustomClass = "sectionLimitations";
+
+
+
+export {def_Sec_6}

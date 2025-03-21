@@ -1,5 +1,5 @@
 //@ts-check
-class DocSection {
+export class DocSection {
     constructor() {
         this.IsNumbered = false;
         this.SectionNumber = "NO SECTION NUMBER";
@@ -268,3 +268,5 @@ class DocSection {
         return result;
     }
 }
+
+
