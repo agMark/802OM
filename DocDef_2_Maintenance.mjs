@@ -1,5 +1,6 @@
 //@ts-check
 
+import {DocSection} from './code/DocSection.mjs'
 
 let defSec_2_0_1 = new DocSection().i(true, "2.0.1", true, "Towing", true, "html/Maintenance/Towing.html");
 let defSec_2_0_2 = new DocSection().i(true, "2.0.2", true, "Tie Down Instructions", true, "html/Maintenance/Tie Down Instructions.html");
@@ -47,7 +48,7 @@ let defSec_2_15_1 = new DocSection().i(true, "2.15.1", true, "Cautionary Informa
 let defSec_2_15_2 = new DocSection().i(true, "2.15.2", true, "R134a Information", true, "html/Maintenance/R134a Information.html");
 let defSec_2_15_3 = new DocSection().i(true, "2.15.3", true, "Application Specifications", true, "html/Maintenance/Application Specifications.html");
 defSec_2_15_3.s([
-    new DocSection().i(false,"",true,"R134a Table of Saturation Temperatures and Pressures",true,"html/Maintenance/Table of Saturation Pressures.html")
+    new DocSection().i(false, "", true, "R134a Table of Saturation Temperatures and Pressures", true, "html/Maintenance/Table of Saturation Pressures.html")
 ])
 let defSec_2_15_4 = new DocSection().i(true, "2.15.4", true, "Diagnosis Confirmation of Compressor Failure", true, "html/Maintenance/Diagnosis Confirmation of Compressor Failure.html");
 let defSec_2_15_5 = new DocSection().i(true, "2.15.5", true, "Compressor Repair", true, "html/Maintenance/Compressor Repair.html");
@@ -56,7 +57,7 @@ let defSec_2_15_7 = new DocSection().i(true, "2.15.7", true, "Service Procedures
 let defSec_2_15_8 = new DocSection().i(true, "2.15.8", true, "Common Causes of Compressor Failure", true, "html/Maintenance/Common Causes of Compressor Failure.html");
 let def_Sec_2_15 = new DocSection();
 def_Sec_2_15
-    .i(true, "2.15", true, "AIR CONDITIONER", false, "")
+    .i(true, "2.15", true, "AIR CONDITIONER", true, "html/Maintenance/ENGINE DRIVEN AIR CONDITIONER.html")
     .s([
         defSec_2_15_1,
         defSec_2_15_2,
@@ -159,7 +160,7 @@ let defSec_2_45_5 = new DocSection().i(true, "2.45.5", true, "Elevator Trim Tabs
 let defSec_2_45_6 = new DocSection().i(true, "2.45.6", true, "Vertical Fin", true, "html/Maintenance/Vertical Fin.html");
 let defSec_2_45_7 = new DocSection().i(true, "2.45.7", true, "Rudder", true, "html/Maintenance/Rudder.html");
 let defSec_2_45_8 = new DocSection().i(true, "2.45.8", true, "Rudder Trim Tab", true, "html/Maintenance/Rudder Trim Tab.html");
-let defSec_2_45_9 = new DocSection().i(true, "2.45.9", true, "Deflector Wire", true, "html/Maintenance/Deflector Wire.html");
+let defSec_2_45_9 = new DocSection().i(true, "2.45.9", true, "Deflector Cable", true, "html/Maintenance/Deflector Cable.html");
 let def_Sec_2_45 = new DocSection();
 def_Sec_2_45
     .i(true, "2.45", true, "EMPENNAGE", false, "")
@@ -239,13 +240,13 @@ def_Sec_2_60
 
 let def_Sec_2_65 = new DocSection();
 def_Sec_2_65
-    .i(true, "2.65", true, "FIRE RETARDANT DISPERSAL SYSTEM", false, "html/Maintenance/FIRE RETARDANT DISPERSAL SYSTEM.html")
+    .i(true, "2.65", true, "FIRE RETARDANT DISPERSAL SYSTEM", true, "html/Maintenance/FIRE RETARDANT DISPERSAL SYSTEM.html")
     .s([
     ]);
 
 
 let defSec_2_70_1 = new DocSection().i(true, "2.70.1", true, "Flap Removal", true, "html/Maintenance/Flap Removal.html");
-let defSec_2_70_2 = new DocSection().i(true, "2.70.2", true, "Flap Replacement", true, "html/Maintenance/Flap Replacement.html");
+let defSec_2_70_2 = new DocSection().i(true, "2.70.2", true, "Flap Installation", true, "html/Maintenance/Flap Installation.html");
 let defSec_2_70_3 = new DocSection().i(true, "2.70.3", true, "Flap Rigging", true, "html/Maintenance/Flap Rigging.html");
 let defSec_2_70_4 = new DocSection().i(true, "2.70.4", true, "Flap Bellcrank and Supports ", true, "html/Maintenance/Flap Bellcrank and Supports.html");
 let defSec_2_70_5 = new DocSection().i(true, "2.70.5", true, "Flap Actuator", true, "html/Maintenance/Flap Actuator.html");
@@ -256,7 +257,7 @@ let defSec_2_70_9 = new DocSection().i(true, "2.70.9", true, "Flap Actuator Inst
 let defSec_2_70_10 = new DocSection().i(true, "2.70.10", true, "Flap Relay Troubleshooting", true, "html/Maintenance/Flap Relay Troubleshooting.html");
 let def_Sec_2_70 = new DocSection();
 def_Sec_2_70
-    .i(true, "2.70", true, "FLAPS", false, "")
+    .i(true, "2.70", true, "FLAPS", true, "html/Maintenance/Flaps.html")
     .s([
         defSec_2_70_1,
         defSec_2_70_2,
@@ -311,6 +312,109 @@ def_Sec_2_80
     ]);
 
 
+let defSec_2_85_1 = new DocSection().i(true, "2.85.1", true, "Altimeter / Static System", true, "html/Maintenance/Altimeter - Static System.html");
+let defSec_2_85_2 = new DocSection().i(true, "2.85.2", true, "Airspeed System", true, "html/Maintenance/Airspeed System.html");
+let defSec_2_85_3 = new DocSection().i(true, "2.85.3", true, "Compass", true, "html/Maintenance/Compass.html");
+let defSec_2_85_4 = new DocSection().i(true, "2.85.4", true, "Reserved", false, "");
+let defSec_2_85_5 = new DocSection().i(true, "2.85.5", true, "Low Fuel Warning System", true, "html/Maintenance/Low Fuel Warning System.html");
+let defSec_2_85_6 = new DocSection().i(true, "2.85.6", true, "Engine Instruments", true, "html/Maintenance/Engine Instruments.html");
+let defSec_2_85_7 = new DocSection().i(true, "2.85.7", true, "MVP-50T Engine Instrument System", true, "html/Maintenance/MVP-50T.html");
+let def_Sec_2_85 = new DocSection();
+def_Sec_2_85
+    .i(true, "2.85", true, "INSTRUMENTS", false, "")
+    .s([
+        defSec_2_85_1,
+        defSec_2_85_2,
+        defSec_2_85_3,
+        defSec_2_85_4,
+        defSec_2_85_5,
+        defSec_2_85_6,
+        defSec_2_85_7
+    ]);
+
+
+
+let defSec_2_90_1 = new DocSection().i(true, "2.90.1", true, "Tire Inflation", true, "html/Maintenance/Tire Inflation.html");
+let defSec_2_90_2 = new DocSection().i(true, "2.90.2", true, "Main Wheels", true, "html/Maintenance/Main Wheels.html");
+let defSec_2_90_3 = new DocSection().i(true, "2.90.3", true, "Main Wheel Alignment", true, "html/Maintenance/Main Wheel Alignment.html");
+let defSec_2_90_4 = new DocSection().i(true, "2.90.4", true, "Main Gear Spring", true, "html/Maintenance/Main Gear Spring.html");
+let defSec_2_90_5 = new DocSection().i(true, "2.90.5", true, "Tail Wheel", true, "html/Maintenance/Tail Wheel.html");
+let defSec_2_90_6 = new DocSection().i(true, "2.90.6", true, "Tail Wheel Fork", true, "html/Maintenance/Tail Wheel Fork.html");
+let defSec_2_90_7 = new DocSection().i(true, "2.90.7", true, "Tail Wheel Lock Pin and Housing", true, "html/Maintenance/Tail Wheel Lock Pin and Housing.html");
+let defSec_2_90_8 = new DocSection().i(true, "2.90.8", true, "Tail Gear Spring", true, "html/Maintenance/Tail Gear Spring.html");
+let defSec_2_90_9 = new DocSection().i(true, "2.90.9", true, "Brake Removal and Replacement", true, "html/Maintenance/Brake Removal and Replacement.html");
+let defSec_2_90_10 = new DocSection().i(true, "2.90.10", true, "Brake Discs", true, "html/Maintenance/Brake Discs.html");
+let defSec_2_90_11 = new DocSection().i(true, "2.90.11", true, "Brake Linings", true, "html/Maintenance/Brake Linings.html");
+let defSec_2_90_12 = new DocSection().i(true, "2.90.12", true, "Brake Master-Cylinders", true, "html/Maintenance/Brake Master-Cylinders.html");
+let defSec_2_90_13 = new DocSection().i(true, "2.90.13", true, "Brake Bleeding", true, "html/Maintenance/Brake Bleeding.html");
+let defSec_2_90_14 = new DocSection().i(true, "2.90.14", true, "Parking Brake", true, "html/Maintenance/Parking Brake.html");
+let def_Sec_2_90 = new DocSection();
+def_Sec_2_90
+    .i(true, "2.90", true, "LANDING GEAR AND BRAKES", false, "")
+    .s([
+        defSec_2_90_1,
+        defSec_2_90_2,
+        defSec_2_90_3,
+        defSec_2_90_4,
+        defSec_2_90_5,
+        defSec_2_90_6,
+        defSec_2_90_7,
+        defSec_2_90_8,
+        defSec_2_90_9,
+        defSec_2_90_10,
+        defSec_2_90_11,
+        defSec_2_90_12,
+        defSec_2_90_13,
+        defSec_2_90_14
+    ]);
+
+
+let defSec_2_95_1 = new DocSection().i(true, "2.95.1", true, "Propeller Removal", true, "html/Maintenance/Propeller Removal.html");
+let defSec_2_95_2 = new DocSection().i(true, "2.95.2", true, "Propeller Replacement", true, "html/Maintenance/Propeller Replacement.html");
+let def_Sec_2_95 = new DocSection();
+def_Sec_2_95
+    .i(true, "2.95", true, "PROPELLER MAINTENANCE", false, "")
+    .s([
+        defSec_2_95_1,
+        defSec_2_95_2
+    ]);
+
+let defSec_2_100_1 = new DocSection().i(true, "2.100.1", true, "Wing Attachment to Fuselage", true, "html/Maintenance/Wing Attachment to Fuselage.html");
+let defSec_2_100_2 = new DocSection().i(true, "2.100.2", true, "Wing Center Splice Connection", true, "html/Maintenance/Wing Center Splice Connection.html");
+let defSec_2_100_3 = new DocSection().i(true, "2.100.3", true, "Wing Walk", true, "html/Maintenance/Wing Walk.html");
+let def_Sec_2_100 = new DocSection();
+def_Sec_2_100
+    .i(true, "2.100", true, "WINGS", false, "")
+    .s([
+        defSec_2_100_1,
+        defSec_2_100_2,
+        defSec_2_100_3
+    ]);
+
+
+let defSec_2_105_1 = new DocSection().i(true, "2.105.1", true, "Stripping and Repainting Aluminum Parts", true, "html/Maintenance/Stripping and Repainting Aluminum Parts.html");
+let defSec_2_105_2 = new DocSection().i(true, "2.105.2", true, "Priming Aluminum Parts with Chromated Alkyd Primer", true, "html/Maintenance/Priming Aluminum Parts with Chromated Alkyd Primer.html");
+let defSec_2_105_3 = new DocSection().i(true, "2.105.3", true, "Stripping and Repainting Steel Parts", true, "html/Maintenance/Stripping and Repainting Steel Parts.html");
+let defSec_2_105_4 = new DocSection().i(true, "2.105.4", true, "Materials Used for Stripping Painting and Preservation", true, "html/Maintenance/Materials Used for Stripping Painting and Preservation.html");
+let def_Sec_2_105 = new DocSection();
+def_Sec_2_105
+    .i(true, "2.105", true, "PAINT AND FINISHES", false, "")
+    .s([
+        defSec_2_105_1,
+        defSec_2_105_2,
+        defSec_2_105_3,
+        defSec_2_105_4
+    ]);
+
+let defSec_2_200_1 = new DocSection().i(true, "2.200.1", true, "Recommended Time Limits", true, "html/Maintenance/Recommended Time Limits.html");
+let defSec_2_200_2 = new DocSection().i(true, "2.200.2", true, "Suggested Time Limits", true, "html/Maintenance/Suggested Time Limits.html");
+let def_Sec_2_200 = new DocSection();
+def_Sec_2_200
+    .i(true, "2.200", true, "TIME LIMITED PARTS", true, "html/Maintenance/TIME LIMITED PARTS.html")
+    .s([
+        defSec_2_200_1,
+        defSec_2_200_2
+    ])
 
 let def_Sec_2 = new DocSection().i(true, "2", true, "MAINTENANCE", false, "", "break-before:right;");
 def_Sec_2.s([
@@ -329,7 +433,18 @@ def_Sec_2.s([
     def_Sec_2_65,
     def_Sec_2_70,
     def_Sec_2_75,
-    def_Sec_2_80
+    def_Sec_2_80,
+    def_Sec_2_85,
+    def_Sec_2_90,
+    def_Sec_2_95,
+    def_Sec_2_100,
+    def_Sec_2_105,
+    def_Sec_2_200
 ]);
 def_Sec_2.CustomClass = "sectionMaintenance";
 def_Sec_2.SetElementId("Sec_2");
+
+
+
+
+export {def_Sec_2}

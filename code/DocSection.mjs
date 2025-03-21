@@ -1,5 +1,5 @@
 //@ts-check
-class DocSection {
+export class DocSection {
     constructor() {
         this.IsNumbered = false;
         this.SectionNumber = "NO SECTION NUMBER";
@@ -102,48 +102,33 @@ class DocSection {
         }
     }
 
-    /**
-     * Creates unique id's to be used as the element's ID for a table of contents and links.
-     * @param {boolean} recursive 
-     * @param {string[]} ids 
-     */
-    CreateIdsForTOC = (recursive, ids) => {
-        let x = DocSection._generateRandomString(20);
-        while (ids.indexOf(x) > -1) {
-            x = DocSection._generateRandomString(20);
-        }
-        this.SetElementId(x);
-        ids.push(x);
-        if (recursive) {
-            this.Sections.forEach(s => {
-                s.CreateIdsForTOC(true, ids);
-            })
-        }
-    }
-
 
     /**
      * 
      * @param {boolean} includeSelf Include the first level (first section) in the table of contents.
      * @param {HTMLElement} targetDiv 
      * @param {number} parentLevel Set to 0 if you are ignoring the Section header
+     * @param {string} pageNumberPrepend Text that is inserted before the page number...ex "1" in 1-25 for page 25 of section 1.
      */
-    CreateToc = (includeSelf, targetDiv, parentLevel = 0) => {
+    CreateToc = (includeSelf, targetDiv, parentLevel = 0, pageNumberPrepend = "") => {
         /*Styling from: https://css-tricks.com/a-perfect-table-of-contents-with-html-css/ */
         let thisLevel = parentLevel + 1;
         if (includeSelf) {
-            if (this.DisplayTitle) {
+            if (this.DisplayTitle && this.IsNumbered) {
                 let d = document.createElement("div");
                 d.className = "tocLevel" + thisLevel.toFixed(0);
                 let a = document.createElement("a");
                 a.className = "tocGrid";
                 //TEST
-                if(!this.ElementId){
+                if (!this.ElementId) {
                     this._div.id = DocSection._generateRandomString(20);
                     a.href = "#" + this._div.id;
                 }
+                else {
+                    a.href = "#" + this._div.id;
+                }
                 //TEST
-                
+
                 d.appendChild(a);
 
                 let lineText = "";
@@ -162,14 +147,14 @@ class DocSection {
                 a.appendChild(span1);
                 let span2 = document.createElement("span");
                 span2.className = "tocPageNum";
-                span2.innerText = "XXX";
+                span2.innerText = pageNumberPrepend + "XXX";
                 a.appendChild(span2);
                 targetDiv.appendChild(d);
             }
         }
 
         this.Sections.forEach(s => {
-            s.CreateToc(true, targetDiv, thisLevel);
+            s.CreateToc(true, targetDiv, thisLevel, pageNumberPrepend);
         })
     }
 
@@ -206,6 +191,16 @@ class DocSection {
         return this;
     }
 
+    AutoSetElementId = () => {
+        if (this.IsNumbered) {
+            let id = this.SectionNumber;
+            id = id.replaceAll(".", "_");
+            id = "Sec_" + id;
+            this.SetElementId(id);
+        }
+        return this;
+    }
+
     /**
      * Simple initialization function that sets the properties for most sections.
      * 
@@ -218,7 +213,7 @@ class DocSection {
      * @param {string} customStyle Custom CSS style applied to the wrapping DIV
      * @returns 
      */
-    i = (isNumbered, sectionNumber, displayTitle, sectionTitle, hasContent, contentFileUrl, customStyle = "") => {
+    i = (isNumbered, sectionNumber, displayTitle, sectionTitle, hasContent, contentFileUrl, customStyle = "", inhibitAutoId = false) => {
         this.IsNumbered = isNumbered;
         this.SectionNumber = sectionNumber;
         this.DisplayTitle = displayTitle;
@@ -226,6 +221,7 @@ class DocSection {
         this.HasContent = hasContent;
         this.ContentFileUrl = contentFileUrl;
         this.CustomStyle = customStyle;
+        if (!inhibitAutoId) { this.AutoSetElementId(); }
         return this;
     }
 
@@ -272,3 +268,5 @@ class DocSection {
         return result;
     }
 }
+
+

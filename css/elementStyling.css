@@ -16,12 +16,22 @@ h3 {
     break-after: avoid;
 }
 
+li{
+    page-break-inside: avoid;
+}
+
 .unnumberedHeader{
     font-weight: bold;
 }
 
 .centerText{
     text-align: center;
+}
+.boldText{
+    font-weight: bold;
+}
+.tabOver{
+    padding-left: 40px;
 }
 
 /*----------------------------------------------*/
@@ -77,6 +87,26 @@ h3 {
 
 .cellInspectionText {
     width: 90%;
+}
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+
+
+
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+/*LIMITATIONS SECTION SPECIAL FORMATTING*/
+/*----------------------------------------------*/
+/*----------------------------------------------*/
+.limitationsTable {
+    width: 6in;
+    margin: auto;
+}
+
+.limitationsTableCell {
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 /*----------------------------------------------*/
 /*----------------------------------------------*/
@@ -233,9 +263,12 @@ h3 {
     border: 1px solid black;
     border-collapse: collapse;
     width: 6in;
+    margin: auto;
+    page-break-inside: avoid;
 }
 .plainTableHeaderCell{
     border: 1px solid black;
+    font-weight: bold;
     border-collapse: collapse;
     background-color: lightgray;
 }
@@ -259,7 +292,13 @@ h3 {
     width: 6in;
     height: 8in;
 }
-
+.imageCentered_6x4{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 4in;
+    height: 4in;
+}
 .imageCentered_3x2{
     display: block;
     margin-left: auto;
@@ -267,6 +306,7 @@ h3 {
     width: 3in;
     height: 2in;
 }
+
 /*----------------------------------------------*/
 /*----------------------------------------------*/
 /*----------------------------------------------*/
@@ -324,9 +364,12 @@ h3 {
         ". . . . . . . . . . . . . . . . . . . . . . . ";
     text-align: right;
 }
-.tocPageNum::after{
-    content: target-counter(attr(href), pageDesc);
+/*TOC Page numbers don't work for custom counter names...had to do custom javascript way to get page numbers*/
+/*
+.tocGrid::after{
+    content: target-counter(attr(href), page);
 }
+*/
 /*----------------------------------------------*/
 /*----------------------------------------------*/
 /*----------------------------------------------*/
