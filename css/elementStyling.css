@@ -27,6 +27,9 @@ li{
 .centerText{
     text-align: center;
 }
+.rightAlignText{
+    text-align: right;
+}
 .boldText{
     font-weight: bold;
 }
