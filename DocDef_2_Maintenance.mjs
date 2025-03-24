@@ -57,7 +57,7 @@ let defSec_2_15_7 = new DocSection().i(true, "2.15.7", true, "Service Procedures
 let defSec_2_15_8 = new DocSection().i(true, "2.15.8", true, "Common Causes of Compressor Failure", true, "html/Maintenance/Common Causes of Compressor Failure.html");
 let def_Sec_2_15 = new DocSection();
 def_Sec_2_15
-    .i(true, "2.15", true, "AIR CONDITIONER", false, "")
+    .i(true, "2.15", true, "AIR CONDITIONER", true, "html/Maintenance/ENGINE DRIVEN AIR CONDITIONER.html")
     .s([
         defSec_2_15_1,
         defSec_2_15_2,
@@ -160,7 +160,7 @@ let defSec_2_45_5 = new DocSection().i(true, "2.45.5", true, "Elevator Trim Tabs
 let defSec_2_45_6 = new DocSection().i(true, "2.45.6", true, "Vertical Fin", true, "html/Maintenance/Vertical Fin.html");
 let defSec_2_45_7 = new DocSection().i(true, "2.45.7", true, "Rudder", true, "html/Maintenance/Rudder.html");
 let defSec_2_45_8 = new DocSection().i(true, "2.45.8", true, "Rudder Trim Tab", true, "html/Maintenance/Rudder Trim Tab.html");
-let defSec_2_45_9 = new DocSection().i(true, "2.45.9", true, "Deflector Wire", true, "html/Maintenance/Deflector Wire.html");
+let defSec_2_45_9 = new DocSection().i(true, "2.45.9", true, "Deflector Cable", true, "html/Maintenance/Deflector Cable.html");
 let def_Sec_2_45 = new DocSection();
 def_Sec_2_45
     .i(true, "2.45", true, "EMPENNAGE", false, "")
@@ -240,7 +240,7 @@ def_Sec_2_60
 
 let def_Sec_2_65 = new DocSection();
 def_Sec_2_65
-    .i(true, "2.65", true, "FIRE RETARDANT DISPERSAL SYSTEM", false, "html/Maintenance/FIRE RETARDANT DISPERSAL SYSTEM.html")
+    .i(true, "2.65", true, "FIRE RETARDANT DISPERSAL SYSTEM", true, "html/Maintenance/FIRE RETARDANT DISPERSAL SYSTEM.html")
     .s([
     ]);
 
@@ -257,7 +257,7 @@ let defSec_2_70_9 = new DocSection().i(true, "2.70.9", true, "Flap Actuator Inst
 let defSec_2_70_10 = new DocSection().i(true, "2.70.10", true, "Flap Relay Troubleshooting", true, "html/Maintenance/Flap Relay Troubleshooting.html");
 let def_Sec_2_70 = new DocSection();
 def_Sec_2_70
-    .i(true, "2.70", true, "FLAPS", false, "")
+    .i(true, "2.70", true, "FLAPS", true, "html/Maintenance/Flaps.html")
     .s([
         defSec_2_70_1,
         defSec_2_70_2,
