@@ -47,11 +47,11 @@ def_Sec_2_10
 let defSec_2_15_1 = new DocSection().i(true, "2.15.1", true, "Cautionary Information", true, "html/Maintenance/Cautionary Information.html");
 let defSec_2_15_2 = new DocSection().i(true, "2.15.2", true, "R134a Information", true, "html/Maintenance/R134a Information.html");
 let defSec_2_15_3 = new DocSection().i(true, "2.15.3", true, "Application Specifications", true, "html/Maintenance/Application Specifications.html");
-let defSec_2_15_4 = new DocSection().i(true, "2.15.4", true, "Diagnosis Confirmation of Compressor Failure", true, "html/Maintenance/Diagnosis Confirmation of Compressor Failure.html");
-let defSec_2_15_5 = new DocSection().i(true, "2.15.5", true, "Compressor Repair", true, "html/Maintenance/Compressor Repair.html");
-let defSec_2_15_6 = new DocSection().i(true, "2.15.6", true, "Compressor Replacement", true, "html/Maintenance/Compressor Replacement.html");
-let defSec_2_15_7 = new DocSection().i(true, "2.15.7", true, "Service Procedures", true, "html/Maintenance/Service Procedures.html");
-let defSec_2_15_8 = new DocSection().i(true, "2.15.8", true, "Common Causes of Compressor Failure", true, "html/Maintenance/Common Causes of Compressor Failure.html");
+let defSec_2_15_4 = new DocSection().i(true, "2.15.4", true, "Diagnosis Confirmation of Compressor Failure", true, "html/Maintenance/Diagnosis of Compressor Failure.html");
+
+let defSec_2_15_5 = new DocSection().i(true, "2.15.5", true, "Compressor Replacement", true, "html/Maintenance/Compressor Replacement.html");
+let defSec_2_15_6 = new DocSection().i(true, "2.15.6", true, "Service Procedures", true, "html/Maintenance/Service Procedures.html");
+let defSec_2_15_7 = new DocSection().i(true, "2.15.7", true, "Common Causes of Compressor Failure", true, "html/Maintenance/Common Causes of Compressor Failure.html");
 let def_Sec_2_15 = new DocSection();
 def_Sec_2_15
     .i(true, "2.15", true, "AIR CONDITIONER", true, "html/Maintenance/ENGINE DRIVEN AIR CONDITIONER.html")
@@ -63,7 +63,6 @@ def_Sec_2_15
         defSec_2_15_5,
         defSec_2_15_6,
         defSec_2_15_7,
-        defSec_2_15_8,
     ]);
 
 

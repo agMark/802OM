@@ -17,7 +17,7 @@ h3 {
 }
 
 li{
-    page-break-inside: avoid;
+    page-break-inside:avoid;
 }
 
 .unnumberedHeader{
@@ -262,6 +262,20 @@ li{
 /*----------------------------------------------*/
 /*----------------------------------------------*/
 /*----------------------------------------------*/
+.plainTableSmall{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 3.0in;
+    margin: auto;
+    page-break-inside: avoid;
+}
+.plainTableMedium{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 4.5in;
+    margin: auto;
+    page-break-inside: avoid;
+}
 .plainTableLarge{
     border: 1px solid black;
     border-collapse: collapse;
