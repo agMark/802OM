@@ -10,6 +10,7 @@ import { def_Sec_6 } from './DocDef_6_AirworthinessLimitations.mjs'
 
 let render = () => {
     DocDef.RenderContent(true, document.body);
+    DocDef.ResolveXrefs(DocDef);
 
     let tocDiv1 = document.createElement("div");
     def_Sec_1.CreateToc(false, tocDiv1,0,"1-");

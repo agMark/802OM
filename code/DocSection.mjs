@@ -13,7 +13,7 @@ export class DocSection {
         /**@type {DocSection[]} */
         this.Sections = [];
 
-
+        /**@type {ChildNode[]} */
         this._html = [];
         this._div = null;
     }
@@ -235,6 +235,28 @@ export class DocSection {
         return this;
     }
 
+
+
+    ResolveXrefs = (topLevelSection) => {
+        this._html.forEach(s => {
+            if(s.ELEMENT_NODE===1){
+                //is an element node
+                let e = /**@type {HTMLElement} */(s);
+                if(e.getElementsByTagName){
+                    let x = e.getElementsByTagName("xref");
+                    if(x && x.length>0){
+                        console.log(x)
+                    };
+                }
+                
+            }
+        });
+
+        this.Sections.forEach(section => {
+            section.ResolveXrefs(topLevelSection);
+        });
+    }
+
     /**
      * Function used internally.
      * Counts the number of characters (char) in a string (str)
@@ -267,6 +289,9 @@ export class DocSection {
         }
         return result;
     }
+
+
+
 }
 
 
