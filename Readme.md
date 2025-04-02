@@ -85,6 +85,30 @@ The cells are styled as follows
 </table>
 ```
 
+## Cross References
+Cross references to other sections should be made using xref elements.
+The xref element should have attributes.
+
+fileTarget: If note empty, fileTarget should indicate the html file name for the section that is desired to be linked.
+
+sectionTarget: If not empty, section Target should indicate the section number (a string) to link to.
+
+xrefType: options are link and text.  "link" will make a clickable link using an anchor element.
+
+prependLabel: Text that you want before the cross reference number.  "Section" in a link that says "Section 2.1".
+
+When processing, sectionTarget is prioritized over fileTarget.  One of the two must be specified.
+
+```html
+<p>See <xref fileTarget="Windshield Washer.html" xrefType="link", prependLabel="Section"></xref> for more information.</p>
+```
+will render like:
+
+See Section 2.0.1 for more information.
+
+With "Section 2.0.1" being the clickable link.
+
+
 # Paged.js Notes
 ## Page Number Counters
 Page number counters are finnicky.

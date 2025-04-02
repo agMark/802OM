@@ -45,16 +45,18 @@ def_Sec_2_10
 
 
 let defSec_2_15_1 = new DocSection().i(true, "2.15.1", true, "Cautionary Information", true, "html/Maintenance/Cautionary Information.html");
-let defSec_2_15_2 = new DocSection().i(true, "2.15.2", true, "R134a Information", true, "html/Maintenance/R134a Information.html");
-let defSec_2_15_3 = new DocSection().i(true, "2.15.3", true, "Application Specifications", true, "html/Maintenance/Application Specifications.html");
-defSec_2_15_3.s([
-    new DocSection().i(false, "", true, "R134a Table of Saturation Temperatures and Pressures", true, "html/Maintenance/Table of Saturation Pressures.html")
-])
-let defSec_2_15_4 = new DocSection().i(true, "2.15.4", true, "Diagnosis Confirmation of Compressor Failure", true, "html/Maintenance/Diagnosis Confirmation of Compressor Failure.html");
-let defSec_2_15_5 = new DocSection().i(true, "2.15.5", true, "Compressor Repair", true, "html/Maintenance/Compressor Repair.html");
-let defSec_2_15_6 = new DocSection().i(true, "2.15.6", true, "Compressor Replacement", true, "html/Maintenance/Compressor Replacement.html");
-let defSec_2_15_7 = new DocSection().i(true, "2.15.7", true, "Service Procedures", true, "html/Maintenance/Service Procedures.html");
-let defSec_2_15_8 = new DocSection().i(true, "2.15.8", true, "Common Causes of Compressor Failure", true, "html/Maintenance/Common Causes of Compressor Failure.html");
+let defSec_2_15_2 = new DocSection().i(true, "2.15.2", true, "R134a and PAG Oil Precautions", true, "html/Maintenance/R134a Information.html");
+let defSec_2_15_3 = new DocSection().i(true, "2.15.3", true, "Approved Oil and Refrigerants", true, "html/Maintenance/Approved Oil and Refrigerants.html");
+let defSec_2_15_4 = new DocSection().i(true, "2.15.4", true, "Common Causes of Compressor Failure", true, "html/Maintenance/Common Causes of Compressor Failure.html");
+let defSec_2_15_5 = new DocSection().i(true, "2.15.5", true, "Diagnosis of Compressor Failure", true, "html/Maintenance/Diagnosis of Compressor Failure.html");
+
+let defSec_2_15_6 = new DocSection().i(true, "2.15.6", true, "Compressor Removal and Replacement", true, "html/Maintenance/Compressor Replacement.html");
+let defSec_2_15_7 = new DocSection().i(true, "2.15.7", true, "Belt Tensioning", true, "html/Maintenance/Belt Tensioning.html");
+let defSec_2_15_8 = new DocSection().i(true, "2.15.8", true, "Service Procedures - Flushing", true, "html/Maintenance/Flushing.html");
+let defSec_2_15_9 = new DocSection().i(true, "2.15.9", true, "Service Procedures - Evacuation", true, "html/Maintenance/Evacuation.html");
+let defSec_2_15_10 = new DocSection().i(true, "2.15.10", true, "Service Procedures - Charging", true, "html/Maintenance/Charging.html");
+let defSec_2_15_11 = new DocSection().i(true, "2.15.11", true, "Service Procedures - Oiling", true, "html/Maintenance/Oiling.html");
+let defSec_2_15_12 = new DocSection().i(true, "2.15.12", true, "Service Procedures - Contamination Check", true, "html/Maintenance/Contamination Check.html");
 let def_Sec_2_15 = new DocSection();
 def_Sec_2_15
     .i(true, "2.15", true, "AIR CONDITIONER", true, "html/Maintenance/ENGINE DRIVEN AIR CONDITIONER.html")
@@ -67,6 +69,10 @@ def_Sec_2_15
         defSec_2_15_6,
         defSec_2_15_7,
         defSec_2_15_8,
+        defSec_2_15_9,
+        defSec_2_15_10,
+        defSec_2_15_11,
+        defSec_2_15_12
     ]);
 
 
@@ -121,7 +127,7 @@ let defSec_2_35_4 = new DocSection().i(true, "2.35.4", true, "Gate Box Controls"
 let defSec_2_35_5 = new DocSection().i(true, "2.35.5", true, "Spray Lever Controls", true, "html/Maintenance/Spray Lever Controls.html");
 let defSec_2_35_6 = new DocSection().i(true, "2.35.6", true, "Spray Pump", true, "html/Maintenance/Spray Pump.html");
 let defSec_2_35_7 = new DocSection().i(true, "2.35.7", true, "Spray Plumbing", true, "html/Maintenance/Spray Plumbing.html");
-let defSec_2_35_8 = new DocSection().i(true, "2.35.8", true, "Bottom- Load Plumbing", true, "html/Maintenance/Bottom- Load Plumbing.html");
+let defSec_2_35_8 = new DocSection().i(true, "2.35.8", true, "Bottom- Load Plumbing", true, "html/Maintenance/Bottom - Load Plumbing.html");
 let defSec_2_35_9 = new DocSection().i(true, "2.35.9", true, "Spray Nozzles", true, "html/Maintenance/Spray Nozzles.html");
 let defSec_2_35_10 = new DocSection().i(true, "2.35.10", true, "Filling the Hopper Tanks", true, "html/Maintenance/Filling the Hopper Tanks.html");
 let defSec_2_35_11 = new DocSection().i(true, "2.35.11", true, "Minimizing Spray System Corrosion", true, "html/Maintenance/Minimizing Spray System Corrosion.html");
@@ -138,13 +144,14 @@ def_Sec_2_35
         defSec_2_35_7,
         defSec_2_35_8,
         defSec_2_35_9,
-        defSec_2_35_10
+        defSec_2_35_10,
+        defSec_2_35_11
     ]);
 
 
 let def_Sec_2_40 = new DocSection();
 def_Sec_2_40
-    .i(true, "2.40", true, "ELECTRICAL SYSTEM", true, "html/Maintenance/Amsafe Airbag System/ELECTRICAL SYSTEM.html")
+    .i(true, "2.40", true, "ELECTRICAL SYSTEM", true, "html/Maintenance/ELECTRICAL SYSTEM.html")
     .s([
 
     ]);
@@ -296,7 +303,7 @@ let defSec_2_80_2 = new DocSection().i(true, "2.80.2", true, "Fuselage Fixed Ski
 let defSec_2_80_3 = new DocSection().i(true, "2.80.3", true, "Fuselage Cockpit Skins", true, "html/Maintenance/Fuselage Cockpit Skins.html");
 let defSec_2_80_4 = new DocSection().i(true, "2.80.4", true, "Fuselage Frame", true, "html/Maintenance/Fuselage Frame.html");
 let defSec_2_80_5 = new DocSection().i(true, "2.80.5", true, "Windshield", true, "html/Maintenance/Windshield.html");
-let defSec_2_80_6 = new DocSection().i(true, "2.80.6", true, "Canopy Doors", true, "html/Maintenance/Canopy Doors");
+let defSec_2_80_6 = new DocSection().i(true, "2.80.6", true, "Canopy Doors", true, "html/Maintenance/Canopy Doors.html");
 let defSec_2_80_7 = new DocSection().i(true, "2.80.7", true, "Seat", true, "html/Maintenance/Seat.html");
 let def_Sec_2_80 = new DocSection();
 def_Sec_2_80
