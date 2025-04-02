@@ -236,26 +236,107 @@ export class DocSection {
     }
 
 
-
+    /**
+     * 
+     * @param {DocSection} topLevelSection 
+     */
     ResolveXrefs = (topLevelSection) => {
-        this._html.forEach(s => {
-            if(s.ELEMENT_NODE===1){
-                //is an element node
-                let e = /**@type {HTMLElement} */(s);
-                if(e.getElementsByTagName){
-                    let x = e.getElementsByTagName("xref");
-                    if(x && x.length>0){
-                        console.log(x)
-                    };
-                }
-                
-            }
-        });
 
-        this.Sections.forEach(section => {
-            section.ResolveXrefs(topLevelSection);
-        });
+        /**
+         * 
+         * @param {Object[]} objArr 
+         * @param {DocSection} section 
+         */
+        let recursiveGetSectionsAndTargets = (objArr, section) => {
+            if (section.IsNumbered) {
+                objArr.push({
+                    docSection: section,
+                    fileName: section.ContentFileUrl,
+                    sectionNumber: section.SectionNumber
+                });
+            }
+            section.Sections.forEach(s => {
+                recursiveGetSectionsAndTargets(objArr, s);
+            })
+        }
+        let xRefTargets = [];
+        recursiveGetSectionsAndTargets(xRefTargets, topLevelSection);
+
+        //quality check to make sure there aren't duplicate file names
+        let allFileNames = [];
+        for (let i = 0; i < xRefTargets.length; i++) {
+            if (xRefTargets[i].fileName && xRefTargets[i].fileName !== undefined) {
+                if (allFileNames.indexOf(xRefTargets[i].fileName) >= 0) {
+                    console.log("Warning: Duplicate filename found in xref routine....  " + xRefTargets[i].fileName);
+                }
+                else {
+                    allFileNames.push(xRefTargets[i].fileName);
+                }
+            }
+        }
+
+
+        let _RecursiveResolveXrefs = (section) => {
+            section._html.forEach(s => {
+                if (s.ELEMENT_NODE === 1) {
+                    //is an element node
+                    let e = /**@type {HTMLElement} */(s);
+                    if (e.getElementsByTagName) {
+                        let xrefs = e.getElementsByTagName("xref");
+                        if (xrefs && xrefs.length > 0) {
+                            for (let i = 0; i < xrefs.length; i++) {
+                                let fileTarget = xrefs[i].getAttribute("fileTarget");
+                                let xrefType = xrefs[i].getAttribute("xrefType");
+                                let prependLabel = xrefs[i].getAttribute("prependLabel");
+                                let sectionTarget = xrefs[i].getAttribute("sectionTarget");
+    
+                                /**@type {DocSection} */
+                                let targetSection = null;
+                                if (sectionTarget) {
+                                    throw "TODO - NOT IMPLEMENTED";
+                                }
+                                else if (fileTarget) {
+                                    for (let i = 0; i < xRefTargets.length; i++) {
+                                        if (xRefTargets[i].fileName === fileTarget) {
+                                            targetSection = xRefTargets[i].docSection;
+                                            break;
+                                        }
+                                    }
+                                    if (!targetSection) {
+                                        console.log("Invalid xref target file: " + fileTarget);
+                                    }
+                                    else{
+                                        if(!xrefType || xrefType==="link"){
+                                            let a = document.createElement("a");
+                                            a.href = "#" + targetSection.ElementId;
+                                            prependLabel ? a.innerText = prependLabel + " " + targetSection.SectionNumber : a.innerText = targetSection.SectionNumber;
+                                            xrefs[i].replaceWith(a);
+                                        }
+                                        
+                                    }
+                                }
+                                else {
+                                    console.log("invalid xref target");
+                                }
+                            }
+    
+                        };
+                    }
+    
+                }
+            });
+    
+            section.Sections.forEach(s => {
+                _RecursiveResolveXrefs(s);
+            });
+        }
+
+        _RecursiveResolveXrefs(topLevelSection);
+
+
     }
+
+
 
     /**
      * Function used internally.
