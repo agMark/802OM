@@ -9,7 +9,11 @@ import { def_Sec_6 } from './DocDef_6_AirworthinessLimitations.mjs'
 
 
 let render = () => {
+    
     DocDef.RenderContent(true, document.body);
+
+    def_Sec_2.NumberFigures("Figure 2-");
+
     DocDef.ResolveXrefs(DocDef);
 
     let tocDiv1 = document.createElement("div");

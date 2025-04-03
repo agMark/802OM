@@ -235,6 +235,84 @@ export class DocSection {
         return this;
     }
 
+    /**
+     * @param {string} numberPrepend Text to be added before the figure number ie.  "X" in X-23
+     */
+    NumberFigures = (numberPrepend) => {
+
+        /**
+         * 
+         * @param {Object[]} objArr 
+         * @param {DocSection} section 
+         */
+        let recursiveGetFigures = (objArr, section) => {
+            section._html.forEach(s => {
+                if (s.ELEMENT_NODE === 1) {
+                    let e = /**@type {HTMLElement} */(s);
+                    if(e.tagName &&e.tagName.toLocaleLowerCase && e.tagName.toLocaleLowerCase() === "figure"){
+                        let imgs = e.getElementsByTagName("img");
+                        let figCaptions = e.getElementsByTagName("figcaption");
+                        if (!imgs || imgs.length === 0) {
+                            console.log("figure tag doesn't have img");
+                        }
+                        else if (imgs.length > 1) {
+                            console.log("figure tag has multiple images");
+                        }
+                        else {
+                            let o = {
+                                figureElement: e,
+                                imgSrc: imgs[0].src
+                            };
+
+                            figCaptions && figCaptions.length === 1 ? o.figCaption = figCaptions[0] : o.figCaption = null;
+                            objArr.push(o);
+                        }
+                    }
+                    if (e.getElementsByTagName) {
+                        let figs = e.getElementsByTagName("figure");
+                        if (figs && figs.length > 0) {
+                            for (let i = 0; i < figs.length; i++) {
+                                let imgs = figs[i].getElementsByTagName("img");
+                                let figCaptions = figs[i].getElementsByTagName("figcaption");
+                                if (!imgs || imgs.length === 0) {
+                                    console.log("figure tag doesn't have img");
+                                }
+                                else if (imgs.length > 1) {
+                                    console.log("figure tag has multiple images");
+                                }
+                                else {
+                                    let o = {
+                                        figureElement: figs[i],
+                                        imgSrc: imgs[0].src
+                                    };
+
+                                    figCaptions && figCaptions.length === 1 ? o.figCaption = figCaptions[0] : o.figCaption = null;
+                                    objArr.push(o);
+                                }
+                            }
+                        }
+                    }
+
+                }
+            });
+
+            section.Sections.forEach(s => {
+                recursiveGetFigures(objArr, s)
+            });
+        };
+
+        let figs = [];
+        recursiveGetFigures(figs, this);
+
+        let figNum = 1;
+        for(let i=0; i < figs.length; i++){
+            figs[i].figNum = figNum;
+            figs[i].figCaption.innerText = numberPrepend + figNum.toFixed(0) + " " + figs[i].figCaption.innerText;
+            figNum++;
+        }
+
+        let xxx = 2;
+    }
 
     /**
      * 
@@ -289,7 +367,7 @@ export class DocSection {
                                 let xrefType = xrefs[i].getAttribute("xrefType");
                                 let prependLabel = xrefs[i].getAttribute("prependLabel");
                                 let sectionTarget = xrefs[i].getAttribute("sectionTarget");
-    
+
                                 /**@type {DocSection} */
                                 let targetSection = null;
                                 if (sectionTarget) {
@@ -305,27 +383,27 @@ export class DocSection {
                                     if (!targetSection) {
                                         console.log("Invalid xref target file: " + fileTarget);
                                     }
-                                    else{
-                                        if(!xrefType || xrefType==="link"){
+                                    else {
+                                        if (!xrefType || xrefType === "link") {
                                             let a = document.createElement("a");
                                             a.href = "#" + targetSection.ElementId;
                                             prependLabel ? a.innerText = prependLabel + " " + targetSection.SectionNumber : a.innerText = targetSection.SectionNumber;
                                             xrefs[i].replaceWith(a);
                                         }
-                                        
+
                                     }
                                 }
                                 else {
                                     console.log("invalid xref target");
                                 }
                             }
-    
+
                         };
                     }
-    
+
                 }
             });
-    
+
             section.Sections.forEach(s => {
                 _RecursiveResolveXrefs(s);
             });
