@@ -321,7 +321,7 @@ def_Sec_2_80
 
 let defSec_2_85_1 = new DocSection().i(true, "2.85.1", true, "Altimeter / Static System", true, "html/Maintenance/Altimeter - Static System.html");
 let defSec_2_85_2 = new DocSection().i(true, "2.85.2", true, "Airspeed System", true, "html/Maintenance/Airspeed System.html");
-let defSec_2_85_3 = new DocSection().i(true, "2.85.3", true, "Compass", true, "html/Maintenance/Compass.html");
+let defSec_2_85_3 = new DocSection().i(true, "2.85.3", true, "Compass", true, "html/Maintenance/Compass Calibration.html");
 let defSec_2_85_4 = new DocSection().i(true, "2.85.4", true, "Reserved", false, "");
 let defSec_2_85_5 = new DocSection().i(true, "2.85.5", true, "Low Fuel Warning System", true, "html/Maintenance/Low Fuel Warning System.html");
 let defSec_2_85_6 = new DocSection().i(true, "2.85.6", true, "Engine Instruments", true, "html/Maintenance/Engine Instruments.html");
