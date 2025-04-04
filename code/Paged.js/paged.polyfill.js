@@ -542,7 +542,7 @@
 
 
 
-			// Note: there’s no need to special-case astral symbols, surrogate
+			// Note: there's no need to special-case astral symbols, surrogate
 			// pairs, or lone surrogates.
 
 			// If the character is NULL (U+0000), then the REPLACEMENT CHARACTER
@@ -5154,7 +5154,7 @@
 	        // If the next 3 input code points would start an identifier, then:
 	        if (isIdentifierStart$1(getCharCode(offset), getCharCode(offset + 1), getCharCode(offset + 2))) {
 	            // Create a <dimension-token> with the same value and type flag as number, and a unit set initially to the empty string.
-	            // Consume a name. Set the <dimension-token>’s unit to the returned value.
+	            // Consume a name. Set the <dimension-token>'s unit to the returned value.
 	            // Return the <dimension-token>.
 	            type = TYPE$F.Dimension;
 	            offset = consumeName(source, offset);
@@ -5180,7 +5180,7 @@
 	        // Consume a name, and let string be the result.
 	        offset = consumeName(source, offset);
 
-	        // If string’s value is an ASCII case-insensitive match for "url",
+	        // If string's value is an ASCII case-insensitive match for "url",
 	        // and the next input code point is U+0028 LEFT PARENTHESIS ((), consume it.
 	        if (cmpStr$4(source, nameStartOffset, offset, 'url') && getCharCode(offset) === 0x0028) {
 	            // While the next two input code points are whitespace, consume the next input code point.
@@ -5267,22 +5267,22 @@
 	                    } else if (isValidEscape(code, nextCode)) {
 	                        // Otherwise, (the stream starts with a valid escape) consume
 	                        // an escaped code point and append the returned code point to
-	                        // the <string-token>’s value.
+	                        // the <string-token>'s value.
 	                        offset = consumeEscaped(source, offset) - 1;
 	                    }
 	                    break;
 
 	                // anything else
-	                // Append the current input code point to the <string-token>’s value.
+	                // Append the current input code point to the <string-token>'s value.
 	            }
 	        }
 	    }
 
 	    // § 4.3.6. Consume a url token
 	    // Note: This algorithm assumes that the initial "url(" has already been consumed.
-	    // This algorithm also assumes that it’s being called to consume an "unquoted" value, like url(foo).
+	    // This algorithm also assumes that it's being called to consume an "unquoted" value, like url(foo).
 	    // A quoted value, like url("foo"), is parsed as a <function-token>. Consume an ident-like token
-	    // automatically handles this distinction; this algorithm shouldn’t be called directly otherwise.
+	    // automatically handles this distinction; this algorithm shouldn't be called directly otherwise.
 	    function consumeUrlToken() {
 	        // Initially create a <url-token> with its value set to the empty string.
 	        type = TYPE$F.Url;
@@ -5344,7 +5344,7 @@
 	                // U+005C REVERSE SOLIDUS (\)
 	                case 0x005C:
 	                    // If the stream starts with a valid escape, consume an escaped code point and
-	                    // append the returned code point to the <url-token>’s value.
+	                    // append the returned code point to the <url-token>'s value.
 	                    if (isValidEscape(code, getCharCode(offset + 1))) {
 	                        offset = consumeEscaped(source, offset) - 1;
 	                        break;
@@ -5357,7 +5357,7 @@
 	                    return;
 
 	                // anything else
-	                // Append the current input code point to the <url-token>’s value.
+	                // Append the current input code point to the <url-token>'s value.
 	            }
 	        }
 	    }
@@ -5408,12 +5408,12 @@
 	                    // Create a <hash-token>.
 	                    type = TYPE$F.Hash;
 
-	                    // If the next 3 input code points would start an identifier, set the <hash-token>’s type flag to "id".
+	                    // If the next 3 input code points would start an identifier, set the <hash-token>'s type flag to "id".
 	                    // if (isIdentifierStart(getCharCode(offset + 1), getCharCode(offset + 2), getCharCode(offset + 3))) {
 	                    //     // TODO: set id flag
 	                    // }
 
-	                    // Consume a name, and set the <hash-token>’s value to the returned string.
+	                    // Consume a name, and set the <hash-token>'s value to the returned string.
 	                    offset = consumeName(source, offset + 1);
 
 	                    // Return the <hash-token>.
@@ -6298,7 +6298,7 @@
 	// 4.2. Author-defined Identifiers: the <custom-ident> type
 	// Some properties accept arbitrary author-defined identifiers as a component value.
 	// This generic data type is denoted by <custom-ident>, and represents any valid CSS identifier
-	// that would not be misinterpreted as a pre-defined keyword in that property’s value definition.
+	// that would not be misinterpreted as a pre-defined keyword in that property's value definition.
 	//
 	// See also: https://developer.mozilla.org/en-US/docs/Web/CSS/custom-ident
 	function customIdent(token) {
@@ -6321,7 +6321,7 @@
 	    // TODO: ignore property specific keywords (as described https://developer.mozilla.org/en-US/docs/Web/CSS/custom-ident)
 	    // Specifications using <custom-ident> must specify clearly what other keywords
 	    // are excluded from <custom-ident>, if any—for example by saying that any pre-defined keywords
-	    // in that property’s value definition are excluded. Excluded keywords are excluded
+	    // in that property's value definition are excluded. Excluded keywords are excluded
 	    // in all ASCII case permutations.
 
 	    return 1;
@@ -6329,7 +6329,7 @@
 
 	// https://drafts.csswg.org/css-variables/#typedef-custom-property-name
 	// A custom property is any property whose name starts with two dashes (U+002D HYPHEN-MINUS), like --foo.
-	// The <custom-property-name> production corresponds to this: it’s defined as any valid identifier
+	// The <custom-property-name> production corresponds to this: it's defined as any valid identifier
 	// that starts with two dashes, except -- itself, which is reserved for future use by CSS.
 	// NOTE: Current implementation treat `--` as a valid name since most (all?) major browsers treat it as valid.
 	function customPropertyName(token) {
@@ -6349,7 +6349,7 @@
 	// https://drafts.csswg.org/css-color-4/#hex-notation
 	// The syntax of a <hex-color> is a <hash-token> token whose value consists of 3, 4, 6, or 8 hexadecimal digits.
 	// In other words, a hex color is written as a hash character, "#", followed by some number of digits 0-9 or
-	// letters a-f (the case of the letters doesn’t matter - #00ff00 is identical to #00FF00).
+	// letters a-f (the case of the letters doesn't matter - #00ff00 is identical to #00FF00).
 	function hexColor(token) {
 	    if (token === null || token.type !== TYPE$C.Hash) {
 	        return 0;
@@ -6605,7 +6605,7 @@
 	        return 0;
 	    }
 
-	    // The first digit of an integer may be immediately preceded by `-` or `+` to indicate the integer’s sign.
+	    // The first digit of an integer may be immediately preceded by `-` or `+` to indicate the integer's sign.
 	    var i = token.value.charCodeAt(0) === 0x002B ||       // U+002B PLUS SIGN (+)
 	            token.value.charCodeAt(0) === 0x002D ? 1 : 0; // U+002D HYPHEN-MINUS (-)
 
@@ -32177,7 +32177,7 @@
 				// The behavior is identical to that of pre-wrap, except that:
 				// - Any sequence of preserved white space always takes up space, including at the end of the line.
 				// - A line breaking opportunity exists after every preserved white space character, including between white space characters.
-				// - Such preserved spaces take up space and do not hang, and thus affect the box’s intrinsic sizes (min-content size and max-content size).
+				// - Such preserved spaces take up space and do not hang, and thus affect the box's intrinsic sizes (min-content size and max-content size).
 				//
 				// See: https://developer.mozilla.org/en-US/docs/Web/CSS/white-space#Values
 
