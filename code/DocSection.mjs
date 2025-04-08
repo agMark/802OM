@@ -371,7 +371,7 @@ export class DocSection {
                                 /**@type {DocSection} */
                                 let targetSection = null;
                                 if (sectionTarget) {
-                                    throw "TODO - NOT IMPLEMENTED";
+                                    console.log( "TODO - NOT IMPLEMENTED --- NEED TO ADD SECTION TARGETS TO XREF CODE");
                                 }
                                 else if (fileTarget) {
                                     for (let i = 0; i < xRefTargets.length; i++) {
