@@ -36,6 +36,9 @@ li{
 .tabOver{
     padding-left: 40px;
 }
+.smallText{
+    font-size: .8em;
+}
 
 /*----------------------------------------------*/
 /*----------------------------------------------*/
@@ -309,11 +312,18 @@ li{
     width: 6in;
     height: 8in;
 }
+.imageCentered_6x6{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6in;
+    height: 6in;
+}
 .imageCentered_6x4{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 4in;
+    width: 6in;
     height: 4in;
 }
 .imageCentered_3x2{
