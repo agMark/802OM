@@ -249,7 +249,7 @@ export class DocSection {
             section._html.forEach(s => {
                 if (s.ELEMENT_NODE === 1) {
                     let e = /**@type {HTMLElement} */(s);
-                    if(e.tagName &&e.tagName.toLocaleLowerCase && e.tagName.toLocaleLowerCase() === "figure"){
+                    if (e.tagName && e.tagName.toLocaleLowerCase && e.tagName.toLocaleLowerCase() === "figure") {
                         let imgs = e.getElementsByTagName("img");
                         let figCaptions = e.getElementsByTagName("figcaption");
                         if (!imgs || imgs.length === 0) {
@@ -305,7 +305,7 @@ export class DocSection {
         recursiveGetFigures(figs, this);
 
         let figNum = 1;
-        for(let i=0; i < figs.length; i++){
+        for (let i = 0; i < figs.length; i++) {
             figs[i].figNum = figNum;
             figs[i].figCaption.innerText = numberPrepend + figNum.toFixed(0) + " " + figs[i].figCaption.innerText;
             figNum++;
@@ -371,7 +371,15 @@ export class DocSection {
                                 /**@type {DocSection} */
                                 let targetSection = null;
                                 if (sectionTarget) {
-                                    console.log( "TODO - NOT IMPLEMENTED --- NEED TO ADD SECTION TARGETS TO XREF CODE");
+                                    for (let i = 0; i < xRefTargets.length; i++) {
+                                        if (xRefTargets[i].sectionNumber === sectionTarget) {
+                                            targetSection = xRefTargets[i].docSection;
+                                            break;
+                                        }
+                                    }
+                                    if (!targetSection) {
+                                        console.log("Invalid xref target section: " + sectionTarget);
+                                    }
                                 }
                                 else if (fileTarget) {
                                     for (let i = 0; i < xRefTargets.length; i++) {
@@ -383,19 +391,21 @@ export class DocSection {
                                     if (!targetSection) {
                                         console.log("Invalid xref target file: " + fileTarget);
                                     }
-                                    else {
-                                        if (!xrefType || xrefType === "link") {
-                                            let a = document.createElement("a");
-                                            a.href = "#" + targetSection.ElementId;
-                                            prependLabel ? a.innerText = prependLabel + " " + targetSection.SectionNumber : a.innerText = targetSection.SectionNumber;
-                                            xrefs[i].replaceWith(a);
-                                        }
-
-                                    }
                                 }
                                 else {
                                     console.log("invalid xref target");
                                 }
+
+
+                                if(targetSection){
+                                    if (!xrefType || xrefType === "link") {
+                                        let a = document.createElement("a");
+                                        a.href = "#" + targetSection.ElementId;
+                                        prependLabel ? a.innerText = prependLabel + " " + targetSection.SectionNumber : a.innerText = targetSection.SectionNumber;
+                                        xrefs[i].replaceWith(a);
+                                    }
+                                }
+
                             }
 
                         };
