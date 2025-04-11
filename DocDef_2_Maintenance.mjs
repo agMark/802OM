@@ -8,7 +8,7 @@ let defSec_2_0_3 = new DocSection().i(true, "2.0.3", true, "Storage", true, "htm
 let defSec_2_0_4 = new DocSection().i(true, "2.0.4", true, "Lifting and Jacking", true, "html/Maintenance/Lifting and Jacking.html");
 let defSec_2_0_5 = new DocSection().i(true, "2.0.5", true, "Leveling", true, "html/Maintenance/Leveling.html");
 let defSec_2_0_6 = new DocSection().i(true, "2.0.6", true, "Weight and Balance", true, "html/Maintenance/Weight and Balance.html");
-let defSec_2_0_7 = new DocSection().i(true, "2.0.7", true, "Standard Torque and Bolt Installation", true, "html/Maintenance/Standard Torque and Bolt Installation.html");
+let defSec_2_0_7 = new DocSection().i(true, "2.0.7", true, "Standard Torque and Bolt Installation", true, "html/Maintenance/TORQUE VALUES AND GUIDANCE FOR BOLT INSTALLATION.html");
 let defSec_2_0_8 = new DocSection().i(true, "2.0.8", true, "Special Tools and Equipment", true, "html/Maintenance/Special Tools and Equipment.html");
 let def_Sec_2_0 = new DocSection();
 def_Sec_2_0
