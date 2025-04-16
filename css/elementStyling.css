@@ -19,7 +19,9 @@ h3 {
 li{
     page-break-inside:avoid;
 }
-
+tr{
+    page-break-inside:avoid;
+}
 .unnumberedHeader{
     font-weight: bold;
 }
