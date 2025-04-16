@@ -163,11 +163,14 @@ let defSec_2_45_1 = new DocSection().i(true, "2.45.1", true, "Horizontal Stabili
 let defSec_2_45_2 = new DocSection().i(true, "2.45.2", true, "Horizontal Stabilizer Struts", true, "html/Maintenance/Horizontal Stabilizer Struts.html");
 let defSec_2_45_3 = new DocSection().i(true, "2.45.3", true, "Horizontal Stabilizer Rigging", true, "html/Maintenance/Horizontal Stabilizer Rigging.html");
 let defSec_2_45_4 = new DocSection().i(true, "2.45.4", true, "Elevators ", true, "html/Maintenance/Elevators.html");
-let defSec_2_45_5 = new DocSection().i(true, "2.45.5", true, "Elevator Trim Tabs", true, "html/Maintenance/Elevator Trim Tabs.html");
-let defSec_2_45_6 = new DocSection().i(true, "2.45.6", true, "Vertical Fin", true, "html/Maintenance/Vertical Fin.html");
-let defSec_2_45_7 = new DocSection().i(true, "2.45.7", true, "Rudder", true, "html/Maintenance/Rudder.html");
-let defSec_2_45_8 = new DocSection().i(true, "2.45.8", true, "Rudder Trim Tab", true, "html/Maintenance/Rudder Trim Tab.html");
-let defSec_2_45_9 = new DocSection().i(true, "2.45.9", true, "Deflector Cable", true, "html/Maintenance/Deflector Cable.html");
+let defSec_2_45_5 = new DocSection().i(true, "2.45.5", true, "Elevator Removal and Replacement ", true, "html/Maintenance/Elevator Removal.html");
+let defSec_2_45_6 = new DocSection().i(true, "2.45.6", true, "Elevator Trim Tabs", true, "html/Maintenance/Elevator Trim Tabs.html");
+let defSec_2_45_7 = new DocSection().i(true, "2.45.7", true, "Vertical Fin", true, "html/Maintenance/Vertical Fin.html");
+let defSec_2_45_8 = new DocSection().i(true, "2.45.8", true, "Rudder", true, "html/Maintenance/Rudder.html");
+let defSec_2_45_9 = new DocSection().i(true, "2.45.9", true, "Rudder Removal and Replacement", true, "html/Maintenance/Rudder Removal and Replacement.html");
+let defSec_2_45_10 = new DocSection().i(true, "2.45.10", true, "Rudder Trim Tab", true, "html/Maintenance/Rudder Trim Tab.html");
+let defSec_2_45_11 = new DocSection().i(true, "2.45.11", true, "Deflector Cable", true, "html/Maintenance/Deflector Cable.html");
+let defSec_2_45_12 = new DocSection().i(true, "2.45.12", true, "Rudder and Elevator Bearing Replacement", true, "html/Maintenance/Rudder and Elevator Bearing Replacement.html");
 let def_Sec_2_45 = new DocSection();
 def_Sec_2_45
     .i(true, "2.45", true, "EMPENNAGE", false, "")
@@ -180,7 +183,10 @@ def_Sec_2_45
         defSec_2_45_6,
         defSec_2_45_7,
         defSec_2_45_8,
-        defSec_2_45_9
+        defSec_2_45_9,
+        defSec_2_45_10,
+        defSec_2_45_11,
+        defSec_2_45_12
     ]);
 
 
