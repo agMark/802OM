@@ -1,6 +1,6 @@
 //@ts-check
 
-import {DocSection} from './code/DocSection.mjs'
+import { DocSection } from './code/DocSection.mjs'
 
 let defSec_2_0_1 = new DocSection().i(true, "2.0.1", true, "Towing", true, "html/Maintenance/Towing.html");
 let defSec_2_0_2 = new DocSection().i(true, "2.0.2", true, "Tie Down Instructions", true, "html/Maintenance/Tie Down Instructions.html");
@@ -149,11 +149,14 @@ def_Sec_2_35
     ]);
 
 
+
+
+let defSec_2_40_1 = new DocSection().i(true, "2.40.1", true, "General", true, "html/Maintenance/Electrical System General.html");
 let def_Sec_2_40 = new DocSection();
 def_Sec_2_40
     .i(true, "2.40", true, "ELECTRICAL SYSTEM", true, "html/Maintenance/ELECTRICAL SYSTEM.html")
     .s([
-
+        defSec_2_40_1
     ]);
 
 
@@ -316,6 +319,7 @@ let defSec_2_80_4 = new DocSection().i(true, "2.80.4", true, "Fuselage Frame", t
 let defSec_2_80_5 = new DocSection().i(true, "2.80.5", true, "Windshield", true, "html/Maintenance/Windshield.html");
 let defSec_2_80_6 = new DocSection().i(true, "2.80.6", true, "Canopy Doors", true, "html/Maintenance/Canopy Doors.html");
 let defSec_2_80_7 = new DocSection().i(true, "2.80.7", true, "Seat", true, "html/Maintenance/Seat.html");
+let defSec_2_80_8 = new DocSection().i(true, "2.80.8", true, "Engine Mount Inspection", true, "html/Maintenance/Engine Mount Inspection.html");
 let def_Sec_2_80 = new DocSection();
 def_Sec_2_80
     .i(true, "2.80", true, "FUSELAGE", false, "")
@@ -326,7 +330,8 @@ def_Sec_2_80
         defSec_2_80_4,
         defSec_2_80_5,
         defSec_2_80_6,
-        defSec_2_80_7
+        defSec_2_80_7,
+        defSec_2_80_8
     ]);
 
 
@@ -391,7 +396,7 @@ let defSec_2_95_1 = new DocSection().i(true, "2.95.1", true, "Propeller Removal"
 let defSec_2_95_2 = new DocSection().i(true, "2.95.2", true, "Propeller Replacement", true, "html/Maintenance/Propeller Replacement.html");
 let def_Sec_2_95 = new DocSection();
 def_Sec_2_95
-    .i(true, "2.95", true, "PROPELLER MAINTENANCE", false, "")
+    .i(true, "2.95", true, "PROPELLER MAINTENANCE", true, "html/Maintenance/PROPELLER MAINTENANCE.html")
     .s([
         defSec_2_95_1,
         defSec_2_95_2
@@ -414,6 +419,7 @@ let defSec_2_105_1 = new DocSection().i(true, "2.105.1", true, "Stripping and Re
 let defSec_2_105_2 = new DocSection().i(true, "2.105.2", true, "Priming Aluminum Parts with Chromated Alkyd Primer", true, "html/Maintenance/Priming Aluminum Parts with Chromated Alkyd Primer.html");
 let defSec_2_105_3 = new DocSection().i(true, "2.105.3", true, "Stripping and Repainting Steel Parts", true, "html/Maintenance/Stripping and Repainting Steel Parts.html");
 let defSec_2_105_4 = new DocSection().i(true, "2.105.4", true, "Materials Used for Stripping Painting and Preservation", true, "html/Maintenance/Materials Used for Stripping Painting and Preservation.html");
+let defSec_2_105_5 = new DocSection().i(true, "2.105.5", true, "Corrosion Inspection", true, "html/Maintenance/Corrosion Inspection.html");
 let def_Sec_2_105 = new DocSection();
 def_Sec_2_105
     .i(true, "2.105", true, "PAINT AND FINISHES", false, "")
@@ -421,7 +427,8 @@ def_Sec_2_105
         defSec_2_105_1,
         defSec_2_105_2,
         defSec_2_105_3,
-        defSec_2_105_4
+        defSec_2_105_4,
+        defSec_2_105_5
     ]);
 
 let defSec_2_200_1 = new DocSection().i(true, "2.200.1", true, "Recommended Time Limits", true, "html/Maintenance/Recommended Time Limits.html");
@@ -432,7 +439,7 @@ def_Sec_2_200
     .s([
         defSec_2_200_1,
         defSec_2_200_2
-    ])
+    ]);
 
 let def_Sec_2 = new DocSection().i(true, "2", true, "MAINTENANCE", false, "", "break-before:right;");
 def_Sec_2.s([
@@ -465,4 +472,4 @@ def_Sec_2.SetElementId("Sec_2");
 
 
 
-export {def_Sec_2}
+export { def_Sec_2 }

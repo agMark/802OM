@@ -362,18 +362,18 @@ export class DocSection {
                     if (e.getElementsByTagName) {
                         let xrefs = e.getElementsByTagName("xref");
                         if (xrefs && xrefs.length > 0) {
-                            for (let i = 0; i < xrefs.length; i++) {
-                                let fileTarget = xrefs[i].getAttribute("fileTarget");
-                                let xrefType = xrefs[i].getAttribute("xrefType");
-                                let prependLabel = xrefs[i].getAttribute("prependLabel");
-                                let sectionTarget = xrefs[i].getAttribute("sectionTarget");
+                            while (xrefs.length > 0) {
+                                let fileTarget = xrefs[0].getAttribute("fileTarget");
+                                let xrefType = xrefs[0].getAttribute("xrefType");
+                                let prependLabel = xrefs[0].getAttribute("prependLabel");
+                                let sectionTarget = xrefs[0].getAttribute("sectionTarget");
 
                                 /**@type {DocSection} */
                                 let targetSection = null;
                                 if (sectionTarget) {
-                                    for (let i = 0; i < xRefTargets.length; i++) {
-                                        if (xRefTargets[i].sectionNumber === sectionTarget) {
-                                            targetSection = xRefTargets[i].docSection;
+                                    for (let j = 0; j < xRefTargets.length; j++) {
+                                        if (xRefTargets[j].sectionNumber === sectionTarget) {
+                                            targetSection = xRefTargets[j].docSection;
                                             break;
                                         }
                                     }
@@ -382,9 +382,9 @@ export class DocSection {
                                     }
                                 }
                                 else if (fileTarget) {
-                                    for (let i = 0; i < xRefTargets.length; i++) {
-                                        if (xRefTargets[i].fileName === fileTarget) {
-                                            targetSection = xRefTargets[i].docSection;
+                                    for (let j = 0; j < xRefTargets.length; j++) {
+                                        if (xRefTargets[j].fileName === fileTarget) {
+                                            targetSection = xRefTargets[j].docSection;
                                             break;
                                         }
                                     }
@@ -402,8 +402,11 @@ export class DocSection {
                                         let a = document.createElement("a");
                                         a.href = "#" + targetSection.ElementId;
                                         prependLabel ? a.innerText = prependLabel + " " + targetSection.SectionNumber : a.innerText = targetSection.SectionNumber;
-                                        xrefs[i].replaceWith(a);
+                                        xrefs[0].replaceWith(a);
                                     }
+                                }
+                                else{
+                                    throw "Xref Issue, Stopping Code";
                                 }
 
                             }
