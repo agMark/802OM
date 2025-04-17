@@ -51,6 +51,10 @@ let render = () => {
         sc.src = "code/Paged.js/paged.polyfill.js"
         document.body.appendChild(sc);
 
+        let scTableHeaders = document.createElement("script");
+        scTableHeaders.src="/code/Paged.js/tableHeaders.js";
+        document.body.appendChild(sc);
+
     }
     setTimeout(style, 5000);
 

@@ -152,11 +152,41 @@ def_Sec_2_35
 
 
 let defSec_2_40_1 = new DocSection().i(true, "2.40.1", true, "General", true, "html/Maintenance/Electrical System General.html");
+let defSec_2_40_2 = new DocSection().i(true, "2.40.2", true, "Starting / Charging / Power Distribution", true, "html/Maintenance/Starting and Charging.html");
+let defSec_2_40_3 = new DocSection().i(true, "2.40.3", true, "Charging System Troubleshooting", true, "html/Maintenance/Charging System Troubleshooting.html");
+let defSec_2_40_4 = new DocSection().i(true, "2.40.4", true, "Low Voltage Light", true, "html/Maintenance/Low Voltage Light.html");
+let defSec_2_40_5 = new DocSection().i(true, "2.40.5", true, "Electrical Fuel Boost Pump", true, "html/Maintenance/Electrical Fuel Boost Pump.html");
+let defSec_2_40_6 = new DocSection().i(true, "2.40.6", true, "Propeller Overspeed Solenoid", true, "html/Maintenance/Propeller Overspeed Solenoid.html");
+let defSec_2_40_7 = new DocSection().i(true, "2.40.7", true, "Stall Warning Horn", true, "html/Maintenance/Stall Warning Horn.html");
+let defSec_2_40_8 = new DocSection().i(true, "2.40.8", true, "Windshield Washer", true, "html/Maintenance/Windshield Washer.html");
+let defSec_2_40_9 = new DocSection().i(true, "2.40.9", true, "Windshield Washer", true, "html/Maintenance/Windshield Wiper.html");
+let defSec_2_40_10 = new DocSection().i(true, "2.40.10", true, "Cockpit Lighting", true, "html/Maintenance/Cockpit Lighting.html");
+let defSec_2_40_11 = new DocSection().i(true, "2.40.11", true, "Cockpit Lighting Troubleshooting", true, "html/Maintenance/Cockpit Lighting Troubleshooting.html");
+let defSec_2_40_12 = new DocSection().i(true, "2.40.12", true, "Flap Light", true, "html/Maintenance/Flap Light.html");
+let defSec_2_40_13 = new DocSection().i(true, "2.40.13", true, "Position (Nav) and Strobe Lights", true, "html/Maintenance/Nav and Strobe Lights.html");
+let defSec_2_40_14 = new DocSection().i(true, "2.40.14", true, "Taxi Lights", true, "html/Maintenance/Taxi Lights.html");
+let defSec_2_40_15 = new DocSection().i(true, "2.40.15", true, "Night Working Lights", true, "html/Maintenance/Night Working Lights.html");
+let defSec_2_40_16 = new DocSection().i(true, "2.40.16", true, "Oil Cooler Blower", true, "html/Maintenance/Oil Cooler Blower.html");
 let def_Sec_2_40 = new DocSection();
 def_Sec_2_40
     .i(true, "2.40", true, "ELECTRICAL SYSTEM", true, "html/Maintenance/ELECTRICAL SYSTEM.html")
     .s([
-        defSec_2_40_1
+        defSec_2_40_1,
+        defSec_2_40_2,
+        defSec_2_40_3,
+        defSec_2_40_4,
+        defSec_2_40_5,
+        defSec_2_40_6,
+        defSec_2_40_7,
+        defSec_2_40_8,
+        defSec_2_40_9,
+        defSec_2_40_10,
+        defSec_2_40_11,
+        defSec_2_40_12,
+        defSec_2_40_13,
+        defSec_2_40_14,
+        defSec_2_40_15,
+        defSec_2_40_16
     ]);
 
 

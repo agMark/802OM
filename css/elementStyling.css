@@ -42,6 +42,10 @@ tr{
     font-size: .8em;
 }
 
+.marginTop1.plainTableLarge{
+    margin-top: 1em;
+}
+
 /*----------------------------------------------*/
 /*----------------------------------------------*/
 /*DOCUMENT TITLE PAGE SPECIAL FORMATTING*/
@@ -298,8 +302,15 @@ tr{
     border: 1px solid black;
     border-collapse: collapse;
 }
-
-
+.cellWidth1_0{
+    width: 1.0in;
+}
+.cellWidth1_5{
+    width: 1.5in;
+}
+.cellWidth2_0{
+    width: 1.5in;
+}
 
 
 /*----------------------------------------------*/
