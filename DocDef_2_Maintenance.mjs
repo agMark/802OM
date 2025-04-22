@@ -229,7 +229,7 @@ def_Sec_2_45
 
 let defSec_2_50_1 = new DocSection().i(true, "2.50.1", true, "Cleaning Engine Exterior", true, "html/Maintenance/Cleaning Engine Exterior.html");
 let defSec_2_50_2 = new DocSection().i(true, "2.50.2", true, "Fuel Requirements", true, "html/Maintenance/Fuel Requirements.html");
-let defSec_2_50_3 = new DocSection().i(true, "2.50.3", true, "Fuel Filter Cleaning", true, "html/Maintenance/Fuel Filter Cleaning.html");
+let defSec_2_50_3 = new DocSection().i(true, "2.50.3", true, "Fuel Filters", true, "html/Maintenance/Fuel Filter Cleaning.html");
 let defSec_2_50_4 = new DocSection().i(true, "2.50.4", true, "Fuel Header Tank Sump Draining ", true, "html/Maintenance/Fuel Header Tank Sump Draining.html");
 let defSec_2_50_5 = new DocSection().i(true, "2.50.5", true, "Negative Fuel Pressure Warning", true, "html/Maintenance/Negative Fuel Pressure Warning.html");
 let defSec_2_50_6 = new DocSection().i(true, "2.50.6", true, "Fuel Nozzle Cleaning", true, "html/Maintenance/Fuel Nozzle Cleaning.html");
