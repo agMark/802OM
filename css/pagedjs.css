@@ -42,7 +42,9 @@
     break-before: right;
 }
 
-
+figure{
+    break-inside: avoid;
+}
 
 
 .sideBarRight{
