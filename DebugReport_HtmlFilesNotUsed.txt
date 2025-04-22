@@ -12,7 +12,6 @@ html/Maintenance/Cockpit Heater.html
 html/Maintenance/CONTROL SURFACE UNBALANCE LIMITS.html
 html/Maintenance/ELECTRICAL SYSTEM - General.html
 html/Maintenance/Electronic Instrument Light Dimmer.html
-html/Maintenance/ELECTRONIC STARTING AND CHARGING SYSTEM THEORY OF OPERATION .html
 html/Maintenance/ENGINE MAINTENANCE.html
 html/Maintenance/Engine Overspeed Solenoid.html
 html/Maintenance/Engine Removal and Replacement.html
@@ -33,7 +32,6 @@ html/Maintenance/Position and Strobe Lighting.html
 html/Maintenance/ROUTINE MAINTENANCE INSPECTION.html
 html/Maintenance/Rudder Controls.html
 html/Maintenance/Rudder Trim Controls.html
-html/Maintenance/Rudder-Aileron Interconnect System Rigging.html
 html/Maintenance/Stall-Warning Horn.html
 html/Maintenance/STATIC SYSTEM.html
 html/Maintenance/Tail Wheel Fork Housing.html
@@ -41,5 +39,4 @@ html/Maintenance/Troubleshooting Procedures.html
 html/Maintenance/Troubleshooting.html
 html/Maintenance/Voltage Regulator.html
 html/Maintenance/Voltmeter.html
-html/Maintenance/WINGS.html
 html/Inspection/Insp_Propeller and Engine Damage.html
