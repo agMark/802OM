@@ -453,7 +453,7 @@ let defSec_2_100_2 = new DocSection().i(true, "2.100.2", true, "Wing Center Spli
 let defSec_2_100_3 = new DocSection().i(true, "2.100.3", true, "Wing Walk", true, "html/Maintenance/Wing Walk.html");
 let def_Sec_2_100 = new DocSection();
 def_Sec_2_100
-    .i(true, "2.100", true, "WINGS", false, "")
+    .i(true, "2.100", true, "WINGS", true, "html/Maintenance/WINGS.html")
     .s([
         defSec_2_100_1,
         defSec_2_100_2,
