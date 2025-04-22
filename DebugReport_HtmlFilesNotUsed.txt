@@ -9,18 +9,14 @@ html/Maintenance/Boost Pump.html
 html/Maintenance/Checking the Batteries.html
 html/Maintenance/COCKPIT CONTROLS.html
 html/Maintenance/Cockpit Heater.html
-html/Maintenance/Cockpit Lighting.html
 html/Maintenance/CONTROL SURFACE UNBALANCE LIMITS.html
 html/Maintenance/ELECTRICAL SYSTEM - General.html
 html/Maintenance/Electronic Instrument Light Dimmer.html
 html/Maintenance/ELECTRONIC STARTING AND CHARGING SYSTEM THEORY OF OPERATION .html
-html/Maintenance/Engine Build-Up.html
 html/Maintenance/ENGINE MAINTENANCE.html
 html/Maintenance/Engine Overspeed Solenoid.html
-html/Maintenance/Engine Removal.html
-html/Maintenance/Engine Replacement.html
+html/Maintenance/Engine Removal and Replacement.html
 html/Maintenance/Equipment.html
-html/Maintenance/Flap Light.html
 html/Maintenance/Flap-Elevator Interconnect System Rigging.html
 html/Maintenance/Fuel Gauging.html
 html/Maintenance/General Considerations.html
@@ -34,14 +30,9 @@ html/Maintenance/ITT INSTRUMENT CALIBRATION CHECK.html
 html/Maintenance/Line Contact Relay (LCR) Control .html
 html/Maintenance/Low-Voltage Warning Light.html
 html/Maintenance/MAIN AND TAIL GEAR ATTACH BOLTS.html
-html/Maintenance/Night Working Lights.html
 html/Maintenance/Obsolete
-html/Maintenance/Oil Cooler Blower.html
 html/Maintenance/Overvoltage (OV) Protection.html
 html/Maintenance/Position and Strobe Lighting.html
-html/Maintenance/Power Lever.html
-html/Maintenance/Propeller Lever.html
-html/Maintenance/PROPELLER MAINTENANCE.html
 html/Maintenance/Reverse Current Protection.html
 html/Maintenance/ROUTINE MAINTENANCE INSPECTION.html
 html/Maintenance/Rudder Controls.html
@@ -50,17 +41,13 @@ html/Maintenance/Rudder-Aileron Interconnect System Rigging.html
 html/Maintenance/Stabilizer Rigging.html
 html/Maintenance/Stabilizer Struts.html
 html/Maintenance/Stall-Warning Horn.html
-html/Maintenance/Start Control.html
+html/Maintenance/Standard Torque and Bolt Installation.html
 html/Maintenance/Starter-Generator.html
 html/Maintenance/STATIC SYSTEM.html
 html/Maintenance/Tail Wheel Fork Housing.html
-html/Maintenance/Taxi Lights.html
-html/Maintenance/TORQUE VALUES AND GUIDANCE FOR BOLT INSTALLATION.html
 html/Maintenance/Troubleshooting Procedures.html
 html/Maintenance/Troubleshooting.html
 html/Maintenance/Voltage Regulator.html
 html/Maintenance/Voltmeter.html
-html/Maintenance/Windshield Washer.html
-html/Maintenance/Windshield Wiper.html
 html/Maintenance/WINGS.html
 html/Inspection/Insp_Propeller and Engine Damage.html
