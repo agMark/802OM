@@ -167,6 +167,7 @@ let defSec_2_40_13 = new DocSection().i(true, "2.40.13", true, "Position (Nav) a
 let defSec_2_40_14 = new DocSection().i(true, "2.40.14", true, "Taxi Lights", true, "html/Maintenance/Taxi Lights.html");
 let defSec_2_40_15 = new DocSection().i(true, "2.40.15", true, "Night Working Lights", true, "html/Maintenance/Night Working Lights.html");
 let defSec_2_40_16 = new DocSection().i(true, "2.40.16", true, "Oil Cooler Blower", true, "html/Maintenance/Oil Cooler Blower.html");
+let defSec_2_40_50 = new DocSection().i(true, "2.40.50", true, "Starter Generator Brush Inspection", true, "html/Maintenance/Starter Generator Brush Inspection.html");
 let def_Sec_2_40 = new DocSection();
 def_Sec_2_40
     .i(true, "2.40", true, "ELECTRICAL SYSTEM", true, "html/Maintenance/ELECTRICAL SYSTEM.html")
@@ -186,7 +187,8 @@ def_Sec_2_40
         defSec_2_40_13,
         defSec_2_40_14,
         defSec_2_40_15,
-        defSec_2_40_16
+        defSec_2_40_16,
+        defSec_2_40_50
     ]);
 
 
@@ -280,6 +282,24 @@ def_Sec_2_55
     ]);
 
 
+
+let defSec_2_56_1 = new DocSection().i(true, "2.56.1", true, "Analog Engine Instruments", true, "html/Maintenance/Engine Instruments.html");
+let defSec_2_56_2 = new DocSection().i(true, "2.56.2", true, "MVP-50T Engine Instrument System", true, "html/Maintenance/MVP-50T.html");
+let defSec_2_56_3 = new DocSection().i(true, "2.56.3", true, "Low Fuel Warning System", true, "html/Maintenance/Low Fuel Warning System.html");
+let defSec_2_56_4 = new DocSection().i(true, "2.56.4", true, "Analog Engine Instrument Calibration", true, "html/Maintenance/Analog Engine Instrument Calibration.html");
+let defSec_2_56_5 = new DocSection().i(true, "2.56.5", true, "MVP-50T Engine Instrument Calibration", true, "html/Maintenance/MVP50T Engine Instrument Calibration.html")
+let def_Sec_2_56 = new DocSection();
+def_Sec_2_56
+    .i(true, "2.56", true, "ENGINE INSTRUMENTS", false, "")
+    .s([
+        defSec_2_56_1,
+        defSec_2_56_2,
+        defSec_2_56_3,
+        defSec_2_56_4,
+        defSec_2_56_5
+    ]);
+
+
 let defSec_2_60_1 = new DocSection().i(true, "2.60.1", true, "FCU Manual Override Rigging", true, "html/Maintenance/FCU Manual Override Rigging.html");
 let def_Sec_2_60 = new DocSection();
 def_Sec_2_60
@@ -369,9 +389,6 @@ let defSec_2_85_1 = new DocSection().i(true, "2.85.1", true, "Altimeter / Static
 let defSec_2_85_2 = new DocSection().i(true, "2.85.2", true, "Airspeed System", true, "html/Maintenance/Airspeed System.html");
 let defSec_2_85_3 = new DocSection().i(true, "2.85.3", true, "Compass", true, "html/Maintenance/Compass Calibration.html");
 let defSec_2_85_4 = new DocSection().i(true, "2.85.4", true, "Reserved", false, "");
-let defSec_2_85_5 = new DocSection().i(true, "2.85.5", true, "Low Fuel Warning System", true, "html/Maintenance/Low Fuel Warning System.html");
-let defSec_2_85_6 = new DocSection().i(true, "2.85.6", true, "Engine Instruments", true, "html/Maintenance/Engine Instruments.html");
-let defSec_2_85_7 = new DocSection().i(true, "2.85.7", true, "MVP-50T Engine Instrument System", true, "html/Maintenance/MVP-50T.html");
 let def_Sec_2_85 = new DocSection();
 def_Sec_2_85
     .i(true, "2.85", true, "INSTRUMENTS", false, "")
@@ -379,10 +396,7 @@ def_Sec_2_85
         defSec_2_85_1,
         defSec_2_85_2,
         defSec_2_85_3,
-        defSec_2_85_4,
-        defSec_2_85_5,
-        defSec_2_85_6,
-        defSec_2_85_7
+        defSec_2_85_4
     ]);
 
 
@@ -484,6 +498,7 @@ def_Sec_2.s([
     def_Sec_2_45,
     def_Sec_2_50,
     def_Sec_2_55,
+    def_Sec_2_56,
     def_Sec_2_60,
     def_Sec_2_65,
     def_Sec_2_70,
