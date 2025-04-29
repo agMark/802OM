@@ -6,7 +6,7 @@ import { def_Sec_4 } from './DocDef_4_Lubrication.mjs'
 import { def_Sec_5 } from './DocDef_5_Repairs.mjs'
 import { def_Sec_6 } from './DocDef_6_AirworthinessLimitations.mjs'
 
-
+DocDef.GetContent();
 
 let render = () => {
     

@@ -104,10 +104,6 @@ DocDef.Sections = [
     def_Sec_5,
     def_Sec_6
 ];
-DocDef.GetContent();
-
-
-
 
 
 
