@@ -3,5 +3,8 @@
     "LatestDate": "9/1/2025",
     "DocDefFile": "DocDef_03-0121.json",
     "RenderFile": "RenderDoc.mjs",
-    "HtmlFile": "index.html"
+    "HtmlFile": "index.html",
+    "CssFiles": [
+        "./css/elementStyling.css"
+    ]
 }
