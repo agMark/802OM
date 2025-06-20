@@ -5,7 +5,8 @@
 .breakBefore {
     break-before: page;
 }
-.dontBreakBefore{
+
+.dontBreakBefore {
     break-before: avoid;
 }
 
@@ -13,7 +14,7 @@
     break-after: page;
 }
 
-.dontBreakAfter{
+.dontBreakAfter {
     break-after: avoid;
 }
 
@@ -21,41 +22,44 @@
     page: descriptionSection;
     break-before: right;
 }
-.sectionMaintenance{
+
+.sectionMaintenance {
     page: maintenanceSection;
     break-before: right;
 }
-.sectionInspection{
+
+.sectionInspection {
     page: inspectionSection;
     break-before: right;
 }
-.sectionLubrication{
+
+.sectionLubrication {
     page: lubricationSection;
     break-before: right;
 }
-.sectionRepairs{
+
+.sectionRepairs {
     page: repairsSection;
     break-before: right;
 }
-.sectionLimitations{
+
+.sectionLimitations {
     page: limitationsSection;
     break-before: right;
 }
 
-figure{
+figure {
     break-inside: avoid;
 }
 
 
-.sideBarRight{
-    position:running(sideBarRight);
-}
 
-@page :right{
-    @right-bottom{
-        content: element(sideBarRight)
+
+/* @page :right {
+    @right-bottom {
+        content: element(sideBarRight_Description)
     }
-}
+} */
 
 
 
@@ -65,7 +69,7 @@ figure{
 /*HEADERS AND PAGE NUMBERS*/
 /**/
 /*Declare the counters*/
-body{
+body {
     counter-reset: descPage maintPage inspPage lubePage repairsPage limitationsPage;
 }
 
@@ -73,26 +77,46 @@ body{
 .pgNumDesc::after {
     content: counter(descPage);
 }
+
 .descriptionHeaderRight {
     position: running(descriptionHeaderRight);
     font-family: 'Times New Roman', Times, serif;
     border-bottom: 1px solid black;
     counter-increment: descPage;
 }
+
+.sideBarRight_Description {
+    position: running(sideBarRight_Description);
+}
+
 @page descriptionSection :right {
     @top-center {
         content: element(descriptionHeaderRight);
     }
+
+    @right-bottom {
+        content: element(sideBarRight_Description)
+    }
 }
+
 .descriptionHeaderLeft {
     position: running(descriptionHeaderLeft);
     font-family: 'Times New Roman', Times, serif;
     border-bottom: 1px solid black;
     counter-increment: descPage;
 }
+
+.sideBarLeft_Description {
+    position: running(sideBarLeft_Description);
+}
+
 @page descriptionSection :left {
     @top-center {
         content: element(descriptionHeaderLeft);
+    }
+
+    @left-bottom {
+        content: element(sideBarLeft_Description)
     }
 }
 
@@ -100,26 +124,46 @@ body{
 .pgNumMaint::after {
     content: counter(maintPage);
 }
+
 .maintenanceHeaderRight {
     position: running(maintenanceHeaderRight);
     font-family: 'Times New Roman', Times, serif;
     border-bottom: 1px solid black;
     counter-increment: maintPage;
 }
+
+.sideBarRight_Maintenance {
+    position: running(sideBarRight_Maintenance);
+}
+
 @page maintenanceSection :right {
     @top-center {
         content: element(maintenanceHeaderRight);
     }
+
+    @right-bottom {
+        content: element(sideBarRight_Maintenance);
+    }
 }
+
 .maintenanceHeaderLeft {
     position: running(maintenanceHeaderLeft);
     font-family: 'Times New Roman', Times, serif;
     border-bottom: 1px solid black;
     counter-increment: maintPage;
 }
+
+.sideBarLeft_Maintenance {
+    position: running(sideBarLeft_Maintenance);
+}
+
 @page maintenanceSection :left {
     @top-center {
         content: element(maintenanceHeaderLeft);
+    }
+
+    @left-bottom {
+        content: element(sideBarLeft_Maintenance)
     }
 }
 
@@ -131,26 +175,46 @@ body{
 .pgNumInsp::after {
     content: counter(inspPage);
 }
+
 .inspectionHeaderRight {
     position: running(inspectionHeaderRight);
     font-family: 'Times New Roman', Times, serif;
     border-bottom: 1px solid black;
     counter-increment: inspPage;
 }
+
+.sideBarRight_Inspection {
+    position: running(sideBarRight_Inspection);
+}
+
 @page inspectionSection :right {
     @top-center {
         content: element(inspectionHeaderRight);
     }
+
+    @right-bottom {
+        content: element(sideBarRight_Inspection);
+    }
 }
+
 .inspectionHeaderLeft {
     position: running(inspectionHeaderLeft);
     font-family: 'Times New Roman', Times, serif;
     border-bottom: 1px solid black;
     counter-increment: inspPage;
 }
+
+.sideBarLeft_Inspection {
+    position: running(sideBarLeft_Inspection);
+}
+
 @page inspectionSection :left {
     @top-center {
         content: element(inspectionHeaderLeft);
+    }
+
+    @left-bottom {
+        content: element(sideBarLeft_Inspection);
     }
 }
 
@@ -163,26 +227,46 @@ body{
 .pgNumLube::after {
     content: counter(lubePage);
 }
+
 .lubricationHeaderRight {
     position: running(lubricationHeaderRight);
     font-family: 'Times New Roman', Times, serif;
     border-bottom: 1px solid black;
     counter-increment: lubePage;
 }
+
+.sideBarRight_Lubrication {
+    position: running(sideBarRight_Lubrication);
+}
+
 @page lubricationSection :right {
     @top-center {
         content: element(lubricationHeaderRight);
     }
+
+    @right-bottom {
+        content: element(sideBarRight_Lubrication);
+    }
 }
+
 .lubricationHeaderLeft {
     position: running(lubricationHeaderLeft);
     font-family: 'Times New Roman', Times, serif;
     border-bottom: 1px solid black;
     counter-increment: lubePage;
 }
+
+.sideBarLeft_Lubrication {
+    position: running(sideBarLeft_Lubrication);
+}
+
 @page lubricationSection :left {
     @top-center {
         content: element(lubricationHeaderLeft);
+    }
+
+    @left-bottom {
+        content: element(sideBarLeft_Lubrication);
     }
 }
 
@@ -190,26 +274,46 @@ body{
 .pgNumRepairs::after {
     content: counter(repairsPage);
 }
+
 .repairsHeaderRight {
     position: running(repairsHeaderRight);
     font-family: 'Times New Roman', Times, serif;
     border-bottom: 1px solid black;
     counter-increment: repairsPage;
 }
+
+.sideBarRight_Repairs {
+    position: running(sideBarRight_Repairs);
+}
+
 @page repairsSection :right {
     @top-center {
         content: element(repairsHeaderRight);
     }
+
+    @right-bottom {
+        content: element(sideBarRight_Repairs);
+    }
 }
+
 .repairsHeaderLeft {
     position: running(repairsHeaderLeft);
     font-family: 'Times New Roman', Times, serif;
     border-bottom: 1px solid black;
     counter-increment: repairsPage;
 }
+
+.sideBarLeft_Repairs {
+    position: running(sideBarLeft_Repairs);
+}
+
 @page repairsSection :left {
     @top-center {
         content: element(repairsHeaderLeft);
+    }
+
+    @left-bottom {
+        content: element(sideBarLeft_Repairs);
     }
 }
 
@@ -217,26 +321,46 @@ body{
 .pgNumLimitations::after {
     content: counter(limitationsPage);
 }
+
 .limitationsHeaderRight {
     position: running(limitationsHeaderRight);
     font-family: 'Times New Roman', Times, serif;
     border-bottom: 1px solid black;
     counter-increment: limitationsPage;
 }
+
+.sideBarRight_Limitations {
+    position: running(sideBarRight_Limitations);
+}
+
 @page limitationsSection :right {
     @top-center {
         content: element(limitationsHeaderRight);
     }
+
+    @right-bottom {
+        content: element(sideBarRight_Limitations);
+    }
 }
+
 .limitationsHeaderLeft {
     position: running(limitationsHeaderLeft);
     font-family: 'Times New Roman', Times, serif;
     border-bottom: 1px solid black;
     counter-increment: limitationsPage;
 }
+
+.sideBarLeft_Limitations {
+    position: running(sideBarLeft_Limitations);
+}
+
 @page limitationsSection :left {
     @top-center {
         content: element(limitationsHeaderLeft);
+    }
+
+    @left-bottom {
+        content: element(sideBarLeft_Limitations);
     }
 }
 
@@ -245,6 +369,3 @@ body{
 /*-------------------------------------------------------*/
 /*-------------------------------------------------------*/
 /*-------------------------------------------------------*/
-
-
-
