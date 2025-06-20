@@ -11,6 +11,8 @@ let defSec_2_0_6 = new DocSection().i(true, "2.0.6", true, "Weight and Balance",
 let defSec_2_0_7 = new DocSection().i(true, "2.0.7", true, "Standard Torque and Bolt Installation", true, "html/Maintenance/TORQUE VALUES AND GUIDANCE FOR BOLT INSTALLATION.html");
 let defSec_2_0_8 = new DocSection().i(true, "2.0.8", true, "Special Tools and Equipment", true, "html/Maintenance/Special Tools and Equipment.html");
 let defSec_2_0_9 = new DocSection().i(true, "2.0.9", true, "Unapproved Parts", true, "html/Maintenance/Unapproved Parts.html");
+let defSec_2_0_10 = new DocSection().i(true, "2.0.10", true, "Operational Best Practices", true, "html/Maintenance/Operational Best Practices.html");
+let defSec_2_0_11 = new DocSection().i(true, "2.0.11", true, "Emergency and Normal Procedures", true, "html/Maintenance/Emergency and Normal Procedures.html");
 let def_Sec_2_0 = new DocSection();
 def_Sec_2_0
     .i(true, "2.0", true, "GENERAL", false, "")
@@ -23,7 +25,9 @@ def_Sec_2_0
         defSec_2_0_6,
         defSec_2_0_7,
         defSec_2_0_8,
-        defSec_2_0_9
+        defSec_2_0_9,
+        defSec_2_0_10,
+        defSec_2_0_11
     ]);
 
 
@@ -51,7 +55,6 @@ let defSec_2_15_2 = new DocSection().i(true, "2.15.2", true, "R134a and PAG Oil 
 let defSec_2_15_3 = new DocSection().i(true, "2.15.3", true, "Approved Oil and Refrigerants", true, "html/Maintenance/Approved Oil and Refrigerants.html");
 let defSec_2_15_4 = new DocSection().i(true, "2.15.4", true, "Common Causes of Compressor Failure", true, "html/Maintenance/Common Causes of Compressor Failure.html");
 let defSec_2_15_5 = new DocSection().i(true, "2.15.5", true, "Diagnosis of Compressor Failure", true, "html/Maintenance/Diagnosis of Compressor Failure.html");
-
 let defSec_2_15_6 = new DocSection().i(true, "2.15.6", true, "Compressor Removal and Replacement", true, "html/Maintenance/Compressor Replacement.html");
 let defSec_2_15_7 = new DocSection().i(true, "2.15.7", true, "Belt Tensioning", true, "html/Maintenance/Belt Tensioning.html");
 let defSec_2_15_8 = new DocSection().i(true, "2.15.8", true, "Service Procedures - Flushing", true, "html/Maintenance/Flushing.html");
@@ -133,6 +136,10 @@ let defSec_2_35_8 = new DocSection().i(true, "2.35.8", true, "Bottom- Load Plumb
 let defSec_2_35_9 = new DocSection().i(true, "2.35.9", true, "Spray Nozzles", true, "html/Maintenance/Spray Nozzles.html");
 let defSec_2_35_10 = new DocSection().i(true, "2.35.10", true, "Filling the Hopper Tanks", true, "html/Maintenance/Filling the Hopper Tanks.html");
 let defSec_2_35_11 = new DocSection().i(true, "2.35.11", true, "Minimizing Spray System Corrosion", true, "html/Maintenance/Minimizing Spray System Corrosion.html");
+let defSec_2_35_12 = new DocSection().i(true, "2.35.12", true, "Support Hangers and Straps", true, "html/Maintenance/Support Hangers and Straps.html");
+let defSec_2_35_13 = new DocSection().i(true, "2.35.13", true, "Hopper Rinse System", true, "html/Maintenance/Hopper Rinse System.html");
+let defSec_2_35_14 = new DocSection().i(true, "2.35.14", true, "Automatic Flagman Installations", true, "html/Maintenance/Automatic Flagman Installations.html");
+
 let def_Sec_2_35 = new DocSection();
 def_Sec_2_35
     .i(true, "2.35", true, "DISPERSAL EQUIPMENT", false, "")
@@ -147,7 +154,10 @@ def_Sec_2_35
         defSec_2_35_8,
         defSec_2_35_9,
         defSec_2_35_10,
-        defSec_2_35_11
+        defSec_2_35_11,
+        defSec_2_35_12,
+        defSec_2_35_13,
+        defSec_2_35_14
     ]);
 
 
@@ -246,6 +256,13 @@ let defSec_2_50_14 = new DocSection().i(true, "2.50.14", true, "Engine Ground Ru
 let defSec_2_50_15 = new DocSection().i(true, "2.50.15", true, "Engine Removal", true, "html/Maintenance/Engine Removal.html");
 let defSec_2_50_16 = new DocSection().i(true, "2.50.16", true, "Engine Build Up", true, "html/Maintenance/Engine Build Up.html");
 let defSec_2_50_17 = new DocSection().i(true, "2.50.17", true, "Engine Replacement", true, "html/Maintenance/Engine Replacement.html");
+let defSec_2_50_18 = new DocSection().i(true, "2.50.18", true, "Engine Air Plenum", true, "html/Maintenance/Engine Air Plenum.html");
+let defSec_2_50_19 = new DocSection().i(true, "2.50.19", true, "SCEET Flexible Duct Installation and Routing", true, "html/Maintenance/SCEET Flexible Duct Installation and Routing.html");
+let defSec_2_50_20 = new DocSection().i(true, "2.50.20", true, "PT6A-67F engines that are subject to modification by PWC SB14505", true, "html/Maintenance/PT6A-67F engines that are subject to modification by PWC SB14505.html");
+let defSec_2_50_21 = new DocSection().i(true, "2.50.21", true, "Engine Driven Low Pressure Fuel Pump", true, "html/Maintenance/Engine Driven Low Pressure Fuel Pump.html");
+let defSec_2_50_22 = new DocSection().i(true, "2.50.22", true, "Air Conditioner Drive Pad", true, "html/Maintenance/Air Conditioner Drive Pad.html");
+let defSec_2_50_23 = new DocSection().i(true, "2.50.23", true, "P3 Air Pressure Tube", true, "html/Maintenance/P3 Air Pressure Tube.html");
+let defSec_2_50_24 = new DocSection().i(true, "2.50.24", true, "Exhaust Pipe Repair", true, "html/Maintenance/Exhaust Pipe Repair.html");
 
 let def_Sec_2_50 = new DocSection();
 def_Sec_2_50
@@ -267,7 +284,14 @@ def_Sec_2_50
         defSec_2_50_14,
         defSec_2_50_15,
         defSec_2_50_16,
-        defSec_2_50_17
+        defSec_2_50_17,
+        defSec_2_50_18,
+        defSec_2_50_19,
+        defSec_2_50_20,
+        defSec_2_50_21,
+        defSec_2_50_22,
+        defSec_2_50_23,
+        defSec_2_50_24
     ]);
 
 
@@ -353,6 +377,9 @@ let defSec_2_75_4 = new DocSection().i(true, "2.75.4", true, "Fuel Tank Receiver
 let defSec_2_75_5 = new DocSection().i(true, "2.75.5", true, "Fuel System Drains", true, "html/Maintenance/Fuel System Drains.html");
 let defSec_2_75_6 = new DocSection().i(true, "2.75.6", true, "Fuel System Screens and Filters", true, "html/Maintenance/Fuel System Screens and Filters.html");
 let defSec_2_75_7 = new DocSection().i(true, "2.75.7", true, "Airframe Fuel Pump", true, "html/Maintenance/Airframe Fuel Pump.html");
+let defSec_2_75_8 = new DocSection().i(true, "2.75.8", true, "Fuel Tank Placards", true, "html/Maintenance/Fuel Tank Placards.html");
+let defSec_2_75_9 = new DocSection().i(true, "2.75.9", true, "Ferry Fuel System", true, "html/Maintenance/Ferry Fuel System.html");
+let defSec_2_75_10 = new DocSection().i(true, "2.75.10", true, "Fuel Selector Valve", true, "html/Maintenance/Fuel Selector Valve.html");
 let def_Sec_2_75 = new DocSection();
 def_Sec_2_75
     .i(true, "2.75", true, "FUEL SYSTEM", false, "")
@@ -363,7 +390,10 @@ def_Sec_2_75
         defSec_2_75_4,
         defSec_2_75_5,
         defSec_2_75_6,
-        defSec_2_75_7
+        defSec_2_75_7,
+        defSec_2_75_8,
+        defSec_2_75_9,
+        defSec_2_75_10
     ]);
 
 let defSec_2_80_1 = new DocSection().i(true, "2.80.1", true, "Fuselage Removable Skins", true, "html/Maintenance/Fuselage Removable Skins.html");
@@ -374,6 +404,7 @@ let defSec_2_80_5 = new DocSection().i(true, "2.80.5", true, "Windshield", true,
 let defSec_2_80_6 = new DocSection().i(true, "2.80.6", true, "Canopy Doors", true, "html/Maintenance/Canopy Doors.html");
 let defSec_2_80_7 = new DocSection().i(true, "2.80.7", true, "Seat", true, "html/Maintenance/Seat.html");
 let defSec_2_80_8 = new DocSection().i(true, "2.80.8", true, "Engine Mount Inspection", true, "html/Maintenance/Engine Mount Inspection.html");
+let defSec_2_80_9 = new DocSection().i(true, "2.80.9", true, "Baggage Compartment", true, "html/Maintenance/Baggage Compartment.html");
 let def_Sec_2_80 = new DocSection();
 def_Sec_2_80
     .i(true, "2.80", true, "FUSELAGE", false, "")
@@ -385,7 +416,8 @@ def_Sec_2_80
         defSec_2_80_5,
         defSec_2_80_6,
         defSec_2_80_7,
-        defSec_2_80_8
+        defSec_2_80_8,
+        defSec_2_80_9
     ]);
 
 
@@ -442,12 +474,16 @@ def_Sec_2_90
 
 let defSec_2_95_1 = new DocSection().i(true, "2.95.1", true, "Propeller Removal", true, "html/Maintenance/Propeller Removal.html");
 let defSec_2_95_2 = new DocSection().i(true, "2.95.2", true, "Propeller Replacement", true, "html/Maintenance/Propeller Replacement.html");
+let defSec_2_95_3 = new DocSection().i(true, "2.95.3", true, "Beta System", true, "html/Maintenance/Beta System.html");
+let defSec_2_95_4 = new DocSection().i(true, "2.95.4", true, "Propeller Grease", true, "html/Maintenance/Propeller Grease.html");
 let def_Sec_2_95 = new DocSection();
 def_Sec_2_95
     .i(true, "2.95", true, "PROPELLER MAINTENANCE", true, "html/Maintenance/PROPELLER MAINTENANCE.html")
     .s([
         defSec_2_95_1,
-        defSec_2_95_2
+        defSec_2_95_2,
+        defSec_2_95_3,
+        defSec_2_95_4
     ]);
 
 let defSec_2_100_1 = new DocSection().i(true, "2.100.1", true, "Wing Attachment to Fuselage", true, "html/Maintenance/Wing Attachment to Fuselage.html");
