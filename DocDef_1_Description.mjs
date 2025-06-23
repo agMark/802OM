@@ -72,7 +72,7 @@ def_Sec_1_70
     ]);
 let def_Sec_1_80_6 = new DocSection();
 def_Sec_1_80_6
-    .i(true, "1.80.6", true, "Analog Engine Instruments", true, "html/Description/Analog Engine Instruments.html")
+    .i(true, "1.85.6", true, "Analog Engine Instruments", true, "html/Description/Analog Engine Instruments.html")
     .s([
         new DocSection().i(false, "", true, "Fuel Gauges", true, "html/Description/Fuel Gauges.html"),
         new DocSection().i(false, "", true, "ITT Gauge", true, "html/Description/ITT Gauge.html"),
@@ -93,7 +93,7 @@ def_Sec_1_85
         new DocSection().i(true, "1.85.4", true, "Attitude Indicator", true, "html/Description/Attitude Indicator.html"),
         new DocSection().i(true, "1.85.5", true, "Low Fuel Warning Light System", true, "html/Description/Low Fuel Warning Light System.html"),
         def_Sec_1_80_6,
-        new DocSection().i(true, "1.80.7", true, "MVP-50T Digital Instruments", true, "html/Description/MVP-50T.html")
+        new DocSection().i(true, "1.85.7", true, "MVP-50T Digital Instruments", true, "html/Description/MVP-50T.html")
     ]);
 
 let def_Sec_1_90 = new DocSection();

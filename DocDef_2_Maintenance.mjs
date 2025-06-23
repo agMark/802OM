@@ -115,7 +115,7 @@ let defSec_2_30_5 = new DocSection().i(true, "2.30.5", true, "Elevator Trim Tab 
 let defSec_2_30_6 = new DocSection().i(true, "2.30.6", true, "Elevator - Flap Interconnect System Rigging", true, "html/Maintenance/Elevator - Flap Interconnect System Rigging.html");
 let def_Sec_2_30 = new DocSection();
 def_Sec_2_30
-    .i(true, "2.30", true, "CONTROL SYSTEMS", false, "")
+    .i(true, "2.30", true, "CONTROL SYSTEMS", true, "html/Maintenance/Control Systems.html")
     .s([
         defSec_2_30_1,
         defSec_2_30_2,
