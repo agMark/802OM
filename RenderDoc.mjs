@@ -11,7 +11,7 @@ DocDef.GetContent();
 let render = () => {
     
     DocDef.RenderContent(true, document.body);
-
+    def_Sec_1.NumberFigures("Figure 1-");
     def_Sec_2.NumberFigures("Figure 2-");
 
     DocDef.ResolveXrefs(DocDef);
