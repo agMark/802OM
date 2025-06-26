@@ -308,6 +308,7 @@ export class DocSection {
         let figNum = 1;
         for (let i = 0; i < figs.length; i++) {
             figs[i].figNum = figNum;
+            figs[i].numberPrepend = numberPrepend;
             figs[i].figCaption.innerText = numberPrepend + figNum.toFixed(0) + " " + figs[i].figCaption.innerText;
             figs[i].figCaption.id = "fig_" + numberPrepend + figNum.toFixed(0);
             figNum++;
@@ -358,7 +359,12 @@ export class DocSection {
         }
 
 
-        let _RecursiveResolveXrefs = (section) => {
+        /**
+         * 
+         * @param {DocSection} section 
+         * @param {Object[]} figureTargets 
+         */
+        let _RecursiveResolveXrefs = (section, figureTargets) => {
             section._html.forEach(s => {
                 if (s.ELEMENT_NODE === 1) {
                     //is an element node
@@ -413,31 +419,50 @@ export class DocSection {
                                 }
                                 else {
                                     //Now look at the images
+                                    let figTargets = [];
+
                                     if (figureTargets && figureTargets.length > 0) {
-                                        for(let j=0; j<figureTargets.length; j++){
-                                            //TODO
+                                        for (let j = 0; j < figureTargets.length; j++) {
+                                            let srcParts = figureTargets[j].imgSrc.split(/[/\\]/); // Split by either / or \
+                                            let fName = srcParts.pop(); // Get the last element
+
+                                            if (fName === fileTarget) {
+                                                figTargets.push(figureTargets[j]);
+                                            }
                                         }
                                     }
 
+                                    if (figTargets.length == 1) {
+                                        let a = document.createElement("a");
+                                        a.href = "#" + figTargets[0].figCaption.id;
+                                        prependLabel ? a.innerText = prependLabel + " " + figTargets[0].numberPrepend + figTargets[0].figNum.toFixed(0) : a.innerText = figTargets[0].numberPrepend + figTargets[0].figNum.toFixed(0);
 
-
-                                    //throw "Xref Issue, Stopping Code";
+                                        xrefs[0].replaceWith(a);
+                                    }
+                                    else if (figTargets.length == 0) {
+                                        throw "No figure targets found."
+                                    }
+                                    else {
+                                        throw "Multiple figure targets found.  Most likely re-used image file name."
+                                    }
                                 }
-
+                                
                             }
 
-                        };
-                    }
+                        }
 
+                    }
                 }
+
+
             });
 
             section.Sections.forEach(s => {
-                _RecursiveResolveXrefs(s);
+                _RecursiveResolveXrefs(s, figureTargets);
             });
         }
 
-        _RecursiveResolveXrefs(topLevelSection);
+        _RecursiveResolveXrefs(topLevelSection, figureTargets);
 
 
     }

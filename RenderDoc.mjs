@@ -21,7 +21,7 @@ let render = () => {
     
 
 
-    DocDef.ResolveXrefs(DocDef);
+    DocDef.ResolveXrefs(DocDef, allFigs);
 
     let tocDiv1 = document.createElement("div");
     def_Sec_1.CreateToc(false, tocDiv1,0,"1-");
