@@ -414,14 +414,14 @@ export class DocSection {
                                 else {
                                     //Now look at the images
                                     if (figureTargets && figureTargets.length > 0) {
-                                        // for(let j=0; j<figureTargets.length; j++){
-                                        //     //TODO
-                                        // }
+                                        for(let j=0; j<figureTargets.length; j++){
+                                            //TODO
+                                        }
                                     }
 
 
 
-                                    throw "Xref Issue, Stopping Code";
+                                    //throw "Xref Issue, Stopping Code";
                                 }
 
                             }
