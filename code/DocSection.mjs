@@ -237,6 +237,7 @@ export class DocSection {
 
     /**
      * @param {string} numberPrepend Text to be added before the figure number ie.  "X" in X-23
+     * @returns {Object[]}
      */
     NumberFigures = (numberPrepend) => {
 
@@ -308,17 +309,20 @@ export class DocSection {
         for (let i = 0; i < figs.length; i++) {
             figs[i].figNum = figNum;
             figs[i].figCaption.innerText = numberPrepend + figNum.toFixed(0) + " " + figs[i].figCaption.innerText;
+            figs[i].figCaption.id = "fig_" + numberPrepend + figNum.toFixed(0);
             figNum++;
         }
 
         let xxx = 2;
+        return figs;
     }
 
     /**
      * 
-     * @param {DocSection} topLevelSection 
+     * @param {DocSection} topLevelSection
+     * @param {Object[]} figureTargets 
      */
-    ResolveXrefs = (topLevelSection) => {
+    ResolveXrefs = (topLevelSection, figureTargets) => {
 
         /**
          * 
@@ -388,6 +392,7 @@ export class DocSection {
                                             break;
                                         }
                                     }
+
                                     if (!targetSection) {
                                         console.log("Invalid xref target file: " + fileTarget);
                                     }
@@ -397,15 +402,22 @@ export class DocSection {
                                 }
 
 
-                                if(targetSection){
+                                if (targetSection) {
                                     if (!xrefType || xrefType === "link") {
                                         let a = document.createElement("a");
                                         a.href = "#" + targetSection.ElementId;
                                         prependLabel ? a.innerText = prependLabel + " " + targetSection.SectionNumber : a.innerText = targetSection.SectionNumber;
+
                                         xrefs[0].replaceWith(a);
                                     }
                                 }
-                                else{
+                                else {
+                                    //Now look at the images
+                                    for(let j=0; j<figureTargets.length; j++){
+                                        //TODO
+                                    }
+
+
                                     throw "Xref Issue, Stopping Code";
                                 }
 

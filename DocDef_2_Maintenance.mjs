@@ -62,6 +62,7 @@ let defSec_2_15_9 = new DocSection().i(true, "2.15.9", true, "Service Procedures
 let defSec_2_15_10 = new DocSection().i(true, "2.15.10", true, "Service Procedures - Charging", true, "html/Maintenance/Charging.html");
 let defSec_2_15_11 = new DocSection().i(true, "2.15.11", true, "Service Procedures - Oiling", true, "html/Maintenance/Oiling.html");
 let defSec_2_15_12 = new DocSection().i(true, "2.15.12", true, "Service Procedures - Contamination Check", true, "html/Maintenance/Contamination Check.html");
+let defSec_2_15_13 = new DocSection().i(true, "2.15.13", true, "Compressor Cooling", true, "html/Maintenance/AC Compressor Cooling.html");
 let def_Sec_2_15 = new DocSection();
 def_Sec_2_15
     .i(true, "2.15", true, "AIR CONDITIONER", true, "html/Maintenance/ENGINE DRIVEN AIR CONDITIONER.html")
@@ -77,7 +78,8 @@ def_Sec_2_15
         defSec_2_15_9,
         defSec_2_15_10,
         defSec_2_15_11,
-        defSec_2_15_12
+        defSec_2_15_12,
+        defSec_2_15_13
     ]);
 
 
