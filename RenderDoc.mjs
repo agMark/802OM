@@ -11,8 +11,15 @@ DocDef.GetContent();
 let render = () => {
     
     DocDef.RenderContent(true, document.body);
-    def_Sec_1.NumberFigures("Figure 1-");
-    def_Sec_2.NumberFigures("Figure 2-");
+    let figs_Sec1 = def_Sec_1.NumberFigures("Figure 1-");
+    let figs_Sec2 = def_Sec_2.NumberFigures("Figure 2-");
+    let figs_Sec3 = def_Sec_3.NumberFigures("Figure 3-");
+    let figs_Sec4 = def_Sec_3.NumberFigures("Figure 4-");
+    let figs_Sec5 = def_Sec_3.NumberFigures("Figure 5-");
+    let figs_Sec6 = def_Sec_3.NumberFigures("Figure 6-");
+    let allFigs = figs_Sec1.concat(figs_Sec2, figs_Sec3, figs_Sec4, figs_Sec5, figs_Sec6);
+    
+
 
     DocDef.ResolveXrefs(DocDef);
 
