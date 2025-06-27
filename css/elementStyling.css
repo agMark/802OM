@@ -443,6 +443,7 @@ tr{
         ". . . . . . . . . . . . . . . . . . . . . . . "
         ". . . . . . . . . . . . . . . . . . . . . . . "
         ". . . . . . . . . . . . . . . . . . . . . . . ";
+    margin-right: 5ch;
     text-align: right;
 }
 /*TOC Page numbers don't work for custom counter names...had to do custom javascript way to get page numbers*/
