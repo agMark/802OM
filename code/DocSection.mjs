@@ -22,36 +22,32 @@ export class DocSection {
     /**
      * Recursively retrieves the section's and subsection's content.
      */
-    GetContent = () => {
+    GetContent = async () => {
         if (this.HasContent) {
-            fetch(this.ContentFileUrl)
-                .then(response => {
-                    if (!response.ok) {
-                        console.log("fetch not ok");
-                    }
-                    return response.text();
+            try {
+                const response = await fetch(this.ContentFileUrl);
+                if (!response.ok) {
+                    console.error("Fetch failed:", response.statusText);
+                    return;
                 }
-                )
-                .then(
-                    data => {
-                        let parser = new DOMParser();
-                        let doc = parser.parseFromString(data, "text/html");
 
-                        doc.body.childNodes.forEach(c => {
-                            this._html.push(c);
-                        })
-                    }
-                )
-                .catch(x => console.log("fetch error"));
+                const data = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(data, "text/html");
 
+                doc.body.childNodes.forEach(c => {
+                    this._html.push(c);
+                });
+            } catch (error) {
+                console.error("Fetch error:", error);
+            }
         }
 
-
-        this.Sections.forEach(s => {
-            s.GetContent();
-        });
-
-    }
+        // Now call GetContent on each section
+        for (const s of this.Sections) {
+            await s.GetContent();
+        }
+    };
 
     /**
      * Renders the html content into an html element.
@@ -398,10 +394,6 @@ export class DocSection {
                                             break;
                                         }
                                     }
-
-                                    if (!targetSection) {
-                                        console.log("Invalid xref target file: " + fileTarget);
-                                    }
                                 }
                                 else {
                                     console.log("invalid xref target");
@@ -440,13 +432,13 @@ export class DocSection {
                                         xrefs[0].replaceWith(a);
                                     }
                                     else if (figTargets.length == 0) {
-                                        throw "No figure targets found."
+                                        throw "No file targets found."
                                     }
                                     else {
                                         throw "Multiple figure targets found.  Most likely re-used image file name."
                                     }
                                 }
-                                
+
                             }
 
                         }

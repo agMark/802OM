@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
-        "module": "CommonJS",
+        // "module": "CommonJS",
+        "module": "esnext",
         "target": "ES2021"
     },
 }
