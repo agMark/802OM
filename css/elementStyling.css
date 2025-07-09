@@ -45,6 +45,9 @@ tr{
 .marginTop1.plainTableLarge{
     margin-top: 1em;
 }
+.marginTop1.plainTableMedium{
+    margin-top: 1em;
+}
 
 /*----------------------------------------------*/
 /*----------------------------------------------*/
@@ -346,6 +349,13 @@ tr{
     width: 3in;
     height: 2in;
 }
+.imageCentered_3x3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 3in;
+    height: 3in;
+}
 .imageCentered_3x5{
     display: block;
     margin-left: auto;
@@ -366,6 +376,13 @@ tr{
     margin-right: auto;
     width: 4in;
     height: 3in;
+}
+.imageCentered_4x4{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 4in;
+    height: 4in;
 }
 .imageCentered_5x2{
     display: block;

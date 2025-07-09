@@ -61,18 +61,11 @@ def_Sec_1_55
     .i(true, "1.55", true, "ENGINE CONTROLS", true, "html/Description/ENGINE CONTROLS.html")
     .s([
         new DocSection().i(true, "1.55.1", true, "Air Tractor Throttle Quadrant", true, "html/Description/Air Tractor Throttle Quadrant.html"),
-        new DocSection().i(true, "1.55.2", true, "Kawak Throttle Quadrant", true, "html/Description/Kawak Throttle Quadrant.html"),
-        new DocSection().i(true, "1.55.3", true, "Control Cables", true, "html/Description/Control Cables.html"),
-    ])
-let def_Sec_1_70 = new DocSection();
-def_Sec_1_70
-    .i(true, "1.70", true, "FLAPS", true, "html/Description/FLAPS.html")
-    .s([
-        new DocSection().i(true, "1.70.1", true, "Flap Actuator", true, "html/Description/Flap Actuator.html")
+        new DocSection().i(true, "1.55.2", true, "Kawak Throttle Quadrant", true, "html/Description/Kawak Throttle Quadrant.html")
     ]);
-let def_Sec_1_80_6 = new DocSection();
-def_Sec_1_80_6
-    .i(true, "1.85.6", true, "Analog Engine Instruments", true, "html/Description/Analog Engine Instruments.html")
+let def_Sec_1_56_1 = new DocSection();
+def_Sec_1_56_1
+    .i(true, "1.56.1", true, "Analog Engine Instruments", false, "")
     .s([
         new DocSection().i(false, "", true, "Fuel Gauges", true, "html/Description/Fuel Gauges.html"),
         new DocSection().i(false, "", true, "ITT Gauge", true, "html/Description/ITT Gauge.html"),
@@ -83,6 +76,21 @@ def_Sec_1_80_6
         new DocSection().i(false, "", true, "Torque-Meter", true, "html/Description/Torque-Meter.html"),
         new DocSection().i(false, "", true, "Volt-Ammeter and Voltmeter", true, "html/Description/Volt-Ammeter and Voltmeter.html")
     ]);
+let def_Sec_1_56 = new DocSection();
+def_Sec_1_56
+    .i(true, "1.56", true, "ENGINE INSTRUMENTS", false, "")
+    .s([
+        def_Sec_1_56_1,
+        new DocSection().i(true, "1.56.2", true, "MVP-50T Digital Instruments", true, "html/Description/MVP-50T.html"),
+        new DocSection().i(true, "1.56.3", true, "Low Fuel Warning Light System", true, "html/Description/Low Fuel Warning Light System.html"),
+    ]);
+let def_Sec_1_70 = new DocSection();
+def_Sec_1_70
+    .i(true, "1.70", true, "FLAPS", true, "html/Description/FLAPS.html")
+    .s([
+        new DocSection().i(true, "1.70.1", true, "Flap Actuator", true, "html/Description/Flap Actuator.html")
+    ]);
+
 let def_Sec_1_85 = new DocSection();
 def_Sec_1_85
     .i(true, "1.85", true, "INSTRUMENTS", true, "html/Description/INSTRUMENTS.html")
@@ -90,10 +98,7 @@ def_Sec_1_85
         new DocSection().i(true, "1.85.1", true, "Altimeter", true, "html/Description/Altimeter.html"),
         new DocSection().i(true, "1.85.2", true, "Airspeed Indicator", true, "html/Description/Airspeed Indicator.html"),
         new DocSection().i(true, "1.85.3", true, "Compass", true, "html/Description/Compass.html"),
-        new DocSection().i(true, "1.85.4", true, "Attitude Indicator", true, "html/Description/Attitude Indicator.html"),
-        new DocSection().i(true, "1.85.5", true, "Low Fuel Warning Light System", true, "html/Description/Low Fuel Warning Light System.html"),
-        def_Sec_1_80_6,
-        new DocSection().i(true, "1.85.7", true, "MVP-50T Digital Instruments", true, "html/Description/MVP-50T.html")
+        new DocSection().i(true, "1.85.4", true, "Attitude Indicator", true, "html/Description/Attitude Indicator.html")        
     ]);
 
 let def_Sec_1_90 = new DocSection();
@@ -123,6 +128,7 @@ def_Sec_1
         new DocSection().i(true, "1.45", true, "EMPENNAGE", true, "html/Description/EMPENNAGE.html"),
         def_Sec_1_50,
         def_Sec_1_55,
+        def_Sec_1_56,
         new DocSection().i(true, "1.60", true, "FCU MANUAL OVERRIDE", true, "html/Description/FCU MANUAL OVERRIDE.html"),
         new DocSection().i(true, "1.65", true, "FIRE RETARDANT DISPERSAL SYSTEM (FRDS)", true, "html/Description/FIRE RETARDANT DISPERSAL SYSTEM.html"),
         def_Sec_1_70,
@@ -138,4 +144,4 @@ def_Sec_1
 
 
 
-    export{def_Sec_1}
+export { def_Sec_1 }
