@@ -354,12 +354,12 @@ let defSec_2_70_1 = new DocSection().i(true, "2.70.1", true, "Flap Removal", tru
 let defSec_2_70_2 = new DocSection().i(true, "2.70.2", true, "Flap Installation", true, "html/Maintenance/Flap Installation.html");
 let defSec_2_70_3 = new DocSection().i(true, "2.70.3", true, "Flap Rigging", true, "html/Maintenance/Flap Rigging.html");
 let defSec_2_70_4 = new DocSection().i(true, "2.70.4", true, "Flap Bellcrank and Supports ", true, "html/Maintenance/Flap Bellcrank and Supports.html");
-let defSec_2_70_5 = new DocSection().i(true, "2.70.5", true, "Flap Actuator", true, "html/Maintenance/Flap Actuator.html");
-let defSec_2_70_6 = new DocSection().i(true, "2.70.6", true, "Flap Actuator Troubleshooting", true, "html/Maintenance/Flap Actuator Troubleshooting.html");
-let defSec_2_70_7 = new DocSection().i(true, "2.70.7", true, "Flap Motor Troubleshooting", true, "html/Maintenance/Flap Motor Troubleshooting.html");
+let defSec_2_70_5 = new DocSection().i(true, "2.70.5", true, "Flap Actuator Troubleshooting", true, "html/Maintenance/Flap Actuator Troubleshooting.html");
+let defSec_2_70_6 = new DocSection().i(true, "2.70.6", true, "Flap Motor Troubleshooting", true, "html/Maintenance/Flap Motor Troubleshooting.html");
+let defSec_2_70_7 = new DocSection().i(true, "2.70.7", true, "Flap Relay Troubleshooting", true, "html/Maintenance/Flap Relay Troubleshooting.html");
 let defSec_2_70_8 = new DocSection().i(true, "2.70.8", true, "Flap Actuator Removal Instructions", true, "html/Maintenance/Flap Actuator Removal Instructions.html");
 let defSec_2_70_9 = new DocSection().i(true, "2.70.9", true, "Flap Actuator Installation Instructions", true, "html/Maintenance/Flap Actuator Installation Instructions.html");
-let defSec_2_70_10 = new DocSection().i(true, "2.70.10", true, "Flap Relay Troubleshooting", true, "html/Maintenance/Flap Relay Troubleshooting.html");
+let defSec_2_70_10 = new DocSection().i(true, "2.70.10", true, "Flap Actuator Maintenance", true, "html/Maintenance/Flap Actuator.html");
 let def_Sec_2_70 = new DocSection();
 def_Sec_2_70
     .i(true, "2.70", true, "FLAPS", true, "html/Maintenance/Flaps.html")
