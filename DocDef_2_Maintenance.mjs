@@ -13,6 +13,8 @@ let defSec_2_0_8 = new DocSection().i(true, "2.0.8", true, "Special Tools and Eq
 let defSec_2_0_9 = new DocSection().i(true, "2.0.9", true, "Unapproved Parts", true, "html/Maintenance/Unapproved Parts.html");
 let defSec_2_0_10 = new DocSection().i(true, "2.0.10", true, "Operational Best Practices", true, "html/Maintenance/Operational Best Practices.html");
 let defSec_2_0_11 = new DocSection().i(true, "2.0.11", true, "Emergency and Normal Procedures", true, "html/Maintenance/Emergency and Normal Procedures.html");
+let defSec_2_0_12 = new DocSection().i(true, "2.0.12", true, "Alterations", true, "html/Maintenance/Alterations.html");
+
 let def_Sec_2_0 = new DocSection();
 def_Sec_2_0
     .i(true, "2.0", true, "GENERAL", false, "")
@@ -27,7 +29,8 @@ def_Sec_2_0
         defSec_2_0_8,
         defSec_2_0_9,
         defSec_2_0_10,
-        defSec_2_0_11
+        defSec_2_0_11,
+        defSec_2_0_12
     ]);
 
 

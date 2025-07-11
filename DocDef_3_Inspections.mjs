@@ -61,6 +61,7 @@ let def_Sec_3_2_4 = new DocSection().i(true, "3.2.4", true, "Obstacle Collision"
 let def_Sec_3_2_5 = new DocSection().i(true, "3.2.5", true, "Propeller Strike / Sudden Stoppage", true, "html/Inspection/Insp_Propeller Strike or Sudden Stoppage.html");
 let def_Sec_3_2_6 = new DocSection().i(true, "3.2.6", true, "Starter-Generator Malfunction", true, "html/Inspection/Insp_Starter-Generator Malfunction.html");
 let def_Sec_3_2_7 = new DocSection().i(true, "3.2.7", true, "Engine Oil Metal Contamination", true, "html/Inspection/Insp_Engine Oil Metal Contamination.html");
+let def_Sec_3_2_8 = new DocSection().i(true, "3.2.8", true, "Propeller and Engine Damage", true, "html/Inspection/Insp_Propeller and Engine Damage.html");
 let def_Sec_3_2 = new DocSection().i(true, "3.2", true, "UNSCHEDULED INSPECTIONS", true, "html/Inspection/Insp_UNSCHEDULED INSPECTIONS.html");
 def_Sec_3_2
     .s([
@@ -70,7 +71,8 @@ def_Sec_3_2
         def_Sec_3_2_4,
         def_Sec_3_2_5,
         def_Sec_3_2_6,
-        def_Sec_3_2_7
+        def_Sec_3_2_7,
+        def_Sec_3_2_8
     ]);
 
 let def_Sec_3 = new DocSection().i(true, "3", true, "INSPECTION", false, "", "page-break-before:always;");
