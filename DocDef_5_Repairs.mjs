@@ -21,6 +21,7 @@ let def_Sec_5_6_7 = new DocSection().i(true, "5.6.7", true, "Additional Wing Ins
 let def_Sec_5_6_8 = new DocSection().i(true, "5.6.8", true, "Oversized Horizontal Stabilizer Attach Holes", true, "html/Repairs/Oversized Horizontal Stabilizer Attach Holes.html");
 let def_Sec_5_6_9 = new DocSection().i(true, "5.6.9", true, "Elevator / Rudder Hinge", true, "html/Repairs/Elevator - Rudder Hinge.html");
 let def_Sec_5_6_10 = new DocSection().i(true, "5.6.10", true, "Tail Wheel Lock Bushing", true, "html/Repairs/Tail Wheel Lock Bushing.html");
+let def_Sec_5_6_11 = new DocSection().i(true, "5.6.11", true, "Minor Skin Damage", true, "html/Repairs/Minor Skin Damage.html");
 let def_Sec_5_6 = new DocSection().i(true, "5.6", true, "STANDARD STRUCTURAL REPAIRS", true, "html/Repairs/STANDARD STRUCTURAL REPAIRS.html");
 def_Sec_5_6.s([
     def_Sec_5_6_1,
@@ -32,7 +33,8 @@ def_Sec_5_6.s([
     def_Sec_5_6_7,
     def_Sec_5_6_8,
     def_Sec_5_6_9,
-    def_Sec_5_6_10
+    def_Sec_5_6_10,
+    def_Sec_5_6_11
 ]);
 
 let def_Sec_5 = new DocSection().i(true, "5", true, "REPAIRS", false, "", "page-break-before:always;");
