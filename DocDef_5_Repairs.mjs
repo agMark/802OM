@@ -13,15 +13,35 @@ let def_Sec_5_5 = new DocSection().i(true, "5.5", true, "WATER IMMERSION", true,
 
 let def_Sec_5_6_1 = new DocSection().i(true, "5.6.1", true, "Horizontal Stabilizer Strut Fitting", true, "html/Repairs/Horizontal Stabilizer Strut Fitting.html");
 let def_Sec_5_6_2 = new DocSection().i(true, "5.6.2", true, "Main Gear Attach Tube Cracks", true, "html/Repairs/Main Gear Attach Tube Cracks.html");
+def_Sec_5_6_2.CustomClass = "breakBefore";
+
 let def_Sec_5_6_3 = new DocSection().i(true, "5.6.3", true, "Forward Lower Longeron", true, "html/Repairs/Forward Lower Longeron.html");
+def_Sec_5_6_3.CustomClass = "breakBefore";
+
 let def_Sec_5_6_4 = new DocSection().i(true, "5.6.4", true, "Fuselage Frame Aft Section", true, "html/Repairs/Fuselage Frame Aft Section.html");
+def_Sec_5_6_4.CustomClass = "breakBefore";
+
 let def_Sec_5_6_5 = new DocSection().i(true, "5.6.5", true, "Wing Main Spar Splice", true, "html/Repairs/Wing Main Spar Splice.html");
+def_Sec_5_6_5.CustomClass = "breakBefore";
+
 let def_Sec_5_6_6 = new DocSection().i(true, "5.6.6", true, "Leading Edge Rib", true, "html/Repairs/Leading Edge Rib.html");
+def_Sec_5_6_6.CustomClass = "breakBefore";
+
 let def_Sec_5_6_7 = new DocSection().i(true, "5.6.7", true, "Additional Wing Inspection Holes", true, "html/Repairs/Additional Wing Inspection Holes.html");
+def_Sec_5_6_7.CustomClass = "breakBefore";
+
 let def_Sec_5_6_8 = new DocSection().i(true, "5.6.8", true, "Oversized Horizontal Stabilizer Attach Holes", true, "html/Repairs/Oversized Horizontal Stabilizer Attach Holes.html");
+def_Sec_5_6_8.CustomClass = "breakBefore";
+
 let def_Sec_5_6_9 = new DocSection().i(true, "5.6.9", true, "Elevator / Rudder Hinge", true, "html/Repairs/Elevator - Rudder Hinge.html");
+def_Sec_5_6_9.CustomClass = "breakBefore";
+
 let def_Sec_5_6_10 = new DocSection().i(true, "5.6.10", true, "Tail Wheel Lock Bushing", true, "html/Repairs/Tail Wheel Lock Bushing.html");
+def_Sec_5_6_10.CustomClass = "breakBefore";
+
 let def_Sec_5_6_11 = new DocSection().i(true, "5.6.11", true, "Minor Skin Damage", true, "html/Repairs/Minor Skin Damage.html");
+def_Sec_5_6_11.CustomClass = "breakBefore";
+
 let def_Sec_5_6 = new DocSection().i(true, "5.6", true, "STANDARD STRUCTURAL REPAIRS", true, "html/Repairs/STANDARD STRUCTURAL REPAIRS.html");
 def_Sec_5_6.s([
     def_Sec_5_6_1,

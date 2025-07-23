@@ -32,6 +32,9 @@ tr{
 .rightAlignText{
     text-align: right;
 }
+.leftAlignText{
+    text-align: left;
+}   
 .boldText{
     font-weight: bold;
 }
@@ -312,7 +315,10 @@ tr{
     width: 1.5in;
 }
 .cellWidth2_0{
-    width: 1.5in;
+    width: 2.0in;
+}
+.cellWidth3_0{
+    width: 3.0in;
 }
 
 
