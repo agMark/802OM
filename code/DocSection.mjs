@@ -75,6 +75,7 @@ export class DocSection {
                 let elementType = "h" + level;
                 let hHeader = document.createElement(elementType);
                 hHeader.innerText = titleString;
+                hHeader.classList.add("dontBreakAfter");
                 d.appendChild(hHeader);
             }
             else {
