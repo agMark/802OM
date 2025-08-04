@@ -12,6 +12,8 @@ let def_Sec_5_4 = new DocSection().i(true, "5.4", true, "MAIN LANDING GEAR SPRIN
 let def_Sec_5_5 = new DocSection().i(true, "5.5", true, "WATER IMMERSION", true, "html/Repairs/WATER IMMERSION.html");
 
 let def_Sec_5_6_1 = new DocSection().i(true, "5.6.1", true, "Horizontal Stabilizer Strut Fitting", true, "html/Repairs/Horizontal Stabilizer Strut Fitting.html");
+def_Sec_5_6_1.CustomClass = "breakBefore";
+
 let def_Sec_5_6_2 = new DocSection().i(true, "5.6.2", true, "Main Gear Attach Tube Cracks", true, "html/Repairs/Main Gear Attach Tube Cracks.html");
 def_Sec_5_6_2.CustomClass = "breakBefore";
 
