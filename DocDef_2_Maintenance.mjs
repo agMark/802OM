@@ -188,7 +188,9 @@ let defSec_2_40_13 = new DocSection().i(true, "2.40.13", true, "Position (Nav) a
 let defSec_2_40_14 = new DocSection().i(true, "2.40.14", true, "Taxi Lights", true, "html/Maintenance/Taxi Lights.html");
 let defSec_2_40_15 = new DocSection().i(true, "2.40.15", true, "Night Working Lights", true, "html/Maintenance/Night Working Lights.html");
 let defSec_2_40_16 = new DocSection().i(true, "2.40.16", true, "Oil Cooler Blower", true, "html/Maintenance/Oil Cooler Blower.html");
-let defSec_2_40_50 = new DocSection().i(true, "2.40.50", true, "Starter Generator Brush Inspection", true, "html/Maintenance/Starter Generator Brush Inspection.html");
+let defSec_2_40_50 = new DocSection().i(true, "2.40.50", true, "Starter Generator Removal", true, "html/Maintenance/Starter Generator Removal.html");
+let defSec_2_40_51 = new DocSection().i(true, "2.40.51", true, "Starter Generator Installation", true, "html/Maintenance/Starter Generator Installation.html");
+let defSec_2_40_52 = new DocSection().i(true, "2.40.52", true, "Starter Generator Brush Inspection", true, "html/Maintenance/Starter Generator Brush Inspection.html");
 let def_Sec_2_40 = new DocSection();
 def_Sec_2_40
     .i(true, "2.40", true, "ELECTRICAL SYSTEM", true, "html/Maintenance/ELECTRICAL SYSTEM.html")
@@ -209,7 +211,9 @@ def_Sec_2_40
         defSec_2_40_14,
         defSec_2_40_15,
         defSec_2_40_16,
-        defSec_2_40_50
+        defSec_2_40_50,
+        defSec_2_40_51,
+        defSec_2_40_52
     ]);
 
 
