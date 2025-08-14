@@ -367,6 +367,8 @@ let defSec_2_70_7 = new DocSection().i(true, "2.70.7", true, "Flap Relay Trouble
 let defSec_2_70_8 = new DocSection().i(true, "2.70.8", true, "Flap Actuator Removal Instructions", true, "html/Maintenance/Flap Actuator Removal Instructions.html");
 let defSec_2_70_9 = new DocSection().i(true, "2.70.9", true, "Flap Actuator Installation Instructions", true, "html/Maintenance/Flap Actuator Installation Instructions.html");
 let defSec_2_70_10 = new DocSection().i(true, "2.70.10", true, "Flap Actuator Maintenance", true, "html/Maintenance/Flap Actuator.html");
+let defSec_2_70_11 = new DocSection().i(true, "2.70.11", true, "B100-6 Coupling used on C100168-4 Actuators", true, "html/Maintenance/Flap Motor Coupler and Inspection.html");
+let defSec_2_70_12 = new DocSection().i(true, "2.70.12", true, "Flap Torque Tube Attachment (SL347 and AD 2015-05-14)", true, "html/Maintenance/Flap Torque Tube Attachment.html");
 let def_Sec_2_70 = new DocSection();
 def_Sec_2_70
     .i(true, "2.70", true, "FLAPS", true, "html/Maintenance/Flaps.html")
@@ -380,7 +382,9 @@ def_Sec_2_70
         defSec_2_70_7,
         defSec_2_70_8,
         defSec_2_70_9,
-        defSec_2_70_10
+        defSec_2_70_10,
+        defSec_2_70_11,
+        defSec_2_70_12
     ]);
 
 let defSec_2_75_1 = new DocSection().i(true, "2.75.1", true, "Fuel Tanks", true, "html/Maintenance/Fuel Tanks.html");
