@@ -198,6 +198,7 @@ let defSec_2_40_52 = new DocSection().i(true, "2.40.52", true, "Starter Generato
 let defSec_2_40_60 = new DocSection().i(true, "2.40.60", true, "Batteries", true, "html/Maintenance/Batteries.html")
 let defSec_2_40_61 = new DocSection().i(true, "2.40.61", true, "Checking Batteries", true, "html/Maintenance/Checking the Batteries.html")
 let defSec_2_40_62 = new DocSection().i(true, "2.40.62", true, "Battery Removal and Replacement", true, "html/Maintenance/Battery Removal and Replacement.html")
+let defSec_2_40_63 = new DocSection().i(true, "2.40.63", true, "Installing a New Dry Charged Battery", true, "html/Maintenance/Installing a New Gill Dry Charged Battery.html")
 let def_Sec_2_40 = new DocSection();
 def_Sec_2_40
     .i(true, "2.40", true, "ELECTRICAL SYSTEM", true, "html/Maintenance/ELECTRICAL SYSTEM.html")
@@ -223,7 +224,8 @@ def_Sec_2_40
         defSec_2_40_52,
         defSec_2_40_60,
         defSec_2_40_61,
-        defSec_2_40_62
+        defSec_2_40_62,
+        defSec_2_40_63
     ]);
 
 
