@@ -41,7 +41,7 @@ def_Sec_1_30
     ]);
 let def_Sec_1_35 = new DocSection();
 def_Sec_1_35
-    .i(true, "1.35", true, "DISPERSAL SYSTEM", true, "html/Description/DISPERSAL SYSTEM.html");
+    .i(true, "1.35", true, "DISPERSAL SYSTEM", true, "html/Description/Dispersal System.html");
 let def_Sec_1_40 = new DocSection();
 def_Sec_1_40
     .i(true, "1.40", true, "ELECTRICAL SYSTEM", false, "")
@@ -51,14 +51,14 @@ def_Sec_1_40
     ]);
 let def_Sec_1_50 = new DocSection();
 def_Sec_1_50
-    .i(true, "1.50", true, "ENGINE", true, "html/Description/ENGINE.html")
+    .i(true, "1.50", true, "ENGINE", true, "html/Description/Engine.html")
     .s([
         new DocSection().i(true, "1.50.1", true, "Induction System", true, "html/Description/Induction System.html"),
         new DocSection().i(true, "1.50.2", true, "Exhaust System", true, "html/Description/Exhaust System.html")
     ]);
 let def_Sec_1_55 = new DocSection();
 def_Sec_1_55
-    .i(true, "1.55", true, "ENGINE CONTROLS", true, "html/Description/ENGINE CONTROLS.html")
+    .i(true, "1.55", true, "ENGINE CONTROLS", true, "html/Description/Engine Controls.html")
     .s([
         new DocSection().i(true, "1.55.1", true, "Air Tractor Throttle Quadrant", true, "html/Description/Air Tractor Throttle Quadrant.html"),
         new DocSection().i(true, "1.55.2", true, "Kawak Throttle Quadrant", true, "html/Description/Kawak Throttle Quadrant.html")
@@ -132,7 +132,7 @@ def_Sec_1
         new DocSection().i(true, "1.60", true, "FCU MANUAL OVERRIDE", true, "html/Description/FCU MANUAL OVERRIDE.html"),
         new DocSection().i(true, "1.65", true, "FIRE RETARDANT DISPERSAL SYSTEM (FRDS)", true, "html/Description/FIRE RETARDANT DISPERSAL SYSTEM.html"),
         def_Sec_1_70,
-        new DocSection().i(true, "1.75", true, "FUEL SYSTEM", true, "html/Description/FUEL SYSTEM.html"),
+        new DocSection().i(true, "1.75", true, "FUEL SYSTEM", true, "html/Description/Fuel System.html"),
         new DocSection().i(true, "1.80", true, "FUSELAGE", true, "html/Description/FUSELAGE.html"),
         def_Sec_1_85,
         def_Sec_1_90,
