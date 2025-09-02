@@ -14,7 +14,6 @@ html/Maintenance/General Considerations.html
 html/Maintenance/Generator Mode.html
 html/Maintenance/Hopper Quantity Gauges.html
 html/Maintenance/HYDRAULIC SYSTEM-FIRE GATE.html
-html/Maintenance/Installing a New Gill Dry-Charged Battery.html
 html/Maintenance/Introduction.html
 html/Maintenance/ITT INSTRUMENT CALIBRATION CHECK.html
 html/Maintenance/MAIN AND TAIL GEAR ATTACH BOLTS.html

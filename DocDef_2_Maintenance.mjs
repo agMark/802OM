@@ -17,7 +17,7 @@ let defSec_2_0_12 = new DocSection().i(true, "2.0.12", true, "Alterations", true
 
 let def_Sec_2_0 = new DocSection();
 def_Sec_2_0
-    .i(true, "2.0", true, "GENERAL", false, "")
+    .i(true, "2.0", true, "GENERAL", true, "html/Maintenance/Introduction.html")
     .s([
         defSec_2_0_1,
         defSec_2_0_2,
@@ -291,7 +291,7 @@ let defSec_2_50_24 = new DocSection().i(true, "2.50.24", true, "Exhaust Pipe Rep
 
 let def_Sec_2_50 = new DocSection();
 def_Sec_2_50
-    .i(true, "2.50", true, "ENGINE MAINTENANCE", false, "")
+    .i(true, "2.50", true, "ENGINE MAINTENANCE", true, "html/Maintenance/ENGINE MAINTENANCE.html")
     .s([
         defSec_2_50_1,
         defSec_2_50_2,
