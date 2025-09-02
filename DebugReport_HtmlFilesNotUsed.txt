@@ -7,14 +7,11 @@ html/Maintenance/Cockpit Lighting Troubleshooting.html
 html/Maintenance/CONTROL SURFACE UNBALANCE LIMITS.html
 html/Maintenance/ELECTRICAL SYSTEM - General.html
 html/Maintenance/Electronic Instrument Light Dimmer.html
-html/Maintenance/ENGINE MAINTENANCE.html
-html/Maintenance/Engine Overspeed Solenoid.html
 html/Maintenance/Fuel Gauging.html
 html/Maintenance/General Considerations.html
 html/Maintenance/Generator Mode.html
 html/Maintenance/Hopper Quantity Gauges.html
 html/Maintenance/HYDRAULIC SYSTEM-FIRE GATE.html
-html/Maintenance/Introduction.html
 html/Maintenance/ITT INSTRUMENT CALIBRATION CHECK.html
 html/Maintenance/MAIN AND TAIL GEAR ATTACH BOLTS.html
 html/Maintenance/Obsolete
