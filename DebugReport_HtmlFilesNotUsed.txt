@@ -17,7 +17,6 @@ html/Maintenance/MAIN AND TAIL GEAR ATTACH BOLTS.html
 html/Maintenance/Obsolete
 html/Maintenance/Position and Strobe Lighting.html
 html/Maintenance/ROUTINE MAINTENANCE INSPECTION.html
-html/Maintenance/STATIC SYSTEM.html
 html/Maintenance/Tail Wheel Fork Housing.html
 html/Maintenance/Troubleshooting Procedures.html
 html/Maintenance/Troubleshooting.html

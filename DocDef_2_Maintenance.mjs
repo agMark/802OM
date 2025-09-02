@@ -476,14 +476,15 @@ let defSec_2_90_3 = new DocSection().i(true, "2.90.3", true, "Main Wheel Alignme
 let defSec_2_90_4 = new DocSection().i(true, "2.90.4", true, "Main Gear Spring", true, "html/Maintenance/Main Gear Spring.html");
 let defSec_2_90_5 = new DocSection().i(true, "2.90.5", true, "Tail Wheel", true, "html/Maintenance/Tail Wheel.html");
 let defSec_2_90_6 = new DocSection().i(true, "2.90.6", true, "Tail Wheel Fork", true, "html/Maintenance/Tail Wheel Fork.html");
-let defSec_2_90_7 = new DocSection().i(true, "2.90.7", true, "Tail Wheel Lock Pin and Housing", true, "html/Maintenance/Tail Wheel Lock Pin and Housing.html");
-let defSec_2_90_8 = new DocSection().i(true, "2.90.8", true, "Tail Gear Spring", true, "html/Maintenance/Tail Gear Spring.html");
-let defSec_2_90_9 = new DocSection().i(true, "2.90.9", true, "Brake Removal and Replacement", true, "html/Maintenance/Brake Removal and Replacement.html");
-let defSec_2_90_10 = new DocSection().i(true, "2.90.10", true, "Brake Discs", true, "html/Maintenance/Brake Discs.html");
-let defSec_2_90_11 = new DocSection().i(true, "2.90.11", true, "Brake Linings", true, "html/Maintenance/Brake Linings.html");
-let defSec_2_90_12 = new DocSection().i(true, "2.90.12", true, "Brake Master-Cylinders", true, "html/Maintenance/Brake Master-Cylinders.html");
-let defSec_2_90_13 = new DocSection().i(true, "2.90.13", true, "Brake Bleeding", true, "html/Maintenance/Brake Bleeding.html");
-let defSec_2_90_14 = new DocSection().i(true, "2.90.14", true, "Parking Brake", true, "html/Maintenance/Parking Brake.html");
+let defSec_2_90_7 = new DocSection().i(true, "2.90.7", true, "Tail Wheel Fork Housing", true, "html/Maintenance/Tail Wheel Fork Housing.html");
+let defSec_2_90_8 = new DocSection().i(true, "2.90.8", true, "Tail Wheel Lock Pin and Housing", true, "html/Maintenance/Tail Wheel Lock Pin and Housing.html");
+let defSec_2_90_9 = new DocSection().i(true, "2.90.9", true, "Tail Gear Spring", true, "html/Maintenance/Tail Gear Spring.html");
+let defSec_2_90_10 = new DocSection().i(true, "2.90.10", true, "Brake Removal and Replacement", true, "html/Maintenance/Brake Removal and Replacement.html");
+let defSec_2_90_11 = new DocSection().i(true, "2.90.11", true, "Brake Discs", true, "html/Maintenance/Brake Discs.html");
+let defSec_2_90_12 = new DocSection().i(true, "2.90.12", true, "Brake Linings", true, "html/Maintenance/Brake Linings.html");
+let defSec_2_90_13 = new DocSection().i(true, "2.90.13", true, "Brake Master-Cylinders", true, "html/Maintenance/Brake Master-Cylinders.html");
+let defSec_2_90_14 = new DocSection().i(true, "2.90.14", true, "Brake Bleeding", true, "html/Maintenance/Brake Bleeding.html");
+let defSec_2_90_15 = new DocSection().i(true, "2.90.15", true, "Parking Brake", true, "html/Maintenance/Parking Brake.html");
 let def_Sec_2_90 = new DocSection();
 def_Sec_2_90
     .i(true, "2.90", true, "LANDING GEAR AND BRAKES", false, "")
@@ -501,7 +502,8 @@ def_Sec_2_90
         defSec_2_90_11,
         defSec_2_90_12,
         defSec_2_90_13,
-        defSec_2_90_14
+        defSec_2_90_14,
+        defSec_2_90_15
     ]);
 
 
