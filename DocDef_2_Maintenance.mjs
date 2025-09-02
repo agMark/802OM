@@ -106,7 +106,7 @@ def_Sec_2_20
 
 let def_Sec_2_25 = new DocSection();
 def_Sec_2_25
-    .i(true, "2.25", true, "COCKPIT HEATER", true, "html/Maintenance/COCKPIT HEATER.html")
+    .i(true, "2.25", true, "RESERVED", false, "")
     .s([
 
     ]);
@@ -195,6 +195,9 @@ let defSec_2_40_16 = new DocSection().i(true, "2.40.16", true, "Oil Cooler Blowe
 let defSec_2_40_50 = new DocSection().i(true, "2.40.50", true, "Starter Generator Removal", true, "html/Maintenance/Starter Generator Removal.html");
 let defSec_2_40_51 = new DocSection().i(true, "2.40.51", true, "Starter Generator Installation", true, "html/Maintenance/Starter Generator Installation.html");
 let defSec_2_40_52 = new DocSection().i(true, "2.40.52", true, "Starter Generator Brush Inspection", true, "html/Maintenance/Starter Generator Brush Inspection.html");
+let defSec_2_40_60 = new DocSection().i(true, "2.40.60", true, "Batteries", true, "html/Maintenance/Batteries.html")
+let defSec_2_40_61 = new DocSection().i(true, "2.40.61", true, "Checking Batteries", true, "html/Maintenance/Checking the Batteries.html")
+let defSec_2_40_62 = new DocSection().i(true, "2.40.62", true, "Battery Removal and Replacement", true, "html/Maintenance/Battery Removal and Replacement.html")
 let def_Sec_2_40 = new DocSection();
 def_Sec_2_40
     .i(true, "2.40", true, "ELECTRICAL SYSTEM", true, "html/Maintenance/ELECTRICAL SYSTEM.html")
@@ -217,7 +220,10 @@ def_Sec_2_40
         defSec_2_40_16,
         defSec_2_40_50,
         defSec_2_40_51,
-        defSec_2_40_52
+        defSec_2_40_52,
+        defSec_2_40_60,
+        defSec_2_40_61,
+        defSec_2_40_62
     ]);
 
 
