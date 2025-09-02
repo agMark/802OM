@@ -118,6 +118,7 @@ let defSec_2_30_3 = new DocSection().i(true, "2.30.3", true, "Aileron Boost Tab 
 let defSec_2_30_4 = new DocSection().i(true, "2.30.4", true, "Elevator Controls", true, "html/Maintenance/Elevator Controls.html");
 let defSec_2_30_5 = new DocSection().i(true, "2.30.5", true, "Elevator Trim Tab Controls", true, "html/Maintenance/Elevator Trim Tab Controls.html");
 let defSec_2_30_6 = new DocSection().i(true, "2.30.6", true, "Elevator - Flap Interconnect System Rigging", true, "html/Maintenance/Elevator - Flap Interconnect System Rigging.html");
+let defSec_2_30_7 = new DocSection().i(true, "2.30.7", true, "Rudder Controls", true, "html/Maintenance/Rudder Controls.html");
 let def_Sec_2_30 = new DocSection();
 def_Sec_2_30
     .i(true, "2.30", true, "CONTROL SYSTEMS", true, "html/Maintenance/Control Systems.html")
@@ -127,7 +128,8 @@ def_Sec_2_30
         defSec_2_30_3,
         defSec_2_30_4,
         defSec_2_30_5,
-        defSec_2_30_6
+        defSec_2_30_6,
+        defSec_2_30_7
     ]);
 
 

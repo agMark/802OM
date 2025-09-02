@@ -16,7 +16,7 @@ html/Maintenance/ENGINE MAINTENANCE.html
 html/Maintenance/Engine Overspeed Solenoid.html
 html/Maintenance/Engine Removal and Replacement.html
 html/Maintenance/Equipment.html
-html/Maintenance/Flap-Elevator Interconnect System Rigging.html
+
 html/Maintenance/Fuel Gauging.html
 html/Maintenance/General Considerations.html
 html/Maintenance/Generator Mode.html
@@ -30,7 +30,7 @@ html/Maintenance/MAIN AND TAIL GEAR ATTACH BOLTS.html
 html/Maintenance/Obsolete
 html/Maintenance/Position and Strobe Lighting.html
 html/Maintenance/ROUTINE MAINTENANCE INSPECTION.html
-html/Maintenance/Rudder Controls.html
+
 html/Maintenance/Rudder Trim Controls.html
 html/Maintenance/Stall-Warning Horn.html
 html/Maintenance/STATIC SYSTEM.html
