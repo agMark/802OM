@@ -1,20 +1,13 @@
 Unused Files:
 html/Maintenance/Aileron and Flap Bellcranks and Supports.html
-html/Maintenance/Air Conditioner - Engine Powered.html
-html/Maintenance/Avionics.html
-html/Maintenance/Cockpit Lighting Troubleshooting.html
-html/Maintenance/ELECTRICAL SYSTEM - General.html
 html/Maintenance/Electronic Instrument Light Dimmer.html
 html/Maintenance/Fuel Gauging.html
 html/Maintenance/General Considerations.html
 html/Maintenance/Generator Mode.html
 html/Maintenance/Hopper Quantity Gauges.html
 html/Maintenance/HYDRAULIC SYSTEM-FIRE GATE.html
-html/Maintenance/MAIN AND TAIL GEAR ATTACH BOLTS.html
 html/Maintenance/Obsolete
 html/Maintenance/Position and Strobe Lighting.html
 html/Maintenance/ROUTINE MAINTENANCE INSPECTION.html
 html/Maintenance/Troubleshooting Procedures.html
 html/Maintenance/Troubleshooting.html
-html/Maintenance/Voltage Regulator.html
-html/Maintenance/Voltmeter.html
