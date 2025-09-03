@@ -12,12 +12,10 @@ html/Maintenance/General Considerations.html
 html/Maintenance/Generator Mode.html
 html/Maintenance/Hopper Quantity Gauges.html
 html/Maintenance/HYDRAULIC SYSTEM-FIRE GATE.html
-html/Maintenance/ITT INSTRUMENT CALIBRATION CHECK.html
 html/Maintenance/MAIN AND TAIL GEAR ATTACH BOLTS.html
 html/Maintenance/Obsolete
 html/Maintenance/Position and Strobe Lighting.html
 html/Maintenance/ROUTINE MAINTENANCE INSPECTION.html
-html/Maintenance/Tail Wheel Fork Housing.html
 html/Maintenance/Troubleshooting Procedures.html
 html/Maintenance/Troubleshooting.html
 html/Maintenance/Voltage Regulator.html
