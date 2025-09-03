@@ -2,7 +2,6 @@ Unused Files:
 html/Maintenance/Aileron and Flap Bellcranks and Supports.html
 html/Maintenance/Air Conditioner - Engine Powered.html
 html/Maintenance/Avionics.html
-html/Maintenance/COCKPIT CONTROLS.html
 html/Maintenance/Cockpit Lighting Troubleshooting.html
 html/Maintenance/CONTROL SURFACE UNBALANCE LIMITS.html
 html/Maintenance/ELECTRICAL SYSTEM - General.html

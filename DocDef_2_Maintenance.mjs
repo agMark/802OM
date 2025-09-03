@@ -137,6 +137,8 @@ def_Sec_2_30
     ]);
 
 
+let def_Sec_2_31 = new DocSection().i(true, "2.31", true, "CONTROL SURFACE UNBALANCE LIMITS", true, "html/Maintenance/CONTROL SURFACE UNBALANCE LIMITS.html");
+
 
 
 
@@ -570,6 +572,7 @@ def_Sec_2.s([
     def_Sec_2_20,
     def_Sec_2_25,
     def_Sec_2_30,
+    def_Sec_2_31,
     def_Sec_2_35,
     def_Sec_2_40,
     def_Sec_2_45,
