@@ -39,7 +39,7 @@ def_Sec_2_0
 
 let defSec_2_10_1 = new DocSection().i(true, "2.10.1", true, "Ailerons", true, "html/Maintenance/Ailerons.html");
 let defSec_2_10_2 = new DocSection().i(true, "2.10.2", true, "Aileron Counterweights", true, "html/Maintenance/Aileron Counterweights.html");
-let defSec_2_10_3 = new DocSection().i(true, "2.10.3", true, "Aileron Supports and Bellcranks", true, "html/Maintenance/Aileron Supports and Bellcranks.html");
+let defSec_2_10_3 = new DocSection().i(true, "2.10.3", true, "Reserved", false, ""); //was "Aileron Supports and Bellcranks.html"
 let def_Sec_2_10 = new DocSection();
 def_Sec_2_10
     .i(true, "2.10", true, "AILERONS", false, "")
