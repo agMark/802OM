@@ -38,8 +38,8 @@ def_Sec_2_0
 
 
 let defSec_2_10_1 = new DocSection().i(true, "2.10.1", true, "Ailerons", true, "html/Maintenance/Ailerons.html");
-let defSec_2_10_2 = new DocSection().i(true, "2.10.2", true, "Aileron Counterweights", true, "html/Maintenance/Aileron Counterweights.html");
-let defSec_2_10_3 = new DocSection().i(true, "2.10.3", true, "Reserved", false, ""); //was "Aileron Supports and Bellcranks.html"
+let defSec_2_10_2 = new DocSection().i(true, "2.10.2", true, "Reserved", false, ""); //"Aileron Counterweights.html"
+let defSec_2_10_3 = new DocSection().i(true, "2.10.3", true, "Aileron and Flap Bellcranks and Supports", true, "html/Maintenance/Aileron and Flap Bellcranks and Supports.html"); //was "Aileron Supports and Bellcranks.html"
 let def_Sec_2_10 = new DocSection();
 def_Sec_2_10
     .i(true, "2.10", true, "AILERONS", false, "")
@@ -290,7 +290,7 @@ let defSec_2_50_19 = new DocSection().i(true, "2.50.19", true, "SCEET Flexible D
 let defSec_2_50_20 = new DocSection().i(true, "2.50.20", true, "PT6A-67F engines that are subject to modification by PWC SB14505", true, "html/Maintenance/PT6A-67F engines that are subject to modification by PWC SB14505.html");
 let defSec_2_50_21 = new DocSection().i(true, "2.50.21", true, "Engine Driven Low Pressure Fuel Pump", true, "html/Maintenance/Engine Driven Low Pressure Fuel Pump.html");
 let defSec_2_50_22 = new DocSection().i(true, "2.50.22", true, "Air Conditioner Drive Pad", true, "html/Maintenance/Air Conditioner Drive Pad.html");
-let defSec_2_50_23 = new DocSection().i(true, "2.50.23", true, "P3 Air Pressure Tube", true, "html/Maintenance/P3 Air Pressure Tube.html");
+let defSec_2_50_23 = new DocSection().i(true, "2.50.23", true, "Reserved", true, ""); // Was "P3 Air Pressure Tube.html"
 let defSec_2_50_24 = new DocSection().i(true, "2.50.24", true, "Exhaust Pipe Repair", true, "html/Maintenance/Exhaust Pipe Repair.html");
 
 let def_Sec_2_50 = new DocSection();
