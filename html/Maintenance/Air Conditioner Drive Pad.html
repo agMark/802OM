@@ -1,7 +1,7 @@
 <p>The engine drive pad used to drive the air conditioner compressor is drive pad "C".</p>
 <p>There have been three types of engine drive pads.</p>
 <ul>
-    <li>"Unsealed"??? Dry spline</li>
+    <li>"Unsealed" Dry spline</li>
     <li>"Unsealed" wet spline</li>
     <li>"Sealed" wet spline</li>
 </ul>
@@ -14,10 +14,16 @@
     <figcaption class="centerText">Dry Spline</figcaption>
 </figure>
 
-<p>Dry splines are designed to be packed with grease where shown in 
+<p>Dry splines can be identified by the plug which is installed inside the engine's shaft.  Dry splines are designed to be packed with grease where shown in 
     <xref fileTarget="img_AcDrySpline.png">Cross Reference Placeholder</xref>.
 </p>
-<p>Wet splines (inside the drive pad) are lubricated with engine oil.</p>
+
+<p>Wet splines (inside the drive pad) are lubricated with engine oil .  Visually, they can be identified by a small .040/.045 hole in the center of the engine's shaft which allows for a lubricating oil mist to escape the engine itself into the spline shaft and dive pad. (See <xref fileTarget="img_DrivePadLubricationHole.png">Cross Reference Placeholder</xref>)</p>
+
+<figure>
+    <img class="imageCentered_4x4" src="img/img_DrivePadLubricationHole.png">
+    <figcaption class="centerText">Wet Spline</figcaption>
+</figure>
 
 <p>The "unsealed" drive pad configuration is disadvantageous because of its tendency to waste engine oil through the
     drive pad.</p>
@@ -25,7 +31,65 @@
 <p>The engine build spec can be used to determine if the engine has or has been converted to a "sealed" type. For
     example, a PT6A-67F will have a "sealed" drive pad if the build spec is BS1309 or later.</p>
 
-<p style="color:red">BUILD SPEC TABLE WOULD GO WELL HERE</p>
+<table class="plainTableLarge">
+    <tr>
+        <td class="plainTableHeaderCell cellWidth1_0">Engine</td>
+        <td class="plainTableHeaderCell">Unsealed Dry Spline</td>
+        <td class="plainTableHeaderCell">Unsealed Wet Spline</td>
+        <td class="plainTableHeaderCell">Sealed Wet Spline</td>
+    </tr>
+    <tr>
+        <td class="plainTableNormalCell">PT6A-67F</td>
+        <td class="plainTableNormalCell">N/A</td>
+        <td class="plainTableNormalCell">BS1207</td>
+        <td class="plainTableNormalCell">BS1309, or after RZ0091, or converted per SB14468</td>
+    </tr>
+    <tr>
+        <td class="plainTableNormalCell">PT6A-67AG</td>
+        <td class="plainTableNormalCell">N/A</td>
+        <td class="plainTableNormalCell">BS848</td>
+        <td class="plainTableNormalCell">BS1103, or converted per SB14300</td>
+    </tr>  
+    <tr>
+        <td class="plainTableNormalCell">PT6A-65AG</td>
+        <td class="plainTableNormalCell">N/A</td>
+        <td class="plainTableNormalCell">BS919, BS976</td>
+        <td class="plainTableNormalCell">BS1048, BS1049, or converted per SB1339</td>
+    </tr> 
+    <tr>
+        <td class="plainTableNormalCell">PT6A-60AG</td>
+        <td class="plainTableNormalCell">N/A</td>
+        <td class="plainTableNormalCell">BS708, BS903</td>
+        <td class="plainTableNormalCell">BS1101, BS1102, or converted per SB1339</td>
+    </tr>
+    <tr>
+        <td class="plainTableNormalCell">PT6A-140AG</td>
+        <td class="plainTableNormalCell">N/A</td>
+        <td class="plainTableNormalCell">N/A</td>
+        <td class="plainTableNormalCell">BS1319</td>
+    </tr>     
+    <tr>
+        <td class="plainTableNormalCell">PT6A-34AG</td>
+        <td class="plainTableNormalCell">BS518, BS519, BS1013</td>
+        <td class="plainTableNormalCell">BS760, BS916, BS970, BS975, BS1159, or converted per SB1354</td>
+        <td class="plainTableNormalCell">BS1334, BS1336</td>
+    </tr>
+    <tr>
+        <td class="plainTableNormalCell">PT6A-15AG</td>
+        <td class="plainTableNormalCell">BS579, BS528</td>
+        <td class="plainTableNormalCell">BS827, BS974, or converted per SB12054</td>
+        <td class="plainTableNormalCell">BS1328</td>
+    </tr>     
+    <tr>
+        <td class="plainTableNormalCell">PT6A-11AG</td>
+        <td class="plainTableNormalCell">N/A</td>
+        <td class="plainTableNormalCell">BS980, BS943 (ESN RH0113 and prior)</td>
+        <td class="plainTableNormalCell">BS943 (ESN RH0114 and subsequent), or converted per SB12230</td>
+    </tr>           
+    <tr>
+        <td colspan="100%">All of these engines are not eligible for installation on AT-802's but are shown here for convenience.</td>
+    </tr>
+</table>
 
 <p>There are two primary types of drive pad assemblies that bolt onto the engine's drive pad.</p>
 <ul>

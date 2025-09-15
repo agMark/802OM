@@ -414,28 +414,34 @@ def_Sec_2_70
 
 let defSec_2_75_1 = new DocSection().i(true, "2.75.1", true, "Fuel Tanks", true, "html/Maintenance/Fuel Tanks.html");
 let defSec_2_75_2 = new DocSection().i(true, "2.75.2", true, "Fuel Tank Sealing", true, "html/Maintenance/Fuel Tank Sealing.html");
-let defSec_2_75_3 = new DocSection().i(true, "2.75.3", true, "Fuel Tank Senders", true, "html/Maintenance/Fuel Tank Senders.html");
-let defSec_2_75_4 = new DocSection().i(true, "2.75.4", true, "Fuel Tank Receiver", true, "html/Maintenance/Fuel Tank Receiver.html");
 let defSec_2_75_5 = new DocSection().i(true, "2.75.5", true, "Fuel System Drains", true, "html/Maintenance/Fuel System Drains.html");
 let defSec_2_75_6 = new DocSection().i(true, "2.75.6", true, "Fuel System Screens and Filters", true, "html/Maintenance/Fuel System Screens and Filters.html");
 let defSec_2_75_7 = new DocSection().i(true, "2.75.7", true, "Airframe Fuel Pump", true, "html/Maintenance/Airframe Fuel Pump.html");
 let defSec_2_75_8 = new DocSection().i(true, "2.75.8", true, "Fuel Tank Placards", true, "html/Maintenance/Fuel Tank Placards.html");
 let defSec_2_75_9 = new DocSection().i(true, "2.75.9", true, "Ferry Fuel System", true, "html/Maintenance/Ferry Fuel System.html");
 let defSec_2_75_10 = new DocSection().i(true, "2.75.10", true, "Fuel Selector Valve", true, "html/Maintenance/Fuel Selector Valve.html");
+let defSec_2_75_20 = new DocSection().i(true, "2.75.20", true, "Fuel Tank Quantity System Senders - Resistive", true, "html/Maintenance/Fuel Tank Senders.html");
+let defSec_2_75_21 = new DocSection().i(true, "2.75.21", true, "Reserved", false, "");
+let defSec_2_75_22 = new DocSection().i(true, "2.75.22", true, "Fuel Tank Quantity System Gauges - Analog", true, "html/Maintenance/Fuel Tank Receiver.html");
+let defSec_2_75_23 = new DocSection().i(true, "2.75.23", true, "Fuel Tank Quantity System Gauges - MVP-50T", true, "html/Maintenance/MVP Fuel Gauges.html");
 let def_Sec_2_75 = new DocSection();
 def_Sec_2_75
     .i(true, "2.75", true, "FUEL SYSTEM", false, "")
     .s([
         defSec_2_75_1,
         defSec_2_75_2,
-        defSec_2_75_3,
-        defSec_2_75_4,
+
+        
         defSec_2_75_5,
         defSec_2_75_6,
         defSec_2_75_7,
         defSec_2_75_8,
         defSec_2_75_9,
-        defSec_2_75_10
+        defSec_2_75_10,
+        defSec_2_75_20,
+        defSec_2_75_21,
+        defSec_2_75_22,
+        defSec_2_75_23
     ]);
 
 let defSec_2_80_1 = new DocSection().i(true, "2.80.1", true, "Fuselage Removable Skins", true, "html/Maintenance/Fuselage Removable Skins.html");
@@ -464,7 +470,7 @@ def_Sec_2_80
 
 
 let defSec_2_85_1 = new DocSection().i(true, "2.85.1", true, "Altimeter / Static System", true, "html/Maintenance/Altimeter - Static System.html");
-let defSec_2_85_2 = new DocSection().i(true, "2.85.2", true, "Airspeed System", true, "html/Maintenance/Airspeed System.html");
+
 let defSec_2_85_3 = new DocSection().i(true, "2.85.3", true, "Compass", true, "html/Maintenance/Compass Calibration.html");
 let defSec_2_85_4 = new DocSection().i(true, "2.85.4", true, "Reserved", false, "");
 let def_Sec_2_85 = new DocSection();
@@ -472,7 +478,7 @@ def_Sec_2_85
     .i(true, "2.85", true, "INSTRUMENTS", false, "")
     .s([
         defSec_2_85_1,
-        defSec_2_85_2,
+
         defSec_2_85_3,
         defSec_2_85_4
     ]);
