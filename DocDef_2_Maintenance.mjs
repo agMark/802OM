@@ -412,7 +412,7 @@ def_Sec_2_70
         defSec_2_70_9,
         defSec_2_70_10,
         defSec_2_70_11,
-        defSEc_2_70_12,
+        defSec_2_70_12,
         defSec_2_70_51,
         defSec_2_70_52,
         defSec_2_70_53
