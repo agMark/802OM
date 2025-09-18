@@ -337,6 +337,7 @@ let defSec_2_55_1 = new DocSection().i(true, "2.55.1", true, "Power Lever Riggin
 let defSec_2_55_2 = new DocSection().i(true, "2.55.2", true, "Propeller Lever Rigging Procedures", true, "html/Maintenance/Propeller Lever Rigging Procedures.html");
 let defSec_2_55_3 = new DocSection().i(true, "2.55.3", true, "Start Control Lever Rigging Procedures", true, "html/Maintenance/Start Control Lever Rigging Procedures.html");
 let defSec_2_55_4 = new DocSection().i(true, "2.55.4", true, "Kawak Throttle Quadrant ", true, "html/Maintenance/Kawak Throttle Quadrant.html");
+let defSec_2_55_5 = new DocSection().i(true, "2.55.5", true, "Air Tractor Quadrant Friction", true, "html/Maintenance/Air Tractor Quadrant Friction.html");
 let def_Sec_2_55 = new DocSection();
 def_Sec_2_55
     .i(true, "2.55", true, "ENGINE CONTROLS", false, "")
@@ -344,7 +345,8 @@ def_Sec_2_55
         defSec_2_55_1,
         defSec_2_55_2,
         defSec_2_55_3,
-        defSec_2_55_4
+        defSec_2_55_4,
+        defSec_2_55_5
     ]);
 
 
