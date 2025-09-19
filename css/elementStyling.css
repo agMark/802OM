@@ -206,6 +206,7 @@ tr{
     margin-top: .2em;
     margin-bottom: .2em;
     break-before: avoid;
+    page-break-inside:avoid;
 }
 .boxWarningSmallHeader{
     color: red;
@@ -228,6 +229,7 @@ tr{
     margin-top: .2em;
     margin-bottom: .2em;
     break-before: avoid;
+    page-break-inside:avoid;
 }
 .boxWarningMediumHeader{
     font-weight: bold;
@@ -250,6 +252,7 @@ tr{
     margin-top: .2em;
     margin-bottom: .2em;
     break-before: avoid;
+    page-break-inside:avoid;
 }
 .boxWarningLargeHeader{
     color: red;
