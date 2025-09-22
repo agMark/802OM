@@ -1,4 +1,6 @@
 //@ts-check
+var isWebRender;
+
 
 import { DocDef } from './DocDef.mjs'
 import { def_Sec_1 } from './DocDef_1_Description.mjs'
@@ -9,7 +11,15 @@ import { def_Sec_5 } from './DocDef_5_Repairs.mjs'
 import { def_Sec_6 } from './DocDef_6_AirworthinessLimitations.mjs'
 
 await DocDef.GetContent();
-DocDef.RenderContent(true, document.body);
+if(!globalThis.isWebRender){
+    DocDef.RenderContent(true, document.body);
+}
+else{
+    DocDef.RenderContent(true, globalThis.contentTarget);
+}
+
+
+
 let figs_Sec1 = def_Sec_1.NumberFigures("Figure 1-");
 let figs_Sec2 = def_Sec_2.NumberFigures("Figure 2-");
 let figs_Sec3 = def_Sec_3.NumberFigures("Figure 3-");
@@ -47,34 +57,38 @@ let tocDiv6 = document.createElement("div");
 def_Sec_6.CreateToc(false, tocDiv6, 0, "6-");
 def_Sec_6.InsertToc(tocDiv6, true, true, "Table of Contents", "tocHeader");
 
-let st = document.createElement("link");
-st.rel = "stylesheet";
-st.href = "code/Paged.js/interface.css";
-document.head.appendChild(st);
 
-//@ts-ignore
-window.PagedConfig = {
-		before: () => {
-			return new Promise((resolve, reject) => {
-				setTimeout(() => { resolve() }, 1000);
-			})
-		},
-		after: (flow) => { 
-            console.log("after", flow) 
+if (!globalThis.isWebRender) {
+    let st = document.createElement("link");
+    st.rel = "stylesheet";
+    st.href = "code/Paged.js/interface.css";
+    document.head.appendChild(st);
 
-            if(tocPostProcess){
+    //@ts-ignore
+    window.PagedConfig = {
+        before: () => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => { resolve() }, 1000);
+            })
+        },
+        after: (flow) => {
+            console.log("after", flow)
+
+            if (tocPostProcess) {
                 tocPostProcess();
             }
-            else{
+            else {
                 console.log("tocPostProcess undefined");
             }
         }
-	};
+    };
 
 
-let sc = document.createElement("script");
-sc.src = "code/Paged.js/paged.polyfill.js"
-document.body.appendChild(sc);
+    let sc = document.createElement("script");
+    sc.src = "code/Paged.js/paged.polyfill.js"
+    document.body.appendChild(sc);
+
+}
 
 
 
