@@ -207,7 +207,7 @@ let defSec_2_40_62 = new DocSection().i(true, "2.40.62", true, "Battery Removal 
 let defSec_2_40_63 = new DocSection().i(true, "2.40.63", true, "Installing a New Dry Charged Battery", true, "html/Maintenance/Installing a New Gill Dry Charged Battery.html")
 let def_Sec_2_40 = new DocSection();
 def_Sec_2_40
-    .i(true, "2.40", true, "ELECTRICAL SYSTEM", true, "html/Maintenance/ELECTRICAL SYSTEM.html")
+    .i(true, "2.40", true, "ELECTRICAL SYSTEM", false, "html/Maintenance/ELECTRICAL SYSTEM.html")
     .s([
         defSec_2_40_1,
         defSec_2_40_2,
