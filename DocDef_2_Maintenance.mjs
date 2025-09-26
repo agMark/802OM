@@ -397,7 +397,7 @@ let defSec_2_70_10 = new DocSection().i(true, "2.70.10", true, "C100168-4 Flap A
 let defSec_2_70_11 = new DocSection().i(true, "2.70.11", true, "71112-1 Flap Actuator Maintenance", true, "html/Maintenance/71112 Flap Actuator.html");
 let defSec_2_70_12 = new DocSection().i(true, "2.70.12", true, "Flap Relay Upgrade", true, "html/Maintenance/Flap Relay Upgrade.html");
 let defSec_2_70_51 = new DocSection().i(true, "2.70.51", true, "Inspection of B100-6 Coupling used on C100168-4 Actuators", true, "html/Maintenance/Flap Motor Coupler and Inspection.html");
-let defSec_2_70_52 = new DocSection().i(true, "2.70.52", true, "Inspection of Flap Torque Tube Attachment (SL347 and AD 2015-05-14)", true, "html/Maintenance/Flap Torque Tube Attachment.html");
+let defSec_2_70_52 = new DocSection().i(true, "2.70.52", true, "Inspection of Flap Torque Tube Attachment (SL347 and AD 2021-05-14)", true, "html/Maintenance/Flap Torque Tube Attachment.html");
 let defSec_2_70_53 = new DocSection().i(true, "2.70.53", true, "Inspection of Flap Drive System Free Play Inspection", true, "html/Maintenance/Flap Drive System Free Play Inspection.html");
 let def_Sec_2_70 = new DocSection();
 def_Sec_2_70
@@ -424,7 +424,7 @@ let defSec_2_75_1 = new DocSection().i(true, "2.75.1", true, "Fuel Tanks", true,
 let defSec_2_75_2 = new DocSection().i(true, "2.75.2", true, "Fuel Tank Sealing", true, "html/Maintenance/Fuel Tank Sealing.html");
 let defSec_2_75_5 = new DocSection().i(true, "2.75.5", true, "Fuel System Drains", true, "html/Maintenance/Fuel System Drains.html");
 let defSec_2_75_6 = new DocSection().i(true, "2.75.6", true, "Fuel System Screens and Filters", true, "html/Maintenance/Fuel System Screens and Filters.html");
-let defSec_2_75_7 = new DocSection().i(true, "2.75.7", true, "Airframe Fuel Pump", true, "html/Maintenance/Airframe Fuel Pump.html");
+let defSec_2_75_7 = new DocSection().i(true, "2.75.7", true, "Airframe Electric Fuel Boost Pump", true, "html/Maintenance/Airframe Fuel Pump.html");
 let defSec_2_75_8 = new DocSection().i(true, "2.75.8", true, "Fuel Tank Placards", true, "html/Maintenance/Fuel Tank Placards.html");
 let defSec_2_75_9 = new DocSection().i(true, "2.75.9", true, "Ferry Fuel System", true, "html/Maintenance/Ferry Fuel System.html");
 let defSec_2_75_10 = new DocSection().i(true, "2.75.10", true, "Fuel Selector Valve", true, "html/Maintenance/Fuel Selector Valve.html");
